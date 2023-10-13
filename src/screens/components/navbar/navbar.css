@@ -2,7 +2,27 @@
   margin: 0;
   padding: 0;
 }
+.becomeArtisanBtn {
+  padding: 1rem;
+  width: 300px;
+  height: 60px;
+  margin-left: 120px;
+  background-color: transparent;
+  margin-top: 10px;
+  border-radius: 20px;
+  font-weight: 500;
+  outline: none;
+  transition: 0.2s ease;
+  font-size: 20px;
+  border: 1px solid black;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.becomeArtisanBtn:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
 
+}
 nav {
   padding: 0;
   margin: 0;
@@ -13,6 +33,15 @@ nav {
   padding: 0;
 }
 
-li {
-  font-size: 25px;
+#navItem {
+  margin: 10px;
+  font-size: 21px;
+  padding: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+#navItem:hover {
+  background: peachpuff;
+  border-radius: 10px;
+  cursor: pointer;
 }

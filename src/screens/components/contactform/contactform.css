@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and borders in the element's total width and height */
+}
+
+.contactFormHeading {
+    font-size: 52px;
+    font-weight: bold;
+    font-family: 'Pixelify Sans', sans-serif;
+    text-align: center; /* Center the heading */
+    margin-top: 20px; /* Add space at the top */
+    padding: 20px; /* Add padding for responsiveness */
+}
+
+.contactFormInput {
+    padding: 1rem;
+    width: 100%; /* Make the input field 100% width for responsiveness */
+    font-size: 19px;
+    font-family: 'Pixelify Sans', sans-serif;
+    margin: 10px 0; /* Add space between input fields */
+}
+
+.submitBtn {
+    padding: 1rem;
+    width: 100%; /* Make the button 100% width for responsiveness */
+    border-radius: 20px;
+    font-size: 30px;
+    transition: 0.15s ease-in-out;
+    font-family: 'Pixelify Sans', sans-serif;
+    background-color: transparent; /* Transparent button background */
+    border: 2px solid #ff4444; /* Add a border */
+    text-align: center; /* Center the text */
+    margin: 20px 0; /* Add space at the top and bottom of the button */
+}
+
+.submitBtn:hover {
+    cursor: pointer;
+    background-color: #ff4444;
+    color: white;
+}
+
+.theboxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Add space at the top */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .theboxes {
+        flex-direction: column; /* Stack elements in a column on smaller screens */
+    }
+}

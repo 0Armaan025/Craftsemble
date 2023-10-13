@@ -1,0 +1,77 @@
+/* Custom styles for the main footer container */
+footer {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Text color */
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  /* Style for the "Quick Links" section */
+  footer .col-lg-6 {
+    padding: 0 15px; /* Add space around columns */
+  }
+
+  .text-dark {
+    font-size: 22px;
+  }
+  
+  /* Style for the links in the "Quick Links" section */
+  footer .list-unstyled li a {
+    color: #fff; /* Text color */
+    text-decoration: none;
+  }
+  
+  /* Style for the "Newsletter" section */
+  footer .input-group {
+    margin-top: 20px; /* Add space above the input group */
+  }
+  
+  /* Style for the copyright notice */
+  footer .text-center {
+    background-color: rgba(0, 0, 0, 0.2); /* Transparent background */
+    color: #fff; /* Text color */
+    padding: 15px 0; /* Add space above and below the copyright notice */
+  }
+  
+  /* Add hover effect to links */
+  footer .list-unstyled li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Style for the subscription button */
+  footer .input-group button {
+    background-color: #007BFF; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+  }
+  
+  /* Hover effect for the subscription button */
+  footer .input-group button:hover {
+    background-color: #0056b3; /* Button background color on hover */
+  }
+  
+  /* Style for the link to your website */
+  footer .text-center a {
+    color: #fff; /* Text color */
+    text-decoration: none;
+  }
+  
+  /* Hover effect for the link to your website */
+  footer .text-center a:hover {
+    text-decoration: underline;
+  }
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    footer {
+        padding: 20px 0; /* Reduce top and bottom padding */
+    }
+    
+    .text-dark {
+        font-size: 18px; /* Reduce font size for smaller screens */
+    }
+    
+    footer .input-group {
+        margin-top: 10px; /* Reduce top margin for the input group */
+    }
+  }

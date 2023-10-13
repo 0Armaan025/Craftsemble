@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.internalBox {
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: transparent;
+    display: flex;
+    width: 100%; /* Make the internal box 100% width for responsiveness */
+    max-width: 400px; /* Set a maximum width */
+    height: 300px;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto; /* Center the box horizontally and add margin for spacing */
+    justify-content: center;
+    border-radius: 30px;
+    margin: 5rem;
+    border: 1px solid black;
+    transition: 0.2s ease-in;
+}
+
+.internalBox:hover {
+    background: peachpuff;
+    cursor: pointer;
+    height: 350px;
+    color: black;
+    transition: 0.2s ease-in-out;
+    transform: scale(1.1);
+}
+
+.internalestBox {
+    display: flex;
+    background: transparent;
+    align-items: center;
+    justify-content: center;
+    
+    flex-direction: row;
+}
+
+.featureH2 {
+    margin-top: 20px; /* Reduce the margin for responsiveness */
+    font-size: 30px; /* Adjust font size for smaller screens */
+    color: white;
+    margin-bottom: 10px;
+    font-family: 'Lexend', sans-serif;
+    -webkit-text-stroke: 2px black;
+}
+
+h2,
+p {
+    background: transparent;
+}
+
+p {
+    font-size: 13px;
+    color: white;
+    font-family: monospace;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    max-width: 300px; /* Limit the width for responsiveness */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .internalBox {
+        max-width: 100%; /* Allow the box to take up the full width on smaller screens */
+    }
+
+    .featureH2 {
+        font-size: 24px; /* Further reduce font size for smaller screens */
+    }
+
+    p {
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+}

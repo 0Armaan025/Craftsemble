@@ -4,12 +4,22 @@
     padding: 0;
     background-color: #faeee7;
 }
+
 .homeScreen {
     height: 100%;
 }
+
 .homescreenHeading {
     font-size: 4rem;
     font-weight: 600;
     margin: 1rem 0;
     font-family: 'Work Sans';
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .homescreenHeading {
+        font-size: 3rem; /* Reduce font size for smaller screens */
+        margin: 0.5rem 0; /* Adjust margin for smaller screens */
+    }
 }

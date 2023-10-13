@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and borders in the element's total width and height */
+}
+
+.featuresHeading {
+    font-size: 70px;
+    color: transparent;
+    margin-bottom: 30px; /* Reduce margin for responsiveness */
+    font-family: 'Lexend', sans-serif;
+    -webkit-text-stroke: 2px black;
+    text-align: center; /* Center the heading */
+}
+
+.features {
+    margin-top: 20px; /* Reduce margin for responsiveness */
+    display: flex;
+    flex-wrap: wrap; /* Wrap features to the next row on smaller screens */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.featuresRow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Allow features to wrap to the next row on smaller screens */
+    align-items: center;
+    justify-content: center;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .featuresHeading {
+        font-size: 40px; /* Reduce font size for smaller screens */
+    }
+
+    .features {
+        margin-top: 10px; /* Further reduce margin for responsiveness */
+        padding: 20px;
+    }
+
+    .featuresRow {
+        flex-direction: column; /* Stack features in a column on smaller screens */
+    }
+}
