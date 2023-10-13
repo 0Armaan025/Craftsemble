@@ -8,10 +8,10 @@
 
 .featuresHeading {
     font-size: 70px;
-    color: transparent;
-    margin-bottom: 30px; /* Reduce margin for responsiveness */
-    font-family: 'Lexend', sans-serif;
-    -webkit-text-stroke: 2px black;
+    color: black;
+    font-weight: bold;
+    font-family: 'Autour One', sans-serif;
+    margin-bottom: 30px; /* Reduce margin for responsiveness */        
     text-align: center; /* Center the heading */
 }
 

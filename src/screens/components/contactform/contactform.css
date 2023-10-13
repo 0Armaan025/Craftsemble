@@ -19,6 +19,7 @@
     padding: 1rem;
     width: 100%; /* Make the input field 100% width for responsiveness */
     font-size: 19px;
+    border-radius: 15px;
     font-family: 'Pixelify Sans', sans-serif;
     margin: 10px 0; /* Add space between input fields */
 }
