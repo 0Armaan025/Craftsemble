@@ -12,7 +12,7 @@ const ContactForm = () => {
             <form>
               <input type="text" placeholder="Name" className="contactFormInput" /><br /><br />
               <input type="text" placeholder="Email" className="contactFormInput" /><br /><br />
-              <input type="text" placeholder="Message" className="contactFormInput" /><br /><br />
+              
               <textarea type="text" placeholder='Message' className='contactFormInput'/> <br /><br />
               <input type="submit" value="Submit" className="submitBtn" />
             </form>

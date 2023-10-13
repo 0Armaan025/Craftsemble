@@ -6,7 +6,7 @@ import WorkshopsScreen from "./screens/workshops_screen/WorkshopsScreen";
 
 function App() {
   return (
-    <ExhibitionScreen/>
+    <HomeScreen/>
   );
 }
 

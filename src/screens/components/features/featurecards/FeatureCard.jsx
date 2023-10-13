@@ -8,7 +8,7 @@ const FeatureCard = (props) => {
         <div className="internalBox" style={{ backgroundImage: `url(${props.featureImage})` }}>
           <h2 className='featureH2'>{props.featureName}</h2>
           <div className="internalestBox">
-            <p>{props.featureDescription}</p>
+            <p style={{color: "white"}}>{props.featureDescription}</p>
           </div>
         </div>
       </div>
