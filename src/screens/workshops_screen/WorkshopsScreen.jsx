@@ -49,7 +49,7 @@ const WorkshopsScreen = () => {
           {workshops.map((workshop) => (
             <div key={workshop.id} className="workshop-card">
               <img src={workshop.imageUrl} alt={workshop.title} className="workshop-image" />
-              <h3 className="workshop-title">{workshop.title}</h3>
+              <h3 className="workshop-title" style={{background: "transparent"}}>{workshop.title}</h3>
               <p className="workshop-date">Date: {workshop.date}</p>
               <p className="workshop-description">{workshop.description}</p>
               <p className="workshop-hosted">{workshop.hostedBy}</p>
