@@ -1,32 +1,36 @@
 import React from 'react';
 import './navbar.css';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary" id='navbar'>
         <div className="container-fluid">
-          <a className="navbar-brand" href="#" style={{ fontSize: "30px", marginLeft: "20px", fontWeight: "bold" }}>Craftsemble</a>
+          <Link className="navbar-brand" to="/" style={{ fontSize: "30px", marginLeft: "20px", fontWeight: "bold" }}>Craftsemble</Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item" id="navItem">
-                <a className="nav-link active" aria-current="page" href="#">Home</a>
+                <Link className="nav-link active" to="/">Home</Link>
               </li>
               <li className="nav-item" id="navItem">
-                <a className="nav-link" href="#">Workshops</a>
+                <Link className="nav-link" to="/workshops">Workshops</Link>
               </li>
               <li className="nav-item" id="navItem">
-                <a className="nav-link" href="#">Exhibition</a>
+                <Link className="nav-link" to="/exhibition">Exhibition</Link>
               </li>
               <li className="nav-item" id="navItem">
-                <a className="nav-link">Communities</a>
+                <Link className="nav-link" to="/explore-communities">Explore Communities</Link>
+              </li>
+              <li className="nav-item" id="navItem">
+                <Link className="nav-link" to='/my-communities'>My Communities</Link>
               </li>
               <div className="spacer" style={{ marginLeft: "0.2rem" }}></div>
               <li className="nav-item">
-                <input type="button" value="Become an artisan!" className='becomeArtisanBtn' />
+                <Link to="/become-an-artisan"><input type="button" value="Become an artisan!" className='becomeArtisanBtn' /></Link>
               </li>
             </ul>
             <div className="user-avatar">
