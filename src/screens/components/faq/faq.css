@@ -44,9 +44,16 @@
 .faq-question {
     background-color: #ff9494;
     padding: 10px;
+    text-align: left;
+    padding-left: 30px;
+    border-radius: 10px;
     color: white;
-    font-size: 28px;
-    font-family: sans-serif;
+    font-size: 18px;
+    font-family: monospace;
+    /* transition: all 0.5s no-delay; */
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-delay: 0ms;
     cursor: pointer;
 }
 
@@ -56,9 +63,14 @@
 
 .faq-answer {
     padding: 10px;
-    font-size: 25px;
-    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+    font-family: monospace;
+    text-align: left;
+    padding-left: 30px;
     background-color: #ffedc1;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-delay: 0ms;
 }
 
 .faq-answer:hover {

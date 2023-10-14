@@ -88,7 +88,7 @@ function Faq() {
               <div>
                 <div className="faq-answer">
                   {item.answer}
-                  <button className="copy-button" onClick={() => copyToClipboard(item.answer)}>
+                  <button className="copy-button" style={{margnLeft: "5px"}} onClick={() => copyToClipboard(item.answer)}>
                     Copy!
                   </button>
                 </div>
