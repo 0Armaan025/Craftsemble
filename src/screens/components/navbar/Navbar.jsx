@@ -34,12 +34,14 @@ const Navbar = () => {
               </li>
             </ul>
             <div className="user-avatar">
+              <Link to="/profile">
               <img
                 src="https://i.ytimg.com/an_webp/CY9tvwEXdW8/mqdefault_6s.webp?du=3000&sqp=CLzYpKkG&rs=AOn4CLCrzkVguWMS8WjJoggdaZP_9gYdew" // Replace with the actual image URL
                 alt="User Avatar"
                 className="rounded-circle"
                 style={{ width: "40px", height: "40px" , marginLeft: "40px",cursor: "pointer"}}
               />
+              </Link>
             </div>
           </div>
         </div>
