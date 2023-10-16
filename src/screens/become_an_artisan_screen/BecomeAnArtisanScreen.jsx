@@ -54,7 +54,7 @@ const BecomeAnArtisanScreen = () => {
                     checked={agreeToTerms}
                     onChange={handleCheckboxChange}
                   />
-                  I agree to the <a href="/terms-and-conditions" target="_blank" rel="noopener noreferrer">Terms and Conditions</a>.
+                  I agree to the <a href="https://www.termsandconditionsgenerator.com/live.php?token=0C1A7QlBuET1Xn7I90Al0ZPNR4GIbDpU" target="_blank" rel="noopener noreferrer">Terms and Conditions</a>.
                 </label>
                 
                

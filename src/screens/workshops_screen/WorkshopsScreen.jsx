@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../components/navbar/Navbar';
 import './workshopsscreen.css'; // Import your CSS file
 import Footer from '../components/footer/Footer';
+import { Link } from 'react-router-dom';
 
 const WorkshopsScreen = () => {
   const workshops = [
@@ -53,7 +54,7 @@ const WorkshopsScreen = () => {
               <p className="workshop-date">Date:</p> <p className="workshop-date" style={{fontWeight: "600",color: "black"}}>{workshop.date}</p>
               <p className="workshop-description">{workshop.description}</p>
               <p className="workshop-hosted">Hosted by:</p> <p className='workshop-hosted' style={{fontWeight: "bold",color: "black"}}>{workshop.hostedBy}</p>
-              <button className="register-button">Register</button>
+              <Link to="/workshop-registration"><button className="register-button">Register</button></Link>
             </div>
           ))}
         </div>
