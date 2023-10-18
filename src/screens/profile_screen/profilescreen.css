@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@500&display=swap');
 .profile-screen {
     display: flex;
-    height: 100vh;
+    height: 150vh;
     overflow: hidden;
   }
   
@@ -12,6 +12,20 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
+  }
+  .infoLabel {
+    margin: 10px;
+    font-size: 20px;
+  }
+
+  .editIcon {
+    height: 20px;
+    width: 20px;
+    margin-left: 20px;
+  }
+  .editIcon:hover {
+    cursor: pointer;
+    box-shadow: 2px 1px 2px 1px black;
   }
   
   .sidebar-item {

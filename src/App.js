@@ -9,6 +9,7 @@ import WorkshopRegistrationScreen from "./screens/workshops_registration_screen/
 import WorkshopsScreen from "./screens/workshops_screen/WorkshopsScreen";
 import { Route, Link, Routes } from "react-router-dom";
 import ErrorPage from "./screens/error_page/ErrorPage";
+import DashboardScreen from "./screens/dashboard_screen/DashboardScreen";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="*" element={<ErrorPage />} />
         <Route path="" element={<ErrorPage />} />
         <Route element={<ErrorPage />} />
+        <Route path = "/dashboard" element={<DashboardScreen/>}/>
       </Routes>
 
     </>
