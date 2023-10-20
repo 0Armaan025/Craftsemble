@@ -3,6 +3,7 @@ import Chart from 'chart.js/auto';
 import Navbar from '../components/navbar/Navbar';
 import { Link } from 'react-router-dom';
 import './messagesscreen.css';
+import Message from './Message';
 
 const MessagesScreen = () => {
   
@@ -27,7 +28,7 @@ const MessagesScreen = () => {
         <div className="content">
           <center>
             <h1 className="messageHeading"> Messages sent to you by different people! 💬</h1>
-            
+                <Message/>
           </center>
         </div>
       </div>
