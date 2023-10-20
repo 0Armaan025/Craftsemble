@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './virtualdrawingscreen.css';
+import Navbar from '../components/navbar/Navbar';
 
 class VirtualDrawingScreen extends Component {
   constructor(props) {
@@ -151,6 +152,12 @@ class VirtualDrawingScreen extends Component {
     const backgroundOptions = ['white', 'lightgray', 'lightblue', 'lightpink'];
 
     return (
+        <>
+        <Navbar/>
+        <center>
+            <br/>
+            <h2>You can start drawing here ( BETA VERSION ) </h2>
+        </center>
       <div className="canvas-container">
         <canvas
           ref={this.canvasRef}
@@ -161,74 +168,85 @@ class VirtualDrawingScreen extends Component {
           onMouseUp={this.handleMouseUp}
         ></canvas>
         <div className="controls">
-          <label>
-            Color:
-            <select value={this.state.color} onChange={(e) => this.handleColorChange(e.target.value)}>
-              {colorOptions.map((color, index) => (
-                <option key={index} value={color}>
-                  {color}
-                </option>
-              ))}
-            </select>
-          </label>
-          <label>
-            Brush Size:
-            <select value={this.state.brushSize} onChange={(e) => this.handleBrushSizeChange(e.target.value)}>
-              {brushSizeOptions.map((size, index) => (
-                <option key={index} value={size}>
-                  {size}
-                </option>
-              ))}
-            </select>
-          </label>
-          <label>
-            Brush Type:
-            <select value={this.state.brushType} onChange={(e) => this.setState({ brushType: e.target.value })}>
-              <option value="pencil">Pencil</option>
-              <option value="shape">Shapes</option>
-            </select>
-          </label>
-          {this.state.brushType === 'shape' && (
+          <div className="color-picker">
             <label>
-              Shape Type:
-              <select value={this.state.shapeType} onChange={(e) => this.setShapeType(e.target.value)}>
-                {shapeOptions.map((shape, index) => (
-                  <option key={index} value={shape}>
-                    {shape}
+              Color:
+              <select value={this.state.color} onChange={(e) => this.handleColorChange(e.target.value)}>
+                {colorOptions.map((color, index) => (
+                  <option key={index} value={color}>
+                    {color}
                   </option>
                 ))}
               </select>
             </label>
-          )}
-          <label>
-            Background Color:
-            <select
-              value={this.state.background}
-              onChange={(e) => this.handleBackgroundChange(e.target.value)}
-            >
-              {backgroundOptions.map((bg, index) => (
-                <option key={index} value={bg}>
-                  {bg}
-                </option>
-              ))}
-            </select>
-          </label>
-          <label>
-            Text:
-            <input type="text" value={this.state.text} onChange={this.handleTextChange} />
-            <button onClick={this.addText}>Add Text</button>
-          </label>
-          <button onClick={this.clearCanvas}>Clear Canvas</button>
-          <button onClick={this.undo}>Undo</button>
-          <button onClick={this.toggleEraserMode}>
-            {this.state.eraserMode ? 'Switch to Drawing' : 'Switch to Eraser'}
-          </button>
-          <button onClick={this.toggleGrid}>
-            {this.state.showGrid ? 'Hide Grid' : 'Show Grid'}
-          </button>
-          <button onClick={this.saveAsPNG}>Save as PNG</button>
+          </div>
+          <div className="brush-settings">
+            <label>
+              Brush Size:
+              <select value={this.state.brushSize} onChange={(e) => this.handleBrushSizeChange(e.target.value)}>
+                {brushSizeOptions.map((size, index) => (
+                  <option key={index} value={size}>
+                    {size}
+                  </option>
+                ))}
+              </select>
+            </label>
+            <label>
+              Background Color:
+              <select
+                value={this.state.background}
+                onChange={(e) => this.handleBackgroundChange(e.target.value)}
+              >
+                {backgroundOptions.map((bg, index) => (
+                  <option key={index} value={bg}>
+                    {bg}
+                  </option>
+                ))}
+              </select>
+            </label>
+          </div>
+          <div className="brush-type">
+            <label>
+              Brush Type:
+              <select value={this.state.brushType} onChange={(e) => this.setState({ brushType: e.target.value })}>
+                <option value="pencil">Pencil</option>
+                <option value="shape">Shapes</option>
+              </select>
+            </label>
+            {this.state.brushType === 'shape' && (
+              <label>
+                Shape Type:
+                <select value={this.state.shapeType} onChange={(e) => this.setShapeType(e.target.value)}>
+                  {shapeOptions.map((shape, index) => (
+                    <option key={index} value={shape}>
+                      {shape}
+                    </option>
+                  ))}
+                </select>
+              </label>
+            )}
+          </div>
+          <div className="text-tool">
+            <label>
+              Text:
+              <input type="text" value={this.state.text} onChange={this.handleTextChange} />
+              <button onClick={this.addText}>Add Text</button>
+            </label>
+          </div>
+          <div className="action-buttons">
+            <button onClick={this.clearCanvas}>Clear Canvas</button>
+            <button onClick={this.undo}>Undo</button>
+            <button onClick={this.toggleEraserMode}>
+              {this.state.eraserMode ? 'Switch to Drawing' : 'Switch to Eraser'}
+            </button>
+            <button onClick={this.toggleGrid}>
+              {this.state.showGrid ? 'Hide Grid' : 'Show Grid'}
+            </button>
+            <button onClick={this.saveAsPNG}>Save as PNG</button>
+          </div>
         </div>
       </div>
+      </>
     );
   }
 }
