@@ -7,6 +7,7 @@ const ProfileScreen = () => {
     const [imagePreview, setImagePreview] = useState(null);
     const [editableFields, setEditableFields] = useState({
         username: false,
+        name: false,
         age: false,
         craftSpeciality: false,
         country: false,
@@ -14,10 +15,11 @@ const ProfileScreen = () => {
     });
     const [fieldValues, setFieldValues] = useState({
         username: 'Armaan',
+        name: 'Armaan',
         age: '20',
         craftSpeciality: 'Painting',
         country: 'India',
-        link: 'Instagram',
+        link: 'https://github.com/0Armaan025',
     });
 
     const handleImageChange = (e) => {
@@ -51,12 +53,13 @@ const ProfileScreen = () => {
                     <div className="sidebar-item"><Link to="/dashboard" className='sidebar-item' style={{color: "white", margin: "0px", padding: "0px"}}>Dashboard</Link></div>
                     <Link to='/profile' className='sidebar-item' style={{color: "white",padding: "0px", margin: "0px"}}><div className="sidebar-item">Profile</div></Link>
                     <div className="sidebar-item">Settings</div>
-                    <div className="sidebar-item">Messages</div>
+                    <Link to='/virtual-drawing-screen' className='sidebar-item' style={{color: "white",padding: "0px", margin: "0px"}}><div className="sidebar-item">Virtual Drawing</div></Link>
+                    <div className="sidebar-item" ><Link to='/messages' style={{color: "white", margin: "0px", padding: "0px", background: "none"}}>Messages</Link></div>
                     <div className="sidebar-item">Logout</div>
                 </div>
                 <div className="content">
                     <h2 className="profileHeading">
-                        <span role="img" aria-label="Star">⭐</span> Welcome, {fieldValues.username} <span role="img" aria-label="Star">⭐</span>
+                        <span role="img" aria-label="Star">⭐</span> Welcome, {fieldValues.name} <span role="img" aria-label="Star">⭐</span>
                     </h2>
                     <br />
                     <div className="profileDetails">
@@ -81,6 +84,25 @@ const ProfileScreen = () => {
                         </div>
                         <div className="profileInfo">
                             <br />
+                            <div className="profileInfoItem">
+                                <span className="infoLabel">Name:</span>
+                                {editableFields.name ? (
+                                    <input
+                                        type="text"
+                                        value={fieldValues.name}
+                                        onChange={(e) => handleFieldChange('name', e.target.value)}
+                                        onBlur={() => handleFieldBlur('name')}
+                                        onKeyPress={(e) => {
+                                            if (e.key === 'Enter') {
+                                                handleFieldBlur('name');
+                                            }
+                                        }}
+                                    />
+                                ) : (
+                                    <span className="infoValue" onClick={() => handleEditClick('name')}>{fieldValues.name}</span>
+                                )}
+                                <img src="https://cdn-icons-png.flaticon.com/512/650/650143.png" alt="Edit" className="editIcon" onClick={() => handleEditClick('username')} />
+                            </div>
                             <div className="profileInfoItem">
                                 <span className="infoLabel">Username:</span>
                                 {editableFields.username ? (

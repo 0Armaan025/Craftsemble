@@ -1,0 +1,61 @@
+/* Canvas.css */
+.canvas-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  canvas {
+    border: 1px solid #000;
+    cursor: crosshair;
+  }
+  
+  .controls {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  label {
+    margin: 0 10px;
+    font-weight: bold;
+  }
+  
+  select, button {
+    padding: 5px 10px;
+    margin: 0 10px;
+    font-size: 14px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styling for the eraser mode button */
+  button.toggle-eraser {
+    background-color: #ff3d00;
+  }
+  
+  /* Styling for the shape type dropdown (optional) */
+  select[name="shapeType"] {
+    font-size: 12px;
+    width: 100px;
+  }
+  
+  /* Styling for the canvas container (optional) */
+  .canvas-container {
+    max-width: 800px;
+  }
+  
+  /* Additional styling for other elements and features can be added as needed */
+  

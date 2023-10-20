@@ -1,51 +1,72 @@
 import React, { useEffect, useRef } from 'react';
-import Chart from 'chart.js/auto'; // Import the chart.js library
+import Chart from 'chart.js/auto';
 import Navbar from '../components/navbar/Navbar';
 import { Link } from 'react-router-dom';
 import './dashboardscreen.css';
 
 const DashboardScreen = () => {
-    const chartRef = useRef({ chart: null });
-
+  const pieChartRef = useRef();
+  const lineChartRef = useRef();
 
   useEffect(() => {
-    
-    const createChart = () => {
-        const ctx = chartRef.current.getContext('2d');
-        
-        
-        if (chartRef.current.chart) {
-          chartRef.current.chart.destroy();
-        }
-      
-        chartRef.current.chart = new Chart(ctx, {
-          type: 'line', 
-          data: {
-            labels: ['java', 'dart', 'python'], 
-            datasets: [
-              {
-                label: 'Data Series !',
-                data: [1, 10000, 500], 
-                backgroundColor: 'rgba(255, 120, 120, 0.2)', 
-                borderColor: 'rgba(75, 192, 192, 1)', 
-                borderWidth: 1,
-              },
-            ],
-          },
+    const createPieChart = (ctx, data) => {
+      if (ctx.chart) {
+        ctx.chart.destroy();
+      }
 
-          options: {
-            responsive: true,
-            scales: {
-              y: {
-                beginAtZero: true,
-              },
-            },
-          },
-        });
-      };
-      
+      ctx.chart = new Chart(ctx, {
+        type: 'pie',
+        data: data,
+        options: {
+          responsive: true,
+        },
+      });
+    };
 
-    createChart();
+    const createLineChart = (ctx, data) => {
+      if (ctx.chart) {
+        ctx.chart.destroy();
+      }
+
+      ctx.chart = new Chart(ctx, {
+        type: 'line',
+        data: data,
+        options: {
+          responsive: true,
+          scales: {
+            y: [{
+              beginAtZero: true,
+            }],
+          },
+        },
+      });
+    };
+
+    createPieChart(pieChartRef.current, {
+      labels: ['Total no of crafts made by you'],
+      datasets: [
+        {
+          label: 'Total no of crafts.',
+          data: [30],
+          backgroundColor: ['rgba(255, 99, 132, 0.2)', 'rgba(255, 206, 86, 0.2)', 'rgba(75, 192, 192, 0.2)'],
+          borderColor: ['rgb(255, 99, 132)', 'rgb(255, 206, 86)', 'rgb(75, 192, 192)'],
+          borderWidth: 1,
+        },
+      ],
+    });
+
+    createLineChart(lineChartRef.current, {
+      labels: ['India', 'China', 'Japan'],
+      datasets: [
+        {
+          label: 'Your Profile Visitors (Line)',
+          data: [1, 100, 500],
+          backgroundColor: 'rgba(255, 120, 120, 0.2)',
+          borderColor: 'rgba(75, 192, 192, 1)',
+          borderWidth: 1,
+        },
+      ],
+    });
   }, []);
 
   return (
@@ -59,16 +80,26 @@ const DashboardScreen = () => {
               Profile
             </Link>
           </div>
+          
           <div className="sidebar-item">Settings</div>
-          <div className="sidebar-item">Messages</div>
+          <div className="sidebar-item">Virtual Drawing</div>
+          <div className="sidebar-item"><Link to='/messages' style={{color: "white", margin: "0px", padding: "0px", background: "none"}}>Messages</Link></div>
           <div className="sidebar-item">Logout</div>
+          
         </div>
         <div className="content">
           <center>
             <h1 className="dashboardHeading"> 🤔 Your Statistics 📔</h1>
-            <div className="chart-container">
-              <canvas ref={chartRef}></canvas>
+            <div className="charts" style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
+              <div className="chart-container">
+                <canvas ref={pieChartRef}></canvas>
+              </div>
+              <div className="chart-container">
+                <canvas ref={lineChartRef}></canvas>
+              </div>
             </div>
+            <br/>
+            <h2> These were your statistics (not proper information till now) </h2>
           </center>
         </div>
       </div>

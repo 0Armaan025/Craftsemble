@@ -46,6 +46,8 @@ const WorkshopsScreen = () => {
       <Navbar />
       <div className="workshops-container">
         <h1 className='workshopsHeading'>Upcoming Workshops!</h1>
+        <center><h4> <Link to="/workshop-creation">Click here to make a request for a workshop!</Link></h4></center>
+        <br/>
         <div className="workshop-grid">
           {workshops.map((workshop) => (
             <div key={workshop.id} className="workshop-card">

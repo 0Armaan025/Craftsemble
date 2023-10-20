@@ -10,6 +10,8 @@ import WorkshopsScreen from "./screens/workshops_screen/WorkshopsScreen";
 import { Route, Link, Routes } from "react-router-dom";
 import ErrorPage from "./screens/error_page/ErrorPage";
 import DashboardScreen from "./screens/dashboard_screen/DashboardScreen";
+import MessagesScreen from "./screens/messages_screen/MessagesScreen";
+import VirtualDrawingScreen from "./screens/virtual_drawing_screen/VirtualDrawingScreen";
 
 function App() {
   return (
@@ -24,10 +26,12 @@ function App() {
         <Route path="/list-a-community" element={<ListACommunityScreen />} />
         <Route path="/my-communities" element={<MyCommunitiesScreen />} />
         <Route path="/profile" element={<ProfileScreen />} />
+        <Route path="/messages" element={<MessagesScreen />} />
         <Route path="*" element={<ErrorPage />} />
         <Route path="" element={<ErrorPage />} />
         <Route element={<ErrorPage />} />
         <Route path = "/dashboard" element={<DashboardScreen/>}/>
+        <Route path = "/virtual-drawing-screen" element={<VirtualDrawingScreen/>}/>
       </Routes>
 
     </>

@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.blogsBtn{
+    padding: 1rem;
+    font-size: 20px;
+    width: 200px;
+    margin: 10px;
+    margin-left: 20px;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
+.blogsBtn:hover {
+    background: rgb(214, 160, 112);
+    font-weight: bold;
+    color: white;
+}

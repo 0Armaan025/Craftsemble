@@ -4,6 +4,7 @@ import ContinueButton from './ContinueButton';
 import Features from '../features/Features';
 import Faq from '../faq/Faq';
 import ContactForm from '../contactform/ContactForm';
+import BlogsButton from './BlogsButton';
 
 const MiddlePart = () => {
   return (
@@ -17,7 +18,11 @@ const MiddlePart = () => {
 
                         <h4 className='middleContainer__left_text_text_text'>"Elevate Your Craft and Ignite Collaborative Creations."</h4>
                         <br/>
+                        <div className="buttons">
                         <ContinueButton/>
+                        <div className="spac" style={{width: "2px"}}></div>
+                        <BlogsButton/>
+                        </div>
                     </div>
 
                     <div className="middleContainer__right_text">
