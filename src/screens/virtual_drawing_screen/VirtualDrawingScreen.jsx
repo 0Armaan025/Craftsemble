@@ -13,6 +13,9 @@ class VirtualDrawingScreen extends Component {
       eraserMode: false,
       shapes: [],
       currentShape: null,
+      background: 'white',
+      text: '',
+      showGrid: false,
     };
     this.canvasRef = React.createRef();
   }
@@ -28,7 +31,7 @@ class VirtualDrawingScreen extends Component {
   handleMouseDown = (e) => {
     const { offsetX, offsetY } = e.nativeEvent;
     this.setState({ drawing: true });
-    this.state.context.strokeStyle = this.state.eraserMode ? 'white' : this.state.color;
+    this.state.context.strokeStyle = this.state.eraserMode ? this.state.background : this.state.color;
     this.state.context.beginPath();
 
     if (this.state.brushType === 'shape') {
@@ -45,7 +48,7 @@ class VirtualDrawingScreen extends Component {
         const { currentShape, context } = this.state;
         if (currentShape) {
           context.clearRect(0, 0, context.canvas.width, context.canvas.height);
-          context.strokeStyle = this.state.eraserMode ? 'white' : this.state.color;
+          context.strokeStyle = this.state.eraserMode ? this.state.background : this.state.color;
           this.drawShape(currentShape, offsetX, offsetY);
         }
       } else {
@@ -78,7 +81,8 @@ class VirtualDrawingScreen extends Component {
   };
 
   clearCanvas = () => {
-    this.state.context.clearRect(0, 0, this.state.context.canvas.width, this.state.context.canvas.height);
+    this.state.context.fillStyle = this.state.background;
+    this.state.context.fillRect(0, 0, this.state.context.canvas.width, this.state.context.canvas.height);
     this.setState({ shapes: [] });
   };
 
@@ -89,6 +93,10 @@ class VirtualDrawingScreen extends Component {
       undoneShapes.forEach((shape) => this.drawShape(shape, shape.x, shape.y));
       this.setState({ shapes: undoneShapes });
     }
+  };
+
+  toggleGrid = () => {
+    this.setState((prevState) => ({ showGrid: !prevState.showGrid }));
   };
 
   drawShape = (shape, endX, endY) => {
@@ -111,10 +119,36 @@ class VirtualDrawingScreen extends Component {
     this.setState({ shapeType });
   };
 
+  handleBackgroundChange = (background) => {
+    this.setState({ background });
+    this.state.context.fillStyle = background;
+    this.state.context.fillRect(0, 0, this.state.context.canvas.width, this.state.context.canvas.height);
+  };
+
+  handleTextChange = (e) => {
+    this.setState({ text: e.target.value });
+  };
+
+  addText = () => {
+    const { context, text } = this.state;
+    context.font = '20px Arial';
+    context.fillText(text, 50, 50);
+  };
+
+  saveAsPNG = () => {
+    const canvas = this.canvasRef.current;
+    const imgData = canvas.toDataURL('image/png');
+    const a = document.createElement('a');
+    a.href = imgData;
+    a.download = 'art.png';
+    a.click();
+  };
+
   render() {
     const colorOptions = ['black', 'red', 'green', 'blue', 'yellow', 'purple', 'orange', 'pink', 'brown'];
     const brushSizeOptions = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
     const shapeOptions = ['rectangle', 'circle'];
+    const backgroundOptions = ['white', 'lightgray', 'lightblue', 'lightpink'];
 
     return (
       <div className="canvas-container">
@@ -166,11 +200,33 @@ class VirtualDrawingScreen extends Component {
               </select>
             </label>
           )}
+          <label>
+            Background Color:
+            <select
+              value={this.state.background}
+              onChange={(e) => this.handleBackgroundChange(e.target.value)}
+            >
+              {backgroundOptions.map((bg, index) => (
+                <option key={index} value={bg}>
+                  {bg}
+                </option>
+              ))}
+            </select>
+          </label>
+          <label>
+            Text:
+            <input type="text" value={this.state.text} onChange={this.handleTextChange} />
+            <button onClick={this.addText}>Add Text</button>
+          </label>
           <button onClick={this.clearCanvas}>Clear Canvas</button>
           <button onClick={this.undo}>Undo</button>
           <button onClick={this.toggleEraserMode}>
             {this.state.eraserMode ? 'Switch to Drawing' : 'Switch to Eraser'}
           </button>
+          <button onClick={this.toggleGrid}>
+            {this.state.showGrid ? 'Hide Grid' : 'Show Grid'}
+          </button>
+          <button onClick={this.saveAsPNG}>Save as PNG</button>
         </div>
       </div>
     );
