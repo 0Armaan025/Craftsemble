@@ -15,7 +15,7 @@ const BecomeAnArtisanScreen = () => {
         <Navbar />
         <br />
         <center>
-          <h2 className="formHeading">🤔 Wanna become an artisan ? Welcome!! 🥳</h2>
+          <h2 className="formHeading" style={{color: "black"}}>🤔 Wanna become an artisan ? Welcome!! 🥳</h2>
           <br />
           <h4 className="formShowing">We would need you to submit some details, please :)</h4>
           <div className="theboxes" style={{width: "1300px"}}>

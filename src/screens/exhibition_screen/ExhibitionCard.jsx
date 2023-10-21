@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './exhibitioncard.css';
 
 const ExhibitionCard = ({ imageUrl, isCollaborate }) => {
@@ -16,7 +17,7 @@ const ExhibitionCard = ({ imageUrl, isCollaborate }) => {
         <img src={imageUrl} alt="Artwork" />
       </div>
       <div className="card-buttons">
-        <button className="more-details-button" onClick={handleMoreDetails}>More Details</button>
+        <button className="more-details-button" style={{marginBottom: "20px"}} onClick={handleMoreDetails}><Link to="/project-details" style={{background: "none", color: "white"}}>More Details</Link></button>
         {isCollaborate === 'yes' && (
           <button className="collaborate-button" onClick={handleCollaborate}>Collaborate</button>
         )}

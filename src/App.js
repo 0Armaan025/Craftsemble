@@ -14,6 +14,8 @@ import MessagesScreen from "./screens/messages_screen/MessagesScreen";
 import VirtualDrawingScreen from "./screens/virtual_drawing_screen/VirtualDrawingScreen";
 import BlogsScreen from "./screens/blogs_screen/Blogs";
 import AddBlog from "./screens/blogs_screen/AddBlog";
+import WorkshopCreationScreen from "./screens/workshop_creation_screen/WorkshopCreationScreen";
+import ExhibitionCardDetailsScreen from "./screens/exhibition_screen/ExhibitionCardDetailsScreen";
 
 function App() {
   return (
@@ -27,8 +29,10 @@ function App() {
         <Route path="/become-an-artisan" element={<BecomeAnArtisanScreen />} />
         <Route path="/list-a-community" element={<ListACommunityScreen />} />
         <Route path="/blogs" element={<BlogsScreen />} />
+        <Route path="/workshop-creation" element={<WorkshopCreationScreen />} />
         <Route path="/my-communities" element={<MyCommunitiesScreen />} />
         <Route path="/profile" element={<ProfileScreen />} />
+        <Route path="/project-details" element={<ExhibitionCardDetailsScreen/>}/> 
         <Route path="/messages" element={<MessagesScreen />} />
         <Route path="/add-blog" element={<AddBlog />} />
         <Route path="*" element={<ErrorPage />} />

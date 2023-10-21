@@ -7,15 +7,15 @@ const ExhibitionScreen = () => {
   const craftData = [
     {
       imageUrl: "https://i.ytimg.com/an_webp/mSpXxxld4o8/mqdefault_6s.webp?du=3000&sqp=CIzDpKkG&rs=AOn4CLD7yYidlbjqD2aWkt4PTMNmvtLd5A",
-      isCollaborate: "no"
+      isCollaborate: false,
     },
     {
       imageUrl: "https://i.ytimg.com/an_webp/mSpXxxld4o8/mqdefault_6s.webp?du=3000&sqp=CIzDpKkG&rs=AOn4CLD7yYidlbjqD2aWkt4PTMNmvtLd5A",
-      isCollaborate: "yes"
+      isCollaborate: true,
     },
     {
       imageUrl: "https://i.ytimg.com/an_webp/mSpXxxld4o8/mqdefault_6s.webp?du=3000&sqp=CIzDpKkG&rs=AOn4CLD7yYidlbjqD2aWkt4PTMNmvtLd5A",
-      isCollaborate: "no"
+      isCollaborate: false,
     },
     // Add more craft data as needed
   ];
@@ -24,11 +24,13 @@ const ExhibitionScreen = () => {
     <div className="exhibition-screen">
       <Navbar />
       <center>
-        <br/>
-      <h2 className="exhibitions-heading">🔥🎨 Welcome to the Crafts Exhibition!!! 🤩💫</h2>
-      <h4 className="exhibitions-subheading">Wanna share something too? <a href="/join-here">Upload Here!</a></h4>
+        <h2 className="exhibitions-heading">🔥🎨 Welcome to the Crafts Exhibition!!! 🤩💫</h2>
+        <h4 className="exhibitions-subheading">
+          Share your crafts with the world!
+          <a href="/upload" className="upload-link">Upload Here</a>
+        </h4>
       </center>
-      <br/>
+
       <div className="exhibition-row">
         {craftData.map((craft, index) => (
           <ExhibitionCard
@@ -38,7 +40,6 @@ const ExhibitionScreen = () => {
           />
         ))}
       </div>
-      <br/><br/>
     </div>
   );
 }
