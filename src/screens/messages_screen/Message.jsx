@@ -7,10 +7,10 @@ const Message = () => {
       <div className="imageDiv">
         <img src="https://i.ytimg.com/vi/NcXY3SPDe9k/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCwax9MzCwkgOXLEUB62QQLZabdLA" alt="profileImage" className='profileImageMessage' />
       </div>
-      <div className="content">
+      <div className="myContent">
         <div className="textDiv">
-          <h2>Name</h2>
-          <h4>message</h4>
+          <h2 className='nameText'>Name</h2>
+          <h4 className='messageText'>message</h4>
         </div>
         <div className="dateTimeDiv">
           <h5 className='dateTimeText'>Date/Time</h5>

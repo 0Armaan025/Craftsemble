@@ -28,7 +28,13 @@ const MessagesScreen = () => {
         <div className="content">
           <center>
             <h1 className="messageHeading"> Messages sent to you by different people! 💬</h1>
+            <br/>
                 <Message/>
+                <br/>
+                <Message/>
+                <br/>
+                <Message/>
+
           </center>
         </div>
       </div>
