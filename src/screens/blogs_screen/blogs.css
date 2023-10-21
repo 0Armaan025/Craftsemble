@@ -1,0 +1,93 @@
+/* styles.css or your CSS file */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.amazing-blog-page {
+  text-align: center;
+  padding: 20px;
+}
+
+.blog-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.blog-card {
+  background-color: #ffffff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  margin: 10px;
+  border-radius: 16px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-10px) rotateX(10deg);
+}
+
+.blog-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #4b0082, #ff00ff, #000000);
+  animation: gradient-line 4s linear infinite;
+}
+
+@keyframes gradient-line {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.blog-card h2 {
+  margin-bottom: 20px;
+  color: #333333;
+  background: white;
+  font-size: 24px;
+}
+
+.blog-card p {
+  color: #666666;
+  font-size: 18px;
+  background-color: white;
+}
+
+.blog-card span {
+  display: block;
+  margin-top: 20px;
+  font-style: italic;
+  background: white;
+  color: #888888;
+}
+
+/* Add more styles as needed */
+
+.add-blog-button {
+  background-color: #4CAF50; 
+  color: white; 
+  cursor: pointer;
+  border: none; 
+  padding: 12px 24px; 
+  font-size: 16px; 
+  border-radius: 8px; 
+  cursor: pointer;
+}
+
+
+.add-blog-button:hover {
+  background-color: #45a049; 
+}

@@ -12,6 +12,8 @@ import ErrorPage from "./screens/error_page/ErrorPage";
 import DashboardScreen from "./screens/dashboard_screen/DashboardScreen";
 import MessagesScreen from "./screens/messages_screen/MessagesScreen";
 import VirtualDrawingScreen from "./screens/virtual_drawing_screen/VirtualDrawingScreen";
+import BlogsScreen from "./screens/blogs_screen/Blogs";
+import AddBlog from "./screens/blogs_screen/AddBlog";
 
 function App() {
   return (
@@ -24,9 +26,11 @@ function App() {
         <Route path="/workshop-registration" element={<WorkshopRegistrationScreen />} />
         <Route path="/become-an-artisan" element={<BecomeAnArtisanScreen />} />
         <Route path="/list-a-community" element={<ListACommunityScreen />} />
+        <Route path="/blogs" element={<BlogsScreen />} />
         <Route path="/my-communities" element={<MyCommunitiesScreen />} />
         <Route path="/profile" element={<ProfileScreen />} />
         <Route path="/messages" element={<MessagesScreen />} />
+        <Route path="/add-blog" element={<AddBlog />} />
         <Route path="*" element={<ErrorPage />} />
         <Route path="" element={<ErrorPage />} />
         <Route element={<ErrorPage />} />
