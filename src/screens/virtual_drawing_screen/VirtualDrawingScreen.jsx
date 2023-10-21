@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './virtualdrawingscreen.css';
 import Navbar from '../components/navbar/Navbar';
+import Footer from '../components/footer/Footer';
 
 class VirtualDrawingScreen extends Component {
   constructor(props) {
@@ -246,6 +247,7 @@ class VirtualDrawingScreen extends Component {
           </div>
         </div>
       </div>
+      <Footer/>
       </>
     );
   }

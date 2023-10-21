@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './addblog.css';
 import Navbar from '../components/navbar/Navbar';
+import Footer from '../components/footer/Footer';
 
 
 const AddBlog = () => {
@@ -27,6 +28,7 @@ const AddBlog = () => {
   
 
   return (
+    <>
     <div className="add-blog-screen">
         <Navbar/>
       <h1 style={{color: "black"}}>Add a Blog</h1>
@@ -57,6 +59,9 @@ const AddBlog = () => {
       <br/>
       <br/>
     </div>
+
+    <Footer/>
+    </>
   );
 };
 

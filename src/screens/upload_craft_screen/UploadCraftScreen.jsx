@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './becomeanartisanscreen.css';
 import Navbar from '../components/navbar/Navbar';
 import Footer from '../components/footer/Footer';
 
@@ -10,44 +9,49 @@ const BecomeAnArtisanScreen = () => {
     setAgreeToTerms(!agreeToTerms);
   };
 
+  const [collaboration, setCollaboration] = useState(false);
+
+  const handleCollaboration = () => {
+    setCollaboration(!collaboration);
+  };
+
   return (
     <>
       <div className="becomeAnArtisanScreen">
         <Navbar />
         <br />
         <center>
-          <h2 className="formHeading" style={{color: "black"}}>🤔 Wanna become an artisan ? Welcome!! 🥳</h2>
+          <h2 className="formHeading" style={{color: "black"}}>🤔 Let's upload your art!🥳</h2>
           <br />
           <h4 className="formShowing">We would need you to submit some details, please :)</h4>
           <div className="theboxes" style={{width: "1300px"}}>
             <div className="leftBox">
               <form>
-                <input type="text" placeholder="Full Name" className="contactFormInput" /><br /><br />
-                <input type="text" placeholder="Username" className="contactFormInput"/><br /><br />
-                <input type="number" placeholder="Age" className="contactFormInput" /><br /><br />
-                <input type="text" placeholder="Craft Speciality" className="contactFormInput" /><br /><br />
-                <input type="text" placeholder="Country" className="contactFormInput" /><br /><br />
-                <input type="text" placeholder="Any social media links if you want to add?" className="contactFormInput" /><br /><br />
-                <label htmlFor="profilePicture">Profile Picture</label>
+        
+
+                <input type="text" placeholder="Email" className="contactFormInput" /><br /><br />
+                <label htmlFor="profilePicture">Craft image</label>
+                <br/>
                 <input
                   type="file"
                   className="form-control-file"
-                  id="profilePicture"
-                  name="profilePicture"
+                  id="craftImage"
+                  name="craftImage"
                   accept="image/*"
                 />
                 <br/>
                 <br/>
-                <label htmlFor="demoArtWork">A demo art work for verification</label>
-                <input
-                  type="file"
-                  className="form-control-file"
-                  id="demoArtWork"
-                  name="demoArtWork"
-                  accept="image/*"
-                />
-                <br/>
-                <br/>
+                
+                <label>
+                  <input
+                    type="checkbox"
+                    name="collaboration"
+                    checked={collaboration}
+                    onChange={handleCollaboration}
+                  />
+                  Is it collaborative project?
+                </label>
+                
                 <label>
                   <input
                     type="checkbox"
@@ -58,7 +62,8 @@ const BecomeAnArtisanScreen = () => {
                   I agree to the <a href="https://www.termsandconditionsgenerator.com/live.php?token=0C1A7QlBuET1Xn7I90Al0ZPNR4GIbDpU" target="_blank" rel="noopener noreferrer">Terms and Conditions</a>.
                 </label>
                 
-               
+               <br/>
+               <br/>
                 <input type="submit" value="Submit" className="submitBtn" />
               </form>
             </div>

@@ -43,6 +43,7 @@
     margin-top: 20px; /* Reduce the margin for responsiveness */
     font-size: 40px; /* Adjust font size for smaller screens */
     color: white;
+    
     margin-bottom: 10px;
     font-family: 'Lexend', sans-serif;
     -webkit-text-stroke: 1px black;
@@ -78,4 +79,11 @@ p {
         font-size: 12px;
         color: white; /* Adjust font size for smaller screens */
     }
+}
+
+.featureH2 {
+    background: none;
+}
+.ourP {
+    font-size: 14px;
 }

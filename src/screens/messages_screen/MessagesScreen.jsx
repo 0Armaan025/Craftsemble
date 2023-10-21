@@ -4,6 +4,7 @@ import Navbar from '../components/navbar/Navbar';
 import { Link } from 'react-router-dom';
 import './messagesscreen.css';
 import Message from './Message';
+import Footer from '../components/footer/Footer';
 
 const MessagesScreen = () => {
   
@@ -31,6 +32,7 @@ const MessagesScreen = () => {
           </center>
         </div>
       </div>
+      <Footer/>
     </>
   );
 };

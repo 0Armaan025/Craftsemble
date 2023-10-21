@@ -3,9 +3,11 @@ import BlogList from './BlogList';
 import './blogs.css';
 import Navbar from '../components/navbar/Navbar';
 import { Link } from 'react-router-dom';
+import Footer from '../components/footer/Footer';
 
 const Blogs = () => {
   return (
+    <>
     <div className="amazing-blog-page">
         <Navbar/>
         <hr/>
@@ -15,6 +17,8 @@ const Blogs = () => {
       <br/><br/>
       <Link to="/add-blog"><button className="add-blog-button">Add a blog</button></Link>
     </div>
+    <Footer/>
+    </>
   );
 };
 

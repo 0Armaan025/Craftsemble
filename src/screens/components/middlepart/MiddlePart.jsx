@@ -14,7 +14,7 @@ const MiddlePart = () => {
 
             
                     <div className="middleContainer__left_text">
-                        <h2 className='middleContainer__left_text_text'> ⭐ It's the time to empower the unsung creators! ⭐</h2>
+                        <h2 className='middleContainer__left_text_text' style={{color: "black"}}> ⭐ It's the time to empower the unsung creators! ⭐</h2>
 
                         <h4 className='middleContainer__left_text_text_text'>"Elevate Your Craft and Ignite Collaborative Creations."</h4>
                         <br/>

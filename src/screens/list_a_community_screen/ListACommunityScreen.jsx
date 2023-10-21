@@ -1,6 +1,7 @@
 import React from 'react';
 import './listascommunityscreen.css';
 import Navbar from '../components/navbar/Navbar';
+import Footer from '../components/footer/Footer';
 
 const ListACommunityScreen = () => {
     return (
@@ -10,7 +11,7 @@ const ListACommunityScreen = () => {
                 <br />
                 <br />
                 <center>
-                    <h1 className='listCommunityHeading'>💫List your community here!😎</h1>
+                    <h1 className='listCommunityHeading' style={{color: "black"}}>💫List your community here!😎</h1>
                     <br/>
                     <div className="theboxes" style={{ width: "1300px" }}>
                         <div className="leftBox">
@@ -46,6 +47,7 @@ const ListACommunityScreen = () => {
                     </div>
                 </center>
             </div>
+            <Footer/>
         </>
     );
 }

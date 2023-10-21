@@ -2,6 +2,7 @@ import React from 'react';
 import './exhibitionscreen.css';
 import Navbar from '../components/navbar/Navbar';
 import ExhibitionCard from './ExhibitionCard';
+import Footer from '../components/footer/Footer';
 
 const ExhibitionScreen = () => {
   const craftData = [
@@ -21,13 +22,14 @@ const ExhibitionScreen = () => {
   ];
 
   return (
+    <>
     <div className="exhibition-screen">
       <Navbar />
       <center>
         <h2 className="exhibitions-heading">🔥🎨 Welcome to the Crafts Exhibition!!! 🤩💫</h2>
         <h4 className="exhibitions-subheading">
           Share your crafts with the world!
-          <a href="/upload" className="upload-link">Upload Here</a>
+          <a href="/upload-craft" className="upload-link">Upload Here</a>
         </h4>
       </center>
 
@@ -41,6 +43,8 @@ const ExhibitionScreen = () => {
         ))}
       </div>
     </div>
+    <Footer/>
+    </>
   );
 }
 

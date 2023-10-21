@@ -1,6 +1,7 @@
 import React from 'react';
 import './exhibitioncarddetailsscreen.css';
 import Navbar from '../components/navbar/Navbar';
+import Footer from '../components/footer/Footer';
 
 const ExhibitionCardDetailsScreen = () => {
   const exhibitionDetails = {
@@ -34,9 +35,11 @@ const ExhibitionCardDetailsScreen = () => {
         {exhibitionDetails.isCollaborator && (
           <p>Collaborator: Yes</p>
         )}
+        <h3 style={{background: "none"}}> Total Stars now = 10 </h3>
         <button onClick={handleFavoriteClick}>⭐</button>
       </div>
     </div>
+    <Footer/>
     </>
   );
 }

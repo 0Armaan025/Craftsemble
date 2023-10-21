@@ -17,6 +17,7 @@
 .middleContainer__left_text_text {
     font-size: 80px;
     width: 700px;
+    color: 'black';
     font-family: 'Indie Flower', cursive;
     font-weight: bold;
 }

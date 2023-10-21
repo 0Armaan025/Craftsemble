@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './profilescreen.css';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/navbar/Navbar';
+import BADGE from '../../assets/badge.png';
+import Footer from '../components/footer/Footer';
 
 const ProfileScreen = () => {
     const [imagePreview, setImagePreview] = useState(null);
@@ -20,6 +22,7 @@ const ProfileScreen = () => {
         craftSpeciality: 'Painting',
         country: 'India',
         link: 'https://github.com/0Armaan025',
+        verified: true,
     });
 
     const handleImageChange = (e) => {
@@ -58,8 +61,10 @@ const ProfileScreen = () => {
                 </div>
                 <div className="content">
                     <h2 className="profileHeading">
-                        <span role="img" aria-label="Star">⭐</span> Welcome, {fieldValues.name} <span role="img" aria-label="Star">⭐</span>
+                        <span role="img" aria-label="Star">⭐</span> Welcome, {fieldValues.name} <span role="img" aria-label="Star">⭐<img src={BADGE} height="125px" width="205px"/></span>
                     </h2>
+
+                    
                     <br />
                     <div className="profileDetails">
                         <div className="profilePic">
@@ -203,6 +208,7 @@ const ProfileScreen = () => {
                     <button className="updateProfileButton">Update Profile</button>
                 </div>
             </div>
+            <Footer/>
         </>
     );
 };

@@ -16,6 +16,7 @@ import BlogsScreen from "./screens/blogs_screen/Blogs";
 import AddBlog from "./screens/blogs_screen/AddBlog";
 import WorkshopCreationScreen from "./screens/workshop_creation_screen/WorkshopCreationScreen";
 import ExhibitionCardDetailsScreen from "./screens/exhibition_screen/ExhibitionCardDetailsScreen";
+import UploadCraftScreen from "./screens/upload_craft_screen/UploadCraftScreen";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/workshop-creation" element={<WorkshopCreationScreen />} />
         <Route path="/my-communities" element={<MyCommunitiesScreen />} />
         <Route path="/profile" element={<ProfileScreen />} />
+        <Route path="/upload-craft" element={<UploadCraftScreen />} />
         <Route path="/project-details" element={<ExhibitionCardDetailsScreen/>}/> 
         <Route path="/messages" element={<MessagesScreen />} />
         <Route path="/add-blog" element={<AddBlog />} />

@@ -9,8 +9,8 @@ const Features = () => {
             <br/>
             <hr/>
             <br/>
-            <h2 className='featuresHeading'>Features</h2>
-            
+            <h1 className='featuresHeading'>Features</h1>
+            <br/>
         
             { /* time to add some feature cards here */}
             { /* Feature Rows and columns */}

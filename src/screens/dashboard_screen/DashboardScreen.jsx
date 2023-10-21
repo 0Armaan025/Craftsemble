@@ -3,6 +3,7 @@ import Chart from 'chart.js/auto';
 import Navbar from '../components/navbar/Navbar';
 import { Link } from 'react-router-dom';
 import './dashboardscreen.css';
+import Footer from '../components/footer/Footer';
 
 const DashboardScreen = () => {
   const pieChartRef = useRef();
@@ -92,10 +93,11 @@ const DashboardScreen = () => {
               </div>
             </div>
             <br/>
-            <h2> These were your statistics (not proper information till now) </h2>
+            <h3> These were your statistics (not proper information till now) </h3>
           </center>
         </div>
       </div>
+      <Footer/>
     </>
   );
 };
