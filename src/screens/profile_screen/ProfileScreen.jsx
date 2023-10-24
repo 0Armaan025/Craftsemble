@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import './profilescreen.css';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/navbar/Navbar';
-import BADGE from '../../assets/badge.png';
+import BADGE2 from '../../assets/badge2.png';
+import BADGE3 from '../../assets/badge3.png';
+import BADGE1 from '../../assets/badge.png';
 import Footer from '../components/footer/Footer';
 
 const ProfileScreen = () => {
@@ -60,9 +62,27 @@ const ProfileScreen = () => {
                     <div className="sidebar-item">Logout</div>
                 </div>
                 <div className="content">
-                    <h2 className="profileHeading">
-                        <span role="img" aria-label="Star">⭐</span> Welcome, {fieldValues.name} <span role="img" aria-label="Star">⭐<img src={BADGE} height="125px" width="205px"/></span>
-                    </h2>
+                    <div style={{color: "black"}}>
+                        <h2 className="profileHeading" style={{color: "black"}}>⭐Welcome, {fieldValues.name}⭐</h2> 
+                        <br/>
+                            <h3 style={{fontSize: "42px", marginLeft: "160px", marginTop: "10px", fontFamily: "sans-serif", fontWeight: "bold"}}> Your Badges🚀</h3>
+
+                            <div className="badgesContainer">
+                                
+                            <img src={BADGE1} height="175px" width="179px" />
+                            <img src={BADGE2} height="175px" width="175px" />
+                            <img src={BADGE3} height="175px" width="175px" />
+                  
+                            </div>
+
+                        <h3 style={{fontSize: "42px", marginLeft: "160px", marginTop: "10px", fontFamily: "sans-serif", fontWeight: "bold"}}> Your Stars⭐</h3>
+                        <div className="starsContainer">
+
+                        <h4 style={{marginLeft: "250px", fontSize: "42px", fontWeight: "bold"}}> 10 ⭐</h4>
+                        </div>
+                        
+                        
+                    </div>
 
                     
                     <br />

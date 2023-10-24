@@ -1,9 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@500&display=swap');
 .profile-screen {
     display: flex;
-    height: 190vh;
+    height: 250vh;
     overflow: hidden;
   }
+
+  .badgesContainer {
+    padding: 10px;
+    border-radius: 20px;
+    border: 0.6px solid black;
+  }
+  .badgesContainer img {
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  .badgesContainer img:hover {
+    transform: scale(1.1);
+  }
+
   
   .sidebar {
     background-color: #333;
@@ -56,4 +70,10 @@
 
   .profileInfoPara {
     font-size: 16px;
+  }
+
+  .starsContainer {
+    padding: 10px;
+    border-radius: 20px;
+    border: 0.6px solid black;
   }

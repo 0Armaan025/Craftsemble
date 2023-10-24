@@ -19,6 +19,7 @@ import ExhibitionCardDetailsScreen from "./screens/exhibition_screen/ExhibitionC
 import UploadCraftScreen from "./screens/upload_craft_screen/UploadCraftScreen";
 import HankoAuth from "./components/HankoAuth";
 import HankoAuthScreen from "./screens/hanko_auth_screen/HankoAuthScreen";
+import MessageSendingScreen from "./screens/messages_screen/MessageSendingScreen";
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
         <Route path="/project-details" element={<ExhibitionCardDetailsScreen/>}/> 
         <Route path="/messages" element={<MessagesScreen />} />
         <Route path="/add-blog" element={<AddBlog />} />
+        <Route path="/send-message" element={<MessageSendingScreen />} />
         <Route path="*" element={<ErrorPage />} />
         <Route path="" element={<ErrorPage />} />
         <Route element={<ErrorPage />} />

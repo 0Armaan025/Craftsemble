@@ -4,8 +4,26 @@ import Navbar from '../components/navbar/Navbar';
 import MiddlePart from '../components/middlepart/MiddlePart';
 import Features from '../components/features/Features';
 import Footer from '../components/footer/Footer';
+import { Hanko } from '@teamhanko/hanko-elements';
+import { getUserData } from '../../userUtils';
+import { useState, useEffect } from "react";
+import { redirect } from 'react-router-dom';
 
 const HomeScreen = () => {
+
+  const [userExists, setUserExists] = useState(false);
+
+  useEffect(() => {
+    // Call the getUserData function as a function to get the result and update the state
+    getUserData(setUserExists).then((doesUserExist) => {
+      setUserExists(doesUserExist);
+    });
+
+    if (userExists == false) {
+      redirect('/hanko-auth');
+    }
+  }, []);
+
   return (
     <>
     <div className="homeScreen">

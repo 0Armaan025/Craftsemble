@@ -36,7 +36,9 @@ const ExhibitionCardDetailsScreen = () => {
           <p>Collaborator: Yes</p>
         )}
         <h3 style={{background: "none"}}> Total Stars now = 10 </h3>
+        <br/>
         <button onClick={handleFavoriteClick}>⭐</button>
+        <button>Message them</button>
       </div>
     </div>
     <Footer/>

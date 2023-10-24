@@ -6,9 +6,19 @@ import Faq from '../faq/Faq';
 import ContactForm from '../contactform/ContactForm';
 import BlogsButton from './BlogsButton';
 import { Hanko } from '@teamhanko/hanko-elements';
+import { getUserData } from '../../../userUtils';
+import { useState, useEffect } from "react";
 
 const MiddlePart = () => {
 
+  const [userExists, setUserExists] = useState(false);
+
+  useEffect(() => {
+    // Call the getUserData function as a function to get the result and update the state
+    getUserData(setUserExists).then((doesUserExist) => {
+      setUserExists(doesUserExist);
+    });
+  }, []);
 
   return (
     <>
