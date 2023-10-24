@@ -1,22 +1,22 @@
-import { useEffect, useCallback } from "react";
+import { useEffect, useCallback, useMemo } from "react";
+import { useNavigate } from "react-router-dom";
 import { register, Hanko } from "@teamhanko/hanko-elements";
-import { useMemo } from "react";
+import './hankoauth.css';
 
-const hankoApi = 'https://ae043347-1b5a-4254-a847-ca19a03a2dd3.hanko.io';
+const hankoApi = "https://c0cf08ab-bf6f-467b-b53b-20d2ab6f77dc.hanko.io";
 
 export default function HankoAuth() {
-
+  const navigate = useNavigate();
   const hanko = useMemo(() => new Hanko(hankoApi), []);
 
-  const redirectAfterLogin = () => {
-    // do nothing
-    console.log('hi')
-  };
+  const redirectAfterLogin = useCallback(() => {
+    navigate("/dashboard");
+  }, [navigate]);
 
   useEffect(
     () =>
       hanko.onAuthFlowCompleted(() => {
-        console.log("done")
+        redirectAfterLogin();
       }),
     [hanko, redirectAfterLogin]
   );
@@ -24,7 +24,6 @@ export default function HankoAuth() {
   useEffect(() => {
     register(hankoApi).catch((error) => {
       // handle error
-      console.log(error);
     });
   }, []);
 

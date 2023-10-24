@@ -5,8 +5,11 @@ import Features from '../features/Features';
 import Faq from '../faq/Faq';
 import ContactForm from '../contactform/ContactForm';
 import BlogsButton from './BlogsButton';
+import { Hanko } from '@teamhanko/hanko-elements';
 
 const MiddlePart = () => {
+
+
   return (
     <>
       <div className="middlePart">

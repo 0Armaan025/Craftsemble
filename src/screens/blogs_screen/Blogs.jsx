@@ -12,7 +12,7 @@ const Blogs = () => {
         <Navbar/>
         <hr/>
         <br/>
-      <h1 style={{color: "black"}}>Blogs by fellow developers! 💫</h1>
+      <h1 style={{color: "black"}}>Blogs by fellow artisans! 💫</h1>
       <BlogList />
       <br/><br/>
       <Link to="/add-blog"><button className="add-blog-button">Add a blog</button></Link>

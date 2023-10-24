@@ -17,6 +17,8 @@ import AddBlog from "./screens/blogs_screen/AddBlog";
 import WorkshopCreationScreen from "./screens/workshop_creation_screen/WorkshopCreationScreen";
 import ExhibitionCardDetailsScreen from "./screens/exhibition_screen/ExhibitionCardDetailsScreen";
 import UploadCraftScreen from "./screens/upload_craft_screen/UploadCraftScreen";
+import HankoAuth from "./components/HankoAuth";
+import HankoAuthScreen from "./screens/hanko_auth_screen/HankoAuthScreen";
 
 function App() {
   return (
@@ -24,6 +26,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<HomeScreen />} />
         <Route path="/explore-communities" element={<Communities />} />
+        <Route path="/hanko-auth" element={ <HankoAuthScreen/>} />
         <Route path="/exhibition" element={<ExhibitionScreen />} />
         <Route path="/workshops" element={<WorkshopsScreen />} />
         <Route path="/workshop-registration" element={<WorkshopRegistrationScreen />} />
