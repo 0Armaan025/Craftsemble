@@ -8,6 +8,7 @@ import BlogsButton from './BlogsButton';
 import { Hanko } from '@teamhanko/hanko-elements';
 import { getUserData } from '../../../userUtils';
 import { useState, useEffect } from "react";
+import HallOfFame from '../../../components/hall_of_fame/HallOfFame';
 
 const MiddlePart = () => {
 
@@ -48,6 +49,9 @@ const MiddlePart = () => {
           <br/>
           <br/>
           <hr/>
+          <br/>
+          <HallOfFame/>
+          <br/>
           <br/>
           <Faq/>
           <br/>
