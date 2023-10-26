@@ -88,6 +88,9 @@ const WorkshopRegistrationScreen = () => {
                   onClick={() => setShowRegistration(true)}
                 />
                 <input
+                onClick={() => {
+                  alert('in beta!')
+                }}
                   type="button"
                   className="addToGoogleCalendarBtn"
                   value="Add to Google Calendar"
