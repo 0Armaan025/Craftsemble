@@ -6,14 +6,25 @@ import { collection, doc, setDoc } from 'firebase/firestore';
 import { getFirestore } from 'firebase/firestore';
 import { newStorage } from '../../firebase_setup/firebase';
 import { getUserID } from '../../userUtils';
-import { getUserEmail } from '../../userUtils';
+
+import { Hanko } from '@teamhanko/hanko-elements';
 import {
   ref,
   uploadBytesResumable,
   getDownloadURL,
 } from "firebase/storage";
 
+
+
+
+
 const BecomeAnArtisanScreen = () => {
+
+
+  const hankoApi = "https://c0cf08ab-bf6f-467b-b53b-20d2ab6f77dc.hanko.io";
+  const hanko = new Hanko(hankoApi);
+
+  
   const [formData, setFormData] = useState({
     fullName: '',
     username: '',
@@ -53,48 +64,49 @@ const BecomeAnArtisanScreen = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const db = getFirestore();
-  
+
     try {
-      console.log("the email is ", getUserEmail.apply)
-      console.log("the email2 is ", getUserEmail.arguments)
-      console.log("the email3 is ", getUserEmail.bind)
-      console.log("the email4 is ", getUserEmail.call)
-      console.log("the email5 is ", getUserEmail.caller)
-      console.log("the email6 is ", getUserEmail.length)
-      console.log("the email7 is ", getUserEmail.name)
-      console.log("the email8 is ", getUserEmail.toString)
-      console.log("the email9 is ", getUserEmail.prototype)
+      
+      
       // Create a reference to the "users" collection and the "user1" document
       const usersCollectionRef = collection(db, "users");
       const user1DocRef = doc(usersCollectionRef, "user1");
-  
+
       // Create references for profile picture and demo artwork in Firebase Storage
       const profileImageRef = ref(newStorage, `/profileImages/${profileImage.name}`);
       const demoArtworkRef = ref(newStorage, `/demoArtworks/${demoArtWork.name}`);
-  
+
       // Upload the profile picture to Firebase Storage
       const profileUploadTask = uploadBytesResumable(profileImageRef, profileImage);
       await profileUploadTask;
-  
+
       // Upload the demo artwork to Firebase Storage
       const demoArtworkUploadTask = uploadBytesResumable(demoArtworkRef, demoArtWork);
       await demoArtworkUploadTask;
-  
+
       // Get download URLs for the uploaded images
       const profileImageUrl = await getDownloadURL(profileImageRef);
       const demoArtworkUrl = await getDownloadURL(demoArtworkRef);
-  
+
       // Add the data to Firestore, including the profile picture and demo artwork URLs
-      const userData = {
-        ...formData,
-        getUserEmail,
-        profileImageUrl,
-        demoArtworkUrl,
-      };
-  
-      await setDoc(user1DocRef, userData);
-  
+      const currentUser = hanko.user.getCurrent();
+      if (currentUser !== null) {
+        const { email } = await currentUser;
+        console.log(`email: ${email}`);
+        const userData = {
+          ...formData,
+          email,
+          profileImageUrl,
+          demoArtworkUrl,
+        };
+        await setDoc(user1DocRef, userData);
+
       console.log("Data, profile picture URL, and demo artwork URL added to Firestore");
+        
+      }
+    
+
+      
     } catch (error) {
       console.error("Error adding data and URLs to Firestore:", error);
     }
