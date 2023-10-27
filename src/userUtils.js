@@ -32,18 +32,3 @@ export async function getUserData(setUserExists) {
 }
 
 
-
-export async function getUserID() {
-  try {
-    const currentUser = hanko.user.getCurrent();
-    if (currentUser !== null) {
-      const { id } = await currentUser; 
-      console.log(`user-id: ${id}`);
-      return id;
-    }
-    return null; 
-  } catch (error) {
-    console.error("An error occurred:", error);
-    return null;
-  }
-}

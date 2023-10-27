@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useTransition } from 'react';
 import './becomeanartisanscreen.css';
 import Navbar from '../components/navbar/Navbar';
 import Footer from '../components/footer/Footer';
 import { collection, doc, setDoc } from 'firebase/firestore';
 import { getFirestore } from 'firebase/firestore';
 import { newStorage } from '../../firebase_setup/firebase';
-import { getUserID } from '../../userUtils';
+
 
 import { Hanko } from '@teamhanko/hanko-elements';
 import {
@@ -21,6 +21,7 @@ import {
 const BecomeAnArtisanScreen = () => {
 
 
+  const [verified, setVerified] = useState(false);
   const hankoApi = "https://c0cf08ab-bf6f-467b-b53b-20d2ab6f77dc.hanko.io";
   const hanko = new Hanko(hankoApi);
 
@@ -67,28 +68,23 @@ const BecomeAnArtisanScreen = () => {
 
     try {
       
-      
-      // Create a reference to the "users" collection and the "user1" document
+      const newUser = hanko.user.getCurrent();    
+      const { id } = await newUser;
       const usersCollectionRef = collection(db, "users");
-      const user1DocRef = doc(usersCollectionRef, "user1");
+      const user1DocRef = doc(usersCollectionRef, id);
 
-      // Create references for profile picture and demo artwork in Firebase Storage
-      const profileImageRef = ref(newStorage, `/profileImages/${profileImage.name}`);
-      const demoArtworkRef = ref(newStorage, `/demoArtworks/${demoArtWork.name}`);
+      const profileImageRef = ref(newStorage, `/profileImages/id/${profileImage.name}`);
+      const demoArtworkRef = ref(newStorage, `/demoArtworks/id/${demoArtWork.name}`);
 
-      // Upload the profile picture to Firebase Storage
       const profileUploadTask = uploadBytesResumable(profileImageRef, profileImage);
       await profileUploadTask;
 
-      // Upload the demo artwork to Firebase Storage
       const demoArtworkUploadTask = uploadBytesResumable(demoArtworkRef, demoArtWork);
       await demoArtworkUploadTask;
 
-      // Get download URLs for the uploaded images
       const profileImageUrl = await getDownloadURL(profileImageRef);
       const demoArtworkUrl = await getDownloadURL(demoArtworkRef);
 
-      // Add the data to Firestore, including the profile picture and demo artwork URLs
       const currentUser = hanko.user.getCurrent();
       if (currentUser !== null) {
         const { email } = await currentUser;
@@ -96,6 +92,7 @@ const BecomeAnArtisanScreen = () => {
         const userData = {
           ...formData,
           email,
+          verified,
           profileImageUrl,
           demoArtworkUrl,
         };
