@@ -31,21 +31,26 @@ const MessageSendingScreen = () => {
         setImage(null);
     };
 
+    const deleteMessage = (messageId) => {
+        const updatedMessages = messages.filter((message) => message.id !== messageId);
+        setMessages(updatedMessages);
+    };
+
     return (
         <>
             <Navbar />
             <div className="dashboard-screen">
                 <div className="sidebar">
-                    <Link to="/dashboard" className="sidebar-item" style={{color: "white"}}>
+                    <Link to="/dashboard" className="sidebar-item" style={{ color: "white" }}>
                         Dashboard
                     </Link>
-                    <Link to="/profile" className="sidebar-item"  style={{color: "white"}}>
+                    <Link to="/profile" className="sidebar-item" style={{ color: "white" }}>
                         Profile
                     </Link>
-                    <Link to="/virtual-drawing-screen" className="sidebar-item"  style={{color: "white"}}>
+                    <Link to="/virtual-drawing-screen" className="sidebar-item" style={{ color: "white" }}>
                         Virtual Drawing
                     </Link>
-                    <Link to="/send-message" className="sidebar-item" style={{color: "white"}}>
+                    <Link to="/send-message" className="sidebar-item" style={{ color: "white" }}>
                         Messages
                     </Link>
                     <div className="sidebar-item">Logout</div>
@@ -65,6 +70,7 @@ const MessageSendingScreen = () => {
                                             width="170px"
                                         />
                                     )}
+                                    <button onClick={() => deleteMessage(message.id)} className="deleteButton">Delete</button>
                                 </div>
                             </div>
                         ))}
