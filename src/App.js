@@ -20,7 +20,6 @@ import UploadCraftScreen from "./screens/upload_craft_screen/UploadCraftScreen";
 import HankoAuth from "./components/HankoAuth";
 import HankoAuthScreen from "./screens/hanko_auth_screen/HankoAuthScreen";
 import MessageSendingScreen from "./screens/messages_screen/MessageSendingScreen";
-import AboutUsScreen from "./screens/about_us_screen/AboutUsScreen";
 
 function App() {
   return (
@@ -30,7 +29,7 @@ function App() {
         <Route path="/explore-communities" element={<Communities />} />
         <Route path="/hanko-auth" element={ <HankoAuthScreen/>} />
         <Route path="/exhibition" element={<ExhibitionScreen />} />
-        <Route path="/workshops" elementD={<WorkshopsScreen />} />
+        <Route path="/workshops" element={<WorkshopsScreen />} />
         <Route path="/workshop-registration" element={<WorkshopRegistrationScreen />} />
         <Route path="/become-an-artisan" element={<BecomeAnArtisanScreen />} />
         <Route path="/list-a-community" element={<ListACommunityScreen />} />
@@ -42,7 +41,7 @@ function App() {
         <Route path="/project-details" element={<ExhibitionCardDetailsScreen/>}/> 
         <Route path="/messages" element={<MessagesScreen />} />
         <Route path="/add-blog" element={<AddBlog />} />
-        <Route path="/about-us" element={<AboutUsScreen />} />
+        
         <Route path="/send-message" element={<MessageSendingScreen />} />
         <Route path="*" element={<ErrorPage />} />
         <Route path="" element={<ErrorPage />} />
