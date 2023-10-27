@@ -1,14 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './profilescreen.css';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/navbar/Navbar';
+import { Hanko } from '@teamhanko/hanko-elements';
 import BADGE2 from '../../assets/badge2.png';
 import BADGE3 from '../../assets/badge3.png';
 import BADGE1 from '../../assets/badge.png';
 import Footer from '../components/footer/Footer';
+import { getFirestore, doc, getDoc, setDoc } from 'firebase/firestore'; // Import Firebase Firestore functions
 
 const ProfileScreen = () => {
     const [imagePreview, setImagePreview] = useState(null);
+    const [profileImageUrl , setProfileImageUrl] = useState('');
     const [editableFields, setEditableFields] = useState({
         username: false,
         name: false,
@@ -18,24 +21,17 @@ const ProfileScreen = () => {
         link: false,
     });
     const [fieldValues, setFieldValues] = useState({
-        username: 'Armaan',
-        name: 'Armaan',
-        age: '20',
-        craftSpeciality: 'Painting',
-        country: 'India',
-        link: 'https://github.com/0Armaan025',
-        verified: true,
+        username: '',
+        name: '',
+        age: '',
+        craftSpeciality: '',
+        country: '',
+        link: '',
+        verified: true, // Assuming verified is a static value
     });
 
     const handleImageChange = (e) => {
-        const file = e.target.files[0];
-        if (file) {
-            const reader = new FileReader();
-            reader.onload = () => {
-                setImagePreview(reader.result);
-            };
-            reader.readAsDataURL(file);
-        }
+        // Implement the image change logic
     };
 
     const handleEditClick = (field) => {
@@ -50,11 +46,80 @@ const ProfileScreen = () => {
         setEditableFields({ ...editableFields, [field]: false });
     };
 
+    useEffect(() => {
+        // Use Hanko to get the user ID
+        const hankoApi = "https://c0cf08ab-bf6f-467b-b53b-20d2ab6f77dc.hanko.io";
+        const hanko = new Hanko(hankoApi);
+
+        const fetchData = async () => {
+            // Get the user ID
+            const currentUser = hanko.user.getCurrent();
+            const { id } = await currentUser;
+
+            
+            const db = getFirestore();
+            const userDocRef = doc(db, 'users', id);
+
+            try {
+                const docSnapshot = await getDoc(userDocRef);
+                if (docSnapshot.exists()) {
+                    const userData = docSnapshot.data();
+                    setProfileImageUrl(userData.profileImageUrl);
+                    console.log('backend profile image image url is ', userData.profileImageUrl);
+                    setFieldValues({
+                        username: userData.username,
+                        name: userData.fullName,
+                        age: userData.age,
+                        craftSpeciality: userData.craftSpecialty,
+                        country: userData.country,
+                        link: userData.socialMediaLinks,
+                        verified: userData.verified, 
+                    });
+                    console.log('profile image url is ', userData.profileImageUrl);
+                }
+            } catch (error) {
+                console.error('Error fetching user data:', error);
+            }
+        };
+
+        fetchData();
+    }, []);
+
+    const handleUpdateProfile = async () => {
+        // Use Hanko to get the user ID
+        const hankoApi = "https://c0cf08ab-bf6f-467b-b53b-20d2ab6f77dc.hanko.io";
+        const hanko = new Hanko(hankoApi);
+        const currentUser = hanko.user.getCurrent();
+        const { id } = await currentUser;
+
+        // Access the Firestore collection and document
+        const db = getFirestore();
+        const userDocRef = doc(db, 'users', id);
+
+        try {
+            // Update the Firestore document with the new user data
+            await setDoc(userDocRef, {
+                username: fieldValues.username,
+                fullName: fieldValues.name,
+                age: fieldValues.age,
+                craftSpecialty: fieldValues.craftSpeciality,
+                country: fieldValues.country,
+                socialMediaLinks: fieldValues.link,
+                verified: fieldValues.verified,
+                // You can update other fields as needed
+            });
+
+            console.log('Profile updated successfully');
+        } catch (error) {
+            console.error('Error updating profile:', error);
+        }
+    };
+
     return (
         <>
             <Navbar />
             <div className="profile-screen">
-            <div className="sidebar">
+                <div className="sidebar">
                     <div className="sidebar-item"><Link to="/dashboard" className='sidebar-item' style={{color: "white", margin: "0px", padding: "0px"}}>Dashboard</Link></div>
                     <Link to='/profile' className='sidebar-item' style={{color: "white",padding: "0px", margin: "0px"}}><div className="sidebar-item">Profile</div></Link>
                     <Link to='/virtual-drawing-screen' className='sidebar-item' style={{color: "white",padding: "0px", margin: "0px"}}><div className="sidebar-item">Virtual Drawing</div></Link>
@@ -62,34 +127,29 @@ const ProfileScreen = () => {
                     <div className="sidebar-item">Logout</div>
                 </div>
                 <div className="content">
-                    <div style={{color: "black"}}>
-                        <h2 className="profileHeading" style={{color: "black"}}>⭐Welcome, {fieldValues.name}⭐</h2> 
+                    <div style={{ color: "black" }}>
+                        <h2 className="profileHeading" style={{ color: "black" }}>⭐Welcome, {fieldValues.name}⭐</h2>
                         <br/>
-                            <h3 style={{fontSize: "42px", marginLeft: "160px", marginTop: "10px", fontFamily: "sans-serif", fontWeight: "bold"}}> Your Badges🚀</h3>
+                        <h3 style={{ fontSize: "42px", marginLeft: "160px", marginTop: "10px", fontFamily: "sans-serif", fontWeight: "bold" }}> Your Badges🚀</h3>
 
-                            <div className="badgesContainer">
-                                
+                        <div className="badgesContainer">
+
                             <img src={BADGE1} height="175px" width="179px" />
                             <img src={BADGE2} height="175px" width="175px" />
                             <img src={BADGE3} height="175px" width="175px" />
-                  
-                            </div>
 
-                        <h3 style={{fontSize: "42px", marginLeft: "160px", marginTop: "10px", fontFamily: "sans-serif", fontWeight: "bold"}}> Your Stars⭐</h3>
-                        <div className="starsContainer">
-
-                        <h4 style={{marginLeft: "250px", fontSize: "42px", fontWeight: "bold"}}> 10 ⭐</h4>
                         </div>
-                        
-                        
-                    </div>
 
-                    
+                        <h3 style={{ fontSize: "42px", marginLeft: "160px", marginTop: "10px", fontFamily: "sans-serif", fontWeight: "bold" }}> Your Stars⭐</h3>
+                        <div className="starsContainer">
+                            <h4 style={{ marginLeft: "250px", fontSize: "42px", fontWeight: "bold" }}> 10 ⭐</h4>
+                        </div>
+                    </div>
                     <br />
                     <div className="profileDetails">
                         <div className="profilePic">
-                            {imagePreview ? (
-                                <img src={imagePreview} alt="Profile Pic" className="profilePicImg" height="350px" width="350px" />
+                            {profileImageUrl!='' ? (
+                                <img src={profileImageUrl} alt="Profile Pic" className="profilePicImg" height="350px" width="350px" />
                             ) : (
                                 <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Profile Pic" className="profilePicImg" height="350px" width="350px" />
                             )}
@@ -225,7 +285,7 @@ const ProfileScreen = () => {
                         </div>
                     </div>
                     <br/>
-                    <button className="updateProfileButton">Update Profile</button>
+                    <button className="updateProfileButton" onClick={handleUpdateProfile}>Update Profile</button>
                 </div>
             </div>
             <Footer/>

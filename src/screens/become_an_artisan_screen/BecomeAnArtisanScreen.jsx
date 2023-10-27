@@ -44,6 +44,8 @@ const BecomeAnArtisanScreen = () => {
     setAgreeToTerms(!agreeToTerms);
   };
 
+  const [stars, setStars] = useState(0);
+
   const handleFormChange = (event) => {
     const { name, value } = event.target;
     setFormData({
