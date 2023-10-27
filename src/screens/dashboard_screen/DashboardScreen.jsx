@@ -78,7 +78,7 @@ const DashboardScreen = () => {
                     <div className="sidebar-item"><Link to="/dashboard" className='sidebar-item' style={{color: "white", margin: "0px", padding: "0px"}}>Dashboard</Link></div>
                     <Link to='/profile' className='sidebar-item' style={{color: "white",padding: "0px", margin: "0px"}}><div className="sidebar-item">Profile</div></Link>
                     <Link to='/virtual-drawing-screen' className='sidebar-item' style={{color: "white",padding: "0px", margin: "0px"}}><div className="sidebar-item">Virtual Drawing</div></Link>
-                    <div className="sidebar-item" ><Link to='/messages' style={{color: "white", margin: "0px", padding: "0px", background: "none"}}>Messages</Link></div>
+                    <div className="sidebar-item" ><Link to='/send-message' style={{color: "white", margin: "0px", padding: "0px", background: "none"}}>Messages</Link></div>
                     <div className="sidebar-item">Logout</div>
                 </div>
         <div className="content">
