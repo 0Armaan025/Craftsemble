@@ -7,6 +7,7 @@ import { getAnalytics } from "firebase/analytics";
 import Faq from '../faq/Faq';
 import { getFirestore } from 'firebase/firestore';
 import ContactForm from '../contactform/ContactForm';
+import { doc, setDoc } from 'firebase/firestore';
 import BlogsButton from './BlogsButton';
 import { Hanko } from '@teamhanko/hanko-elements';
 import { addDoc, collection } from "@firebase/firestore"
@@ -19,17 +20,12 @@ import HallOfFame from '../../../components/hall_of_fame/HallOfFame';
 const MiddlePart = () => {
 
   
-  const db = getFirestore();
+  
   const [userExists, setUserExists] = useState(false);
-  const addDocumentToCollection = async () => {
-    await addDoc(collection(db, "armaan'sdoc"), {
-      uid: "new-id",
-      name: "Ada Lovelace",
-    });
-  };
+ 
 
   useEffect(() => {
-    addDocumentToCollection();
+    
     
 
     
