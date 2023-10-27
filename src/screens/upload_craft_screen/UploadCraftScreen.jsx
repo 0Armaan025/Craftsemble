@@ -28,7 +28,7 @@ const BecomeAnArtisanScreen = () => {
             <div className="leftBox">
               <form>
         
-
+              <input type="text" placeholder="Name" className="contactFormInput" /><br /><br />
                 <input type="text" placeholder="Email" className="contactFormInput" /><br /><br />
                 <label htmlFor="profilePicture">Craft image</label>
                 <br/>
