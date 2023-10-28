@@ -1,38 +1,118 @@
-import React, { useEffect, useRef } from 'react';
-import Chart from 'chart.js/auto';
+import React, { useEffect, useState } from 'react';
 import Navbar from '../components/navbar/Navbar';
 import { Link } from 'react-router-dom';
 import './messagesscreen.css';
 import Message from './Message';
 import Footer from '../components/footer/Footer';
+import { getFirestore, collection, getDocs, addDoc, serverTimestamp } from 'firebase/firestore'; // Import Firestore functions
+import { getStorage, ref, uploadString, getDownloadURL } from 'firebase/storage'; // Import Storage functions
 
 const MessagesScreen = () => {
+  const [messages, setMessages] = useState([]);
+  const [name, setName] = useState(''); // Initialize with user's name
+  const [messageText, setMessageText] = useState('');
+  const [userPhoto, setUserPhoto] = useState(null);
+
+  useEffect(() => {
+    // Initialize Firestore
+    const db = getFirestore();
+    const messagesCollection = collection(db, 'messages');
+
+    // Fetch messages
+    const fetchMessages = async () => {
+      try {
+        const querySnapshot = await getDocs(messagesCollection);
+        const messageData = querySnapshot.docs.map((doc) => doc.data());
+        setMessages(messageData);
+      } catch (error) {
+        console.error('Error fetching messages:', error);
+      }
+    }
+
+    // Fetch the user's data from Firestore, including their name and photo URL
+    const usersCollection = collection(db, 'users'); // Replace with your collection name
+    const userDoc = 'user1'; // Replace with the user's ID
+    const userDocRef = collection(usersCollection, userDoc);
+
+    getDownloadURL(userDocRef).then((url) => {
+      setUserPhoto(url);
+    });
+
+    // Fetch user's name from Firestore
+    const fetchData = async () => {
+      const doc = await getDocs(userDocRef);
+      if (doc.exists()) {
+        setName(doc.data().name); // Set the user's name
+      }
+    };
+
+    fetchData();
+    fetchMessages();
+  }, []);
+
+  const addMessage = async () => {
+    const db = getFirestore();
+    const messagesCollection = collection(db, 'messages');
+
+    try {
+      await addDoc(messagesCollection, {
+        name: name,
+        time: serverTimestamp(),
+        message: messageText,
+      });
+      setMessageText(''); // Clear the message input
+    } catch (error) {
+      console.error('Error adding message:', error);
+    }
+  };
+
+
   
+
   return (
     <>
       <Navbar />
       <div className="dashboard-screen">
-      <div className="sidebar">
-                    <div className="sidebar-item"><Link to="/dashboard" className='sidebar-item' style={{color: "white", margin: "0px", padding: "0px"}}>Dashboard</Link></div>
-                    <Link to='/profile' className='sidebar-item' style={{color: "white",padding: "0px", margin: "0px"}}><div className="sidebar-item">Profile</div></Link>
-                    <Link to='/virtual-drawing-screen' className='sidebar-item' style={{color: "white",padding: "0px", margin: "0px"}}><div className="sidebar-item">Virtual Drawing</div></Link>
-                    <div className="sidebar-item" ><Link to='/messages' style={{color: "white", margin: "0px", padding: "0px", background: "none"}}>Messages</Link></div>
-                    <div className="sidebar-item">Logout</div>
-                </div>
         <div className="content">
           <center>
-            <h1 className="messageHeading" style={{color: "black"}}> Messages sent to you by different people! 💬</h1>
-            <br/>
-                <Message/>
-                <br/>
-                <Message/>
-                <br/>
-                <Message/>
-
+            <h1 className="messageHeading" style={{ color: 'black' }}>
+              Messages sent to you by different people! 💬
+            </h1>
+            <div className="user-profile">
+              <img
+                src={userPhoto}
+                alt="User Profile"
+                className="user-photo"
+              />
+              <input
+                type="file"
+                accept="image/*"
+                onChange={handleImageChange}
+                className="user-photo-upload"
+              />
+              <div className="user-name">
+                <p>User Name: {name}</p>
+              </div>
+            </div>
+            <div className="message-input">
+              <input
+                type="text"
+                placeholder="Type your message"
+                value={messageText}
+                onChange={(e) => setMessageText(e.target.value)}
+              />
+              <button onClick={addMessage}>Send</button>
+            </div>
+            {messages.map((message, index) => (
+              <div key={index}>
+                <Message message={message} />
+                <br />
+              </div>
+            ))}
           </center>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };

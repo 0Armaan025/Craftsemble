@@ -19,7 +19,7 @@ const CommuntiyCard = (props) => {
                     <h1 className="communityName"> {props.communityName}</h1>
                     <h6 className="communityDescription">{props.communityDescription} </h6>
                     <br/>
-                    <input type="button" className='joinCommunityBtn' value='Join Community' />
+                    <a href={props.communityLink} style={{background: "none"}}><input type="button" className='joinCommunityBtn' value='Join Community' /></a>
                 </div>
 
                 </div>

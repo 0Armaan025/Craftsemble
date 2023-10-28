@@ -21,10 +21,19 @@ const AddBlog = () => {
 
   const handleFormChange = (event) => {
     const { name, value } = event.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
+  
+    if (name === 'content' && value.length > 200) {
+      
+      setFormData({
+        ...formData,
+        content: value.slice(0, 200),
+      });
+    } else {
+      setFormData({
+        ...formData,
+        [name]: value,
+      });
+    }
   };
 
   const handleSubmit = async (e) => {
@@ -40,12 +49,24 @@ const AddBlog = () => {
         const {id} = currentUser;
         var today = new Date();
         var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-        let docName = formData.title + time.toString();
+        let docName = formData.title;
         const user1DocRef = doc(usersCollectionRef, docName);
-        const userData = {
-          ...formData,
-          id,
-        };
+
+        let userData = null;
+
+        if (id) {
+          userData = {
+            ...formData,
+            id,
+          };
+        }
+        else {
+          userData = {
+            ...formData,
+          };
+        }
+
+        
 
         await setDoc(user1DocRef, userData);
         
