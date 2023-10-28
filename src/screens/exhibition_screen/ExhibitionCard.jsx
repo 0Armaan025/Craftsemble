@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './exhibitioncard.css';
 
-const ExhibitionCard = ({ imageUrl, isCollaborate }) => {
+const ExhibitionCard = ({ imageUrl, title, isCollaborate, artist }) => {
   const handleMoreDetails = () => {
     // Implement your logic for the "More Details" button click
   };
@@ -14,13 +14,19 @@ const ExhibitionCard = ({ imageUrl, isCollaborate }) => {
   return (
     <div className="exhibition-card">
       <div className="card-image">
-        <img src={imageUrl} alt="Artwork" />
+        <img src={imageUrl} alt={title} />
+      </div>
+      <div className="card-details">
+        <h3 className="card-title" style={{fontSize: "18px"}}>{title}</h3>
+        <p className="card-artist" style={{fontSize: "15px"}}>By: {artist}</p>
       </div>
       <div className="card-buttons">
-        <button className="more-details-button" style={{marginBottom: "20px"}} onClick={handleMoreDetails}><Link to="/project-details" style={{background: "none", color: "white"}}>More Details</Link></button>
-        {isCollaborate === 'yes' && (
-          <button className="collaborate-button" onClick={handleCollaborate}>Collaborate</button>
-        )}
+        <Link to="/project-details" style={{ textDecoration: "none" }}>
+          <center>
+          <button className="more-details-button">More Details</button>
+          </center>
+        </Link>
+       
       </div>
     </div>
   );

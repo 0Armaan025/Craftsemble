@@ -7,45 +7,59 @@ import Footer from '../components/footer/Footer';
 const ExhibitionScreen = () => {
   const craftData = [
     {
-      imageUrl: "https://i.ytimg.com/an_webp/mSpXxxld4o8/mqdefault_6s.webp?du=3000&sqp=CIzDpKkG&rs=AOn4CLD7yYidlbjqD2aWkt4PTMNmvtLd5A",
+      id: 1,
+      imageUrl: "https://i.ytimg.com/an_webp/4UNIxQQJQcE/mqdefault_6s.webp?du=3000&sqp=CIf886kG&rs=AOn4CLCZjfaKTNCdcvb1DmZBjTTaBYse2Q",
+      title: "Beautiful Handcrafted Jewelry",
       isCollaborate: false,
+      artist: "John Doe",
     },
     {
-      imageUrl: "https://i.ytimg.com/an_webp/mSpXxxld4o8/mqdefault_6s.webp?du=3000&sqp=CIzDpKkG&rs=AOn4CLD7yYidlbjqD2aWkt4PTMNmvtLd5A",
+      id: 2,
+      imageUrl: "https://i.ytimg.com/an_webp/4UNIxQQJQcE/mqdefault_6s.webp?du=3000&sqp=CIf886kG&rs=AOn4CLCZjfaKTNCdcvb1DmZBjTTaBYse2Q",
+      title: "Vintage Wooden Furniture",
       isCollaborate: true,
+      artist: "Jane Smith",
     },
     {
-      imageUrl: "https://i.ytimg.com/an_webp/mSpXxxld4o8/mqdefault_6s.webp?du=3000&sqp=CIzDpKkG&rs=AOn4CLD7yYidlbjqD2aWkt4PTMNmvtLd5A",
+      id: 3,
+      imageUrl: "https://i.ytimg.com/an_webp/4UNIxQQJQcE/mqdefault_6s.webp?du=3000&sqp=CIf886kG&rs=AOn4CLCZjfaKTNCdcvb1DmZBjTTaBYse2Q",
+      title: "Artistic Ceramics",
       isCollaborate: false,
+      artist: "Alice Johnson",
     },
     // Add more craft data as needed
   ];
 
   return (
-    <>
     <div className="exhibition-screen">
       <Navbar />
-      <center>
+      <div className="exhibition-header">
         <h2 className="exhibitions-heading">🔥🎨 Welcome to the Crafts Exhibition!!! 🤩💫</h2>
         <h4 className="exhibitions-subheading">
-          Share your crafts with the world!
-          <a href="/upload-craft" className="upload-link">Upload Here</a>
+          <center>
+          Share your crafts with the world!{' '}
+          <a href="/upload-craft" className="upload-link">
+            Upload Here
+          </a>
+          </center>
         </h4>
-      </center>
+      </div>
 
       <div className="exhibition-row">
-        {craftData.map((craft, index) => (
+        {craftData.map((craft) => (
           <ExhibitionCard
-            key={index}
+            key={craft.id}
             imageUrl={craft.imageUrl}
+            title={craft.title}
             isCollaborate={craft.isCollaborate}
+            artist={craft.artist}
           />
         ))}
       </div>
+
+      <Footer />
     </div>
-    <Footer/>
-    </>
   );
-}
+};
 
 export default ExhibitionScreen;

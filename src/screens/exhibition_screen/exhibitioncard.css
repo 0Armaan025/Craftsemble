@@ -1,62 +1,86 @@
-/* Exhibition_card.css */
+/* exhibition_card.css */
 
+/* Container for the exhibition card */
 .exhibition-card {
-    position: relative;
-    width: 250px;
-    height: 350px;
-    margin: 10px 0 10px 30px;
-    border: 2px solid #333;
-    border-radius: 12px;
-    box-shadow: 1px 6px 12px 0px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    transition: transform 0.3s, box-shadow 0.3s;
-    background: url('data:image/jpeg;base64,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'); /* Replace 'glass_texture.png' with your texture image */
-    position: relative;
-  }
-  
-  .exhibition-card:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-  }
-  
-  .card-image {
-    width: 100%;
-    height: 70%;
-    background-size: cover;
-    overflow: hidden;
-  }
-  
-  .card-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .card-buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    background: #333;
-    margin-top: 20px;
-  }
-  
-  button {
-    background: #00aaff;
-    color: #fff;
-    font-size: 15px;
-    border: none;
-    border-radius: 6px;
-    padding: 8px 12px;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-  
-  button:hover {
-    background: #00ff55;
-  }
-  
-  .card-buttons button:not(:last-child) {
-    margin-right: 10px;
-  }
-  
+  width: 250px;
+  height: 550px;
+  margin: 10px;
+  border: 2px solid #ddd; /* Change the border color to a lighter gray */
+  border-radius: 12px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Increased shadow */
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background: url('https://i.ytimg.com/an_webp/4UNIxQQJQcE/mqdefault_6s.webp?du=3000&sqp=CIf886kG&rs=AOn4CLCZjfaKTNCdcvb1DmZBjTTaBYse2Q'); /* Keep the background image */
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Adjust layout */
+}
+
+/* Hover effect for the exhibition card */
+.exhibition-card:hover {
+  transform: scale(1.05); /* Slight scale-up on hover */
+  cursor: pointer;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+/* Container for the image */
+.card-image {
+  width: 100%;
+  height: 70%;
+  background-size: cover;
+  overflow: hidden;
+  border-top-left-radius: 12px; /* Rounded corners for the top */
+  border-top-right-radius: 12px;
+}
+
+/* Styling for the image itself */
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 12px; /* Maintain rounded corners */
+  border-top-right-radius: 12px;
+}
+
+/* Container for the details */
+.card-details {
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.7); /* Dark, semi-transparent background */
+  color: #fff; /* Light text color */
+  text-align: center;
+  border-bottom-left-radius: 12px; /* Rounded corners for the bottom */
+  border-bottom-right-radius: 12px;
+}
+
+/* Adjust the font and spacing for details */
+.card-details h3 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+/* Container for the buttons */
+.card-buttons {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styling for the buttons */
+button {
+  background: #00aaff;
+  color: #fff;
+  font-size: 16px; /* Slightly larger font size */
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+  margin: 5px 0; /* Add space between buttons */
+}
+
+/* Button hover effect */
+button:hover {
+  background: #00ff55;
+}
