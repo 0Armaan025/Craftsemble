@@ -39,15 +39,15 @@ const WorkshopCreationScreen = () => {
                 <Navbar />
                 <br />
                 <center>
-                    <h2 className="formHeading">Craftshop Creation</h2>
+                    <h2 className="formHeading" style={{color: "black"}}>Workshop Creation</h2>
                     <br />
-                    <h4 className="formShowing">Please provide craftshop details:</h4>
+                    <h4 className="formShowing">Please provide workshp details:</h4>
                     <div className="theboxes" style={{ width: "1300px" }}>
                         <div className="leftBox">
                             <form onSubmit={handleSubmit}>
                                 <input
                                     type="text"
-                                    placeholder="Craftshop Title"
+                                    placeholder="Workshop Title"
                                     name="title"
                                     className="contactFormInput"
                                     value={formData.title}
@@ -55,7 +55,7 @@ const WorkshopCreationScreen = () => {
                                 /><br /><br />
                                 <input
                                     type="text"
-                                    placeholder="Craftshop Name"
+                                    placeholder="Workshop Name"
                                     name="workshopname"
                                     className="contactFormInput"
                                     value={formData.workshopname}
@@ -63,7 +63,7 @@ const WorkshopCreationScreen = () => {
                                 /><br /><br />
                                 <input
                                     type="text"
-                                    placeholder="Craftshop Description"
+                                    placeholder="Workshop Description"
                                     name="description"
                                     className="contactFormInput"
                                     value={formData.description}
