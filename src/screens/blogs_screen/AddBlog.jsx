@@ -48,7 +48,7 @@ const AddBlog = () => {
         };
 
         await setDoc(user1DocRef, userData);
-        <Navigate replace to="/" />
+        
 
       }
     } catch (error) {
