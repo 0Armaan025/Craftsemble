@@ -2,65 +2,97 @@ import React, { useState } from 'react';
 import './addblog.css';
 import Navbar from '../components/navbar/Navbar';
 import Footer from '../components/footer/Footer';
+import { collection, doc, setDoc } from 'firebase/firestore';
+import { getFirestore } from 'firebase/firestore';
+import { redirect } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 
+import { Hanko } from '@teamhanko/hanko-elements';
 
 const AddBlog = () => {
+  const hankoApi = "https://c0cf08ab-bf6f-467b-b53b-20d2ab6f77dc.hanko.io";
+  const hanko = new Hanko(hankoApi);
 
-  
-  
+  const [formData, setFormData] = useState({
+    title: '',
+    content: '',
+    author: '',
+  });
 
-  const [title, setTitle] = useState('');
-  const [content, setContent] = useState('');
-  const [author, setAuthor] = useState('');
+  const handleFormChange = (event) => {
+    const { name, value } = event.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const db = getFirestore();
+
     try {
+      const usersCollectionRef = collection(db, "blogs");
+
+      const currentUser = hanko.user.getCurrent();
+      if (currentUser !== null) {
         
-      // Optionally, you can add a success message or redirect the user to a different page.
+        const {id} = currentUser;
+        var today = new Date();
+        var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+        let docName = formData.title + time.toString();
+        const user1DocRef = doc(usersCollectionRef, docName);
+        const userData = {
+          ...formData,
+          id,
+        };
+
+        await setDoc(user1DocRef, userData);
+        <Navigate replace to="/" />
+
+      }
     } catch (error) {
-     
-      // Handle the error, show an error message, or do whatever you need to do.
+      console.log(error);
     }
   };
-  
-  
-  
 
   return (
     <>
-    <div className="add-blog-screen">
-        <Navbar/>
-      <h1 style={{color: "black"}}>Add a Blog</h1>
-      <form className="blog-form" onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Title"
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
-          required
-        />
-        <textarea
-          placeholder="Content"
-          value={content}
-          onChange={(e) => setContent(e.target.value)}
-          required
-        />
-        <input
-          type="text"
-          placeholder="Author"
-          value={author}
-          onChange={(e) => setAuthor(e.target.value)}
-          required
-        />
-        <button type="submit" className='publishButton'>Publish</button>
-
-      </form>
-      <br/>
-      <br/>
-    </div>
-
-    <Footer/>
+      <Navbar />
+      <div className="add-blog-screen">
+        <h1 style={{ color: 'black' }}>Add a Blog</h1>
+        <form className="blog-form" onSubmit={handleSubmit}>
+          <input
+            type="text"
+            name="title"
+            placeholder="Title"
+            value={formData.title}
+            onChange={handleFormChange}
+            required
+          />
+          <textarea
+            name="content"
+            placeholder="Content"
+            value={formData.content}
+            onChange={handleFormChange}
+            required
+          />
+          <input
+            type="text"
+            name="author"
+            placeholder="Author"
+            value={formData.author}
+            onChange={handleFormChange}
+            required
+          />
+          <button type="submit" className="publishButton">
+            Publish
+          </button>
+        </form>
+        <br />
+        <br />
+      </div>
+      <Footer />
     </>
   );
 };

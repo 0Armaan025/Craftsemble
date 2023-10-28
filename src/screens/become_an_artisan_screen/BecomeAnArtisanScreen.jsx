@@ -13,6 +13,7 @@ import {
   uploadBytesResumable,
   getDownloadURL,
 } from "firebase/storage";
+import { redirect } from 'react-router-dom';
 
 
 
@@ -37,6 +38,7 @@ const BecomeAnArtisanScreen = () => {
 
   const [profileImage, setProfileImage] = useState(null);
   const [demoArtWork, setDemoArtWork] = useState(null);
+  
 
   const [agreeToTerms, setAgreeToTerms] = useState(false);
 
@@ -94,6 +96,7 @@ const BecomeAnArtisanScreen = () => {
         const userData = {
           ...formData,
           email,
+          stars,
           verified,
           profileImageUrl,
           demoArtworkUrl,
@@ -101,6 +104,7 @@ const BecomeAnArtisanScreen = () => {
         await setDoc(user1DocRef, userData);
 
       console.log("Data, profile picture URL, and demo artwork URL added to Firestore");
+      redirect("/");
         
       }
     

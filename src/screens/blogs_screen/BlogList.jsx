@@ -1,14 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import BlogCard from './BlogCard';
-import axios from 'axios';
 
-const BlogList = () => {
-  const [blogs, setBlogs] = useState([]);
-  
-
+const BlogList = ({ blogs }) => {
   return (
     <div className="blog-list">
-      <BlogCard/>
+      {blogs.map((blog, index) => (
+        <BlogCard
+          key={index}
+          title={blog.title}
+          content={blog.content}
+          author={blog.author}
+        />
+      ))}
     </div>
   );
 };
