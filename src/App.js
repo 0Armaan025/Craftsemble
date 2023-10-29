@@ -20,6 +20,7 @@ import UploadCraftScreen from "./screens/upload_craft_screen/UploadCraftScreen";
 import HankoAuth from "./components/HankoAuth";
 import HankoAuthScreen from "./screens/hanko_auth_screen/HankoAuthScreen";
 import MessageSendingScreen from "./screens/messages_screen/MessageSendingScreen";
+import FullBlog from "./screens/blogs_screen/FullBlog";
 
 function App() {
   return (
@@ -41,7 +42,7 @@ function App() {
         <Route path="/project-details/:projectId" element={<ExhibitionCardDetailsScreen/>}/> 
         <Route path="/messages" element={<MessagesScreen />} />
         <Route path="/add-blog" element={<AddBlog />} />
-        
+        <Route path="/blog/:blogId" element={<FullBlog />} />
         <Route path="/send-message" element={<MessageSendingScreen />} />
         <Route path="*" element={<ErrorPage />} />
         <Route path="" element={<ErrorPage />} />

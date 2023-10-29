@@ -5,6 +5,7 @@ import Navbar from '../components/navbar/Navbar';
 import { Link } from 'react-router-dom';
 import Footer from '../components/footer/Footer';
 import { collection, getDocs, getFirestore } from 'firebase/firestore';
+import BlogCard from './BlogCard'; // Import the BlogCard component
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
@@ -49,17 +50,25 @@ const Blogs = () => {
         <hr />
         <br />
         <h1 style={{ color: 'black' }}>Blogs by fellow artisans! 💫</h1>
-
-        {/* Render each set of blogs using BlogList */}
-        {blogSets.map((blogSet, index) => (
-          <BlogList key={index} blogs={blogSet} />
-        ))}
+       
+        <div className="blog-cards">
+          {blogs.map((blog, index) => (
+            <BlogCard
+              key={index}
+              author={blog.author}
+              title={blog.title}
+              content={blog.content}
+            />
+          ))}
+        </div>
 
         <br />
-        <br />
+        <center>
         <Link to="/add-blog">
           <button className="add-blog-button">Add a blog</button>
         </Link>
+        </center>
+        <br/>
       </div>
       <Footer />
     </>
