@@ -30,7 +30,7 @@ function App() {
         <Route path="/hanko-auth" element={ <HankoAuthScreen/>} />
         <Route path="/exhibition" element={<ExhibitionScreen />} />
         <Route path="/workshops" element={<WorkshopsScreen />} />
-        <Route path="/workshop-registration" element={<WorkshopRegistrationScreen />} />
+        <Route path="/workshop-registration/:workshopId" element={<WorkshopRegistrationScreen />} />
         <Route path="/become-an-artisan" element={<BecomeAnArtisanScreen />} />
         <Route path="/list-a-community" element={<ListACommunityScreen />} />
         <Route path="/blogs" element={<BlogsScreen />} />

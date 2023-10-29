@@ -20,6 +20,7 @@ const WorkshopCreationScreen = () => {
     dateTime: '',
     detailedInformation: '',
     bannerImage: null,
+    workshopMeetingLink: '', // New field for Workshop Meeting Link
   });
   const [agreeToTerms, setAgreeToTerms] = useState(false);
 
@@ -54,7 +55,7 @@ const WorkshopCreationScreen = () => {
 
       const workshopData = {
         ...formData,
-        bannerImage: profileImageUrl, // Store the image URL, not the File object
+        bannerImage: profileImageUrl,
       };
 
       // Replace 'workshopname' with the unique ID or name of the workshop
@@ -72,6 +73,7 @@ const WorkshopCreationScreen = () => {
         dateTime: '',
         detailedInformation: '',
         bannerImage: null,
+        workshopMeetingLink: '', // Clear the Meeting Link field
       });
     } catch (error) {
       console.error('Error adding data to Firestore: ', error);
@@ -131,6 +133,14 @@ const WorkshopCreationScreen = () => {
                   name="dateTime"
                   className="contactFormInput"
                   value={formData.dateTime}
+                  onChange={handleInputChange}
+                /><br /><br />
+                <input
+                  type="text"
+                  placeholder="Workshop Meeting Link"
+                  name="workshopMeetingLink"
+                  className="contactFormInput"
+                  value={formData.workshopMeetingLink} // Meeting Link field
                   onChange={handleInputChange}
                 /><br /><br />
                 <textarea
