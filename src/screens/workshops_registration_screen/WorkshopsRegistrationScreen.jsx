@@ -2,13 +2,16 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import Navbar from '../components/navbar/Navbar';
 import './workshopsregistrationscreen.css';
+import { Hanko } from '@teamhanko/hanko-elements';
 import Footer from '../components/footer/Footer';
-import { getFirestore, collection, doc, getDoc } from 'firebase/firestore';
+import { getFirestore, doc, getDoc, collection, query, where, getDocs, addDoc } from 'firebase/firestore';
 
 const WorkshopRegistrationScreen = () => {
   const { workshopId } = useParams();
   const [workshopData, setWorkshopData] = useState(null);
   const [showRegistration, setShowRegistration] = useState(false);
+  const [formData, setFormData] = useState({ name: '', email: '', guardiansPermission: false, artisan: false });
+  const [isRegistered, setIsRegistered] = useState(false);
 
   useEffect(() => {
     const fetchWorkshopData = async () => {
@@ -20,6 +23,21 @@ const WorkshopRegistrationScreen = () => {
         if (docSnap.exists()) {
           const data = docSnap.data();
           setWorkshopData(data);
+          const hankoApi = "https://c0cf08ab-bf6f-467b-b53b-20d2ab6f77dc.hanko.io";
+        const hanko = new Hanko(hankoApi);
+            
+        const currentUser = hanko.user.getCurrent();    
+        const { id } = await currentUser;
+
+          // Check if the "registrants" collection exists in the document
+          const registrantsCollectionRef = collection(workshopDocRef, 'registrants');
+          const registrantsQuery = query(registrantsCollectionRef, where('id', '==', id));
+          const registrantsSnapshot = await getDocs(registrantsQuery);
+
+          if (!registrantsSnapshot.empty) {
+            // User is already registered
+            setIsRegistered(true);
+          }
         } else {
           console.log('Workshop document does not exist');
         }
@@ -31,10 +49,45 @@ const WorkshopRegistrationScreen = () => {
     fetchWorkshopData();
   }, [workshopId]);
 
+  const handleFormSubmit = async () => {
+    try {
+      const db = getFirestore();
+      const hankoApi = "https://c0cf08ab-bf6f-467b-b53b-20d2ab6f77dc.hanko.io";
+      const hanko = new Hanko(hankoApi);
+
+      const currentUser = hanko.user.getCurrent();
+      const { id } = await currentUser;
+      const workshopDocRef = doc(db, 'workshops', workshopId);
+
+      // Check if the user has already registered
+      const registrantsCollectionRef = collection(workshopDocRef, 'registrants');
+      const registrantsQuery = query(registrantsCollectionRef, where('email', '==', formData.email));
+      const registrantsSnapshot = await getDocs(registrantsQuery);
+
+      if (!registrantsSnapshot.empty) {
+        // User is already registered
+        setIsRegistered(true);
+        return;
+      }
+
+      const newData = {
+        ...formData,
+        id,
+      };
+
+      // Add the user's details to the registrants collection
+      await addDoc(collection(workshopDocRef, 'registrants'), newData);
+
+      setIsRegistered(true);
+    } catch (error) {
+      console.error('Error submitting registration:', error);
+    }
+  };
+
   return (
     <>
+      <Navbar />
       <div className="workshopRegistrationScreen">
-        <Navbar />
         <br />
         <div className="workshop-registration-container">
           <h1 className="workshop-name" style={{ fontFamily: 'cursive', background: 'transparent' }}>
@@ -64,36 +117,37 @@ const WorkshopRegistrationScreen = () => {
           </div>
           {showRegistration ? (
             <div className="registration-form">
-              <h2 style={{color: "black"}}>Registration Form</h2>
-              <form>
-                <br/>
-                <label htmlFor="name" style={{fontSize: "22px" }}>Name:</label>
-                <input type="text" id="name" name="name" required style={{width: "500px"}} />
+              {isRegistered ? (
+                <p style={{ fontSize: "18px", color: "green" }}>You have successfully registered for this workshop!</p>
+              ) : (
+                <form>
+                  <br />
+                  <label htmlFor="name" style={{ fontSize: "22px" }}>Name:</label>
+                  <input type="text" id="name" name="name" required style={{ width: "500px" }} onChange={(e) => setFormData({ ...formData, name: e.target.value })} />
 
-                <label htmlFor="email" style={{fontSize: "22px"}}>Email:</label>
-                <input type="email" id="email" name="email" required  style={{width: "500px"}}/>
+                  <label htmlFor="email" style={{ fontSize: "22px" }}>Email:</label>
+                  <input type="email" id="email" name="email" required style={{ width: "500px" }} onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
 
-                <div>
-                  <input type="checkbox" id="guardiansPermission" name="guardiansPermission" />
-                  <label htmlFor="guardiansPermission" style={{fontSize: "22px"}}>I have my guardian's permission (if under 16)</label>
-                </div>
+                  <div>
+                    <input type="checkbox" id="guardiansPermission" name="guardiansPermission" onChange={(e) => setFormData({ ...formData, guardiansPermission: e.target.checked })} />
+                    <label htmlFor="guardiansPermission" style={{ fontSize: "22px" }}>I have my guardian's permission (if under 16)</label>
+                  </div>
 
-                <div>
-                  <input type="checkbox" id="artisan" name="artisan" style={{width: "100px"}}/>
-                  <label htmlFor="artisan"style={{fontSize: "22px"}}>I am an artisan</label>
-                </div>
+                  <div>
+                    <input type="checkbox" id="artisan" name="artisan" style={{ width: "100px" }} onChange={(e) => setFormData({ ...formData, artisan: e.target.checked })} />
+                    <label htmlFor="artisan" style={{ fontSize: "22px" }}>I am an artisan</label>
+                  </div>
 
-                <input type="button" className='submitBtn' value='Submit'/>
-              </form>
+                  <input type="button" className='submitBtn' value='Submit' onClick={handleFormSubmit} />
+                </form>
+              )}
             </div>
           ) : (
             <div className="detailed-info" style={{ borderRadius: '30px' }}>
               <center>
                 <br />
                 <h2 style={{ fontFamily: 'cursive' }}>Detailed Information</h2>
-                <p className="detailed-description">
-                  {workshopData ? workshopData.detailedInformation : 'This workshop will cover various topics related to web development, design, and more. Join us for an exciting and informative session.'}
-                </p>
+                <p className="detailed-description">{workshopData ? workshopData.detailedInfo : 'This workshop will cover various topics related to web development, design, and more. Join us for an exciting and informative session.'}</p>
                 <div className="myButtons">
                   <input
                     type="button"
@@ -115,9 +169,9 @@ const WorkshopRegistrationScreen = () => {
             </div>
           )}
         </div>
-        <br/>
+        <br />
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };

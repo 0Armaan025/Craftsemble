@@ -13,6 +13,7 @@ const BecomeAnArtisanScreen = () => {
     collaboration: false,
     agreeToTerms: false,
   });
+  const [stars, setStars] = useState(0);
   const [craftImage, setCraftImage] = useState(null);
 
   const handleInputChange = (e) => {
@@ -40,16 +41,17 @@ const BecomeAnArtisanScreen = () => {
     const db = getFirestore();
 
     var today = new Date();
-    // Reference to a Firestore document (replace 'your_collection_name' and 'document_id' with your collection and document names)
     const artisanDocRef = doc(db, 'exhibition', today.toString());
+
+    
 
     // Prepare the data to be saved
     const artisanData = {
       name: formData.name,
       email: formData.email,
       isCollaborative: formData.collaboration,
-      imageName: formData.imageName, // Include the image name
-      // Add more fields as needed
+      imageName: formData.imageName, 
+      stars: stars,
     };
 
     try {
