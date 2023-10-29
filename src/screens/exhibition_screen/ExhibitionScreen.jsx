@@ -12,8 +12,8 @@ const ExhibitionScreen = () => {
     // Initialize Firestore
     const db = getFirestore();
 
-    // Reference to the "crafts" collection in Firestore (replace 'crafts' with your collection name)
-    const craftsCollectionRef = collection(db, 'crafts');
+    // Reference to the "exhibition" collection in Firestore (replace 'exhibition' with your collection name)
+    const craftsCollectionRef = collection(db, 'exhibition');
 
     // Fetch data from Firestore
     const fetchData = async () => {
@@ -53,9 +53,10 @@ const ExhibitionScreen = () => {
           <ExhibitionCard
             key={craft.id}
             imageUrl={craft.imageUrl}
-            title={craft.title}
-            isCollaborate={craft.isCollaborate}
-            artist={craft.artist}
+            title={craft.imageName}
+            isCollaborate={craft.isCollaborative}
+            artist={craft.name}
+            projectId={craft.id} // Pass projectId here
           />
         ))}
       </div>

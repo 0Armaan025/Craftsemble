@@ -38,7 +38,7 @@ function App() {
         <Route path="/my-communities" element={<MyCommunitiesScreen />} />
         <Route path="/profile" element={<ProfileScreen />} />
         <Route path="/upload-craft" element={<UploadCraftScreen />} />
-        <Route path="/project-details" element={<ExhibitionCardDetailsScreen/>}/> 
+        <Route path="/project-details/:projectId" element={<ExhibitionCardDetailsScreen/>}/> 
         <Route path="/messages" element={<MessagesScreen />} />
         <Route path="/add-blog" element={<AddBlog />} />
         

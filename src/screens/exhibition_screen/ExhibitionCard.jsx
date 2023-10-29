@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './exhibitioncard.css';
 
-const ExhibitionCard = ({ imageUrl, title, isCollaborate, artist }) => {
+const ExhibitionCard = ({ imageUrl, title, isCollaborate, artist , projectId}) => {
   const handleMoreDetails = () => {
     // Implement your logic for the "More Details" button click
   };
@@ -21,7 +21,7 @@ const ExhibitionCard = ({ imageUrl, title, isCollaborate, artist }) => {
         <p className="card-artist" style={{fontSize: "15px"}}>By: {artist}</p>
       </div>
       <div className="card-buttons">
-        <Link to="/project-details" style={{ textDecoration: "none" }}>
+        <Link to={`/project-details/${projectId}`} style={{ textDecoration: "none" }}>
           <center>
           <button className="more-details-button">More Details</button>
           </center>

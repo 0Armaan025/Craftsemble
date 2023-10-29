@@ -87,7 +87,7 @@ const MessagesScreen = () => {
               <input
                 type="file"
                 accept="image/*"
-                onChange={handleImageChange}
+                
                 className="user-photo-upload"
               />
               <div className="user-name">

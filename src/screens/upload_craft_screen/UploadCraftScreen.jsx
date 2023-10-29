@@ -9,6 +9,7 @@ const BecomeAnArtisanScreen = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    imageName: '', // Add a new field for the image name
     collaboration: false,
     agreeToTerms: false,
   });
@@ -47,6 +48,7 @@ const BecomeAnArtisanScreen = () => {
       name: formData.name,
       email: formData.email,
       isCollaborative: formData.collaboration,
+      imageName: formData.imageName, // Include the image name
       // Add more fields as needed
     };
 
@@ -55,7 +57,7 @@ const BecomeAnArtisanScreen = () => {
       await setDoc(artisanDocRef, artisanData);
 
       // Upload the image to Firebase Storage
-      const imageRef = ref(newStorage, `/craftImages/${artisanDocRef.id}/${craftImage.name}`);
+      const imageRef = ref(newStorage, `/craftImages/${artisanDocRef.id}/${formData.imageName}`);
       const uploadTask = uploadBytesResumable(imageRef, craftImage);
       await uploadTask;
 
@@ -85,6 +87,7 @@ const BecomeAnArtisanScreen = () => {
               <form onSubmit={handleSubmit}>
                 <input type="text" placeholder="Name" className="contactFormInput" name="name" value={formData.name} onChange={handleInputChange} /><br /><br />
                 <input type="text" placeholder="Email" className="contactFormInput" name="email" value={formData.email} onChange={handleInputChange} /><br /><br />
+                <input type="text" placeholder="Your masterpiece title" className="contactFormInput" name="imageName" value={formData.imageName} onChange={handleInputChange} /><br /><br />
                 <label htmlFor="craftImage">Craft image</label>
                 <br />
                 <input
@@ -134,4 +137,4 @@ const BecomeAnArtisanScreen = () => {
   )
 }
 
-export default BecomeAnArtisanScreen
+export default BecomeAnArtisanScreen;
