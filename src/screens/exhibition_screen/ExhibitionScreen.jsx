@@ -37,8 +37,9 @@ const ExhibitionScreen = () => {
     <div className="exhibition-screen">
       <Navbar />
       <div className="exhibition-header">
-        <h2 className="exhibitions-heading">🔥🎨 Welcome to the Crafts Exhibition!!! 🤩💫</h2>
-        <h4 className="exhibitions-subheading">
+        <br/>
+        <h2 className="exhibitions-heading" style={{color: "#fffffe"}}>🔥🎨 Welcome to the Crafts Exhibition!!! 🤩💫</h2>
+        <h4 className="exhibitions-subheading" style={{color: "#b8c1ec"}}>
           <center>
           Share your crafts with the world!{' '}
           <a href="/upload-craft" className="upload-link">

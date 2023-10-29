@@ -42,7 +42,7 @@ const WorkshopsScreen = () => {
       
       <div className="workshops-container" style={{background: "none", padding: "30px",  border: "1px solid #121629",marginBottom: "20px", marginTop: "20px"}}>
         <h1 className='workshopsHeading' style={{ color: "#fffffe" , background: "none"}}>Upcoming Workshops!</h1>
-        <center style={{background: "none"}}><h4 style={{ background: "none" }}> <Link to="/workshop-creation" style={{ background: "none" }}>Click here to make a request for a workshop!</Link></h4></center>
+        <center style={{background: "none"}}><h4 style={{ background: "none" }}> <Link to="/workshop-creation" style={{ background: "none" , color: "#b8c1ec"}}>Click here to make a request for a workshop!</Link></h4></center>
         <br />
         <div className="workshop-grid" style={{padding: "20px"}}>
           {workshops.map((workshop) => (
