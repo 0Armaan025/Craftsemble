@@ -55,7 +55,7 @@ const HallOfFame = () => {
     <>
     <div className="hallOfFame">
       <center>
-        <h1 style={{fontFamily:"sans-serif", fontSize: "38px", color: "black", fontWeight: "bold"}}> Hall of Fame 🖼️ </h1>
+        <h1 style={{fontFamily:"revert", fontSize: "38px", color: "#fffffe", fontWeight: "bold"}}> Hall of Fame 🖼️ </h1>
         <br/>
       <div className="trophyContainer">
         <img src={imageUrl} alt="User" className="userImage" id="imageNew"/>

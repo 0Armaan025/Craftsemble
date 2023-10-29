@@ -6,14 +6,10 @@ const Features = () => {
   return (
     <>
         <div className="features">
-            <br/>
-            <hr/>
-            <br/>
+            
+
             <h1 className='featuresHeading'>Features</h1>
-            <br/>
-        
-            { /* time to add some feature cards here */}
-            { /* Feature Rows and columns */}
+ 
 
             <div className="featuresRow">
                 

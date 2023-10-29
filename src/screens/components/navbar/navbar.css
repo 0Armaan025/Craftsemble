@@ -15,24 +15,22 @@ a {
   text-align: center;
   height: 60px;
   margin-left: 20px;
-  background-color: transparent;
+  background-color: #eebbc3;
   margin-top: 10px;
-  border-radius: 20px;
+  border-radius: 8px;
   font-weight: 500;
   outline: none;
   transition: 0.2s ease;
   font-size: 20px;
   border: 1px solid black;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #232946;
 }
-.becomeArtisanBtn:hover {
-  background-color: black;
-  color: white;
-  cursor: pointer;
 
-}
+
 nav {
   /* align-content: center; */
+  
   padding: 0;
   margin: 0;
 }
@@ -40,21 +38,24 @@ nav {
 #navbar {
   margin: 0;
   padding: 0;
+  color: #fffffe;
+  
 }
 
 #navItem {
   margin: 2px;
   margin-top: 15px;
   font-size: 16px;
+  color: #fffffe;
   padding: 10px;
   transition: 0.3s ease-in-out;
-}
-
-#navItem:hover {
-  background: peachpuff;
-  border-radius: 15px;
   cursor: pointer;
 }
+
+#navItem:hover{
+  font-weight: bold;
+}
+
 .rounded-circle {
   background: none;
 }

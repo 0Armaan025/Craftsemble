@@ -20,7 +20,7 @@ const ContactForm = () => {
   return (
     <>
       <div className="contactForm">
-        <h2 className='contactFormHeading'>Contact Us!</h2>
+        <h2 className='contactFormHeading' style={{color: '#fffffe'}}>Contact Us!</h2>
         <br />
         <div className="theboxes">
           <div className="leftBox">

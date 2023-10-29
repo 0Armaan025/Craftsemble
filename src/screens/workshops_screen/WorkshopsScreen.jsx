@@ -38,10 +38,10 @@ const WorkshopsScreen = () => {
   return (
     <>
     <Navbar />
-    <div className="workshopsScreen" style={{padding: "30px",borderRadius: "20px", border: "1px solid black"}}>
+    <div className="workshopsScreen" style={{padding: "30px"}}>
       
-      <div className="workshops-container" style={{background: "none", padding: "30px",  border: "1px solid black",marginBottom: "20px", marginTop: "20px"}}>
-        <h1 className='workshopsHeading' style={{ color: "black" , background: "none"}}>Upcoming Workshops!</h1>
+      <div className="workshops-container" style={{background: "none", padding: "30px",  border: "1px solid #121629",marginBottom: "20px", marginTop: "20px"}}>
+        <h1 className='workshopsHeading' style={{ color: "#fffffe" , background: "none"}}>Upcoming Workshops!</h1>
         <center style={{background: "none"}}><h4 style={{ background: "none" }}> <Link to="/workshop-creation" style={{ background: "none" }}>Click here to make a request for a workshop!</Link></h4></center>
         <br />
         <div className="workshop-grid" style={{padding: "20px"}}>

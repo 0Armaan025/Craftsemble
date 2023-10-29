@@ -43,9 +43,9 @@ const MiddlePart = () => {
 
 
           <div className="middleContainer__left_text">
-            <h2 className='middleContainer__left_text_text' style={{ color: "black" }}> ⭐ It's the time to empower the unsung creators! ⭐</h2>
+            <h2 className='middleContainer__left_text_text' style={{ color: "#fffffe" }}> ⭐ It's the time to empower the unsung creators! ⭐</h2>
 
-            <h4 className='middleContainer__left_text_text_text'>"Elevate Your Craft and Ignite Collaborative Creations."</h4>
+            <h4 className='middleContainer__left_text_text_text' style={{color: "#fffffe"}}>"Elevate Your Craft and Ignite Collaborative Creations."</h4>
             <br />
             <div className="buttons">
               <ContinueButton />
@@ -60,21 +60,24 @@ const MiddlePart = () => {
 
 
         </div>
+        <hr style={{color: "white"}} color='white'/>
         <Features />
         <br />
         <br />
-        <hr />
-        <br />
+        <br/>
+        <hr color='white' style={{color: "white"}}/>
+        
         <HallOfFame />
         <br />
         <br />
         <Faq />
         <br />
         <br />
-        <hr />
+        <hr  color='white' style={{color: "white"}}/>
         <br />
         <br />
         <ContactForm />
+        
       </div>
     </>
   )

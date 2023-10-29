@@ -52,7 +52,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary" id='navbar'>
+      <nav className="navbar navbar-expand-lg " id='navbar' style={{background: "#b8c1ec",color: "white"}}>
         <div className="container-fluid">
           <Link className="navbar-brand" to="/" style={{ fontSize: "30px", marginLeft: "20px", fontWeight: "bold" }}><img src={LOGO} height="80px" width="120px" /></Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,16 +61,16 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item" id="navItem">
-                <Link className="nav-link" to={userExists ? '/workshops' : '/hanko-auth'}>Workshops</Link>
+                <Link className="nav-link" style={{color: "#fffffe"}} to={userExists ? '/workshops' : '/hanko-auth'}>Workshops</Link>
               </li>
               <li className="nav-item" id="navItem">
-                <Link className="nav-link" to={userExists ? '/exhibition' : '/hanko-auth'}>Exhibition</Link>
+                <Link className="nav-link" style={{color: "#fffffe"}} to={userExists ? '/exhibition' : '/hanko-auth'}>Exhibition</Link>
               </li>
               <li className="nav-item" id="navItem">
-                <Link className="nav-link" to={userExists ? '/blogs' : '/hanko-auth'}>Blogs</Link>
+                <Link className="nav-link" style={{color: "#fffffe"}} to={userExists ? '/blogs' : '/hanko-auth'}>Blogs</Link>
               </li>
               <li className="nav-item" id="navItem">
-                <Link className="nav-link" to={userExists ? '/explore-communities' : '/hanko-auth'}>Explore Communities</Link>
+                <Link className="nav-link" style={{color: "#fffffe"}} to={userExists ? '/explore-communities' : '/hanko-auth'}>Explore Communities</Link>
               </li>
               <div className="spacer" style={{ marginLeft: "0rem" }}></div>
               {isArtisan ? (

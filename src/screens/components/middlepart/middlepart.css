@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap');
 
 * {
     margin: 0;
@@ -15,10 +16,10 @@
 }
 
 .middleContainer__left_text_text {
-    font-size: 80px;
+    font-size: 76px;
     width: 700px;
-    color: 'black';
-    font-family: 'Indie Flower', cursive;
+    color: #fffffe;
+    font-family: 'Playpen Sans', cursive;
     font-weight: bold;
 }
 
