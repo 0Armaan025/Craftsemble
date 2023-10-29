@@ -1,0 +1,57 @@
+/* fullblog.css */
+
+/* Style for the entire FullBlog page */
+.full-blog {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    max-width: 800px;
+  }
+  
+  /* Style for the Full Blog Title */
+  .full-blog h2 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 0;
+  }
+  
+  /* Style for the Full Blog Content */
+  .full-blog-content {
+    font-size: 18px;
+    line-height: 1.5;
+    
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+  }
+  
+  /* Style for the Navbar at the top */
+  .navbar {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  /* Style for the Footer at the bottom */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .full-blog {
+      padding: 10px;
+      max-width: 100%;
+    }
+  }
+  
+  .full-blog-content p {
+    
+  }

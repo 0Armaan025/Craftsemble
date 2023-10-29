@@ -193,6 +193,7 @@ const BecomeAnArtisanScreen = () => {
                 />
                 <br />
                 <br />
+                <label htmlFor="profilePicture">Profile Picture</label>
                 <input
                   type="file"
                   className="form-control-file"
@@ -203,6 +204,7 @@ const BecomeAnArtisanScreen = () => {
                 />
                 <br />
                 <br />
+                <label htmlFor="profilePicture">Demo art work for verification</label>
                 <input
                   type="file"
                   className="form-control-file"
