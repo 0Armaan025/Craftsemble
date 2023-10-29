@@ -1,18 +1,74 @@
 import React, { useState } from 'react';
 import Navbar from '../components/navbar/Navbar';
 import Footer from '../components/footer/Footer';
+import { getFirestore, doc, setDoc } from 'firebase/firestore'; // Import Firebase Firestore functions
+import { ref, uploadBytesResumable, getDownloadURL } from 'firebase/storage'; // Import Firebase Storage functions
+import { newStorage } from '../../firebase_setup/firebase'; // Import your Firebase Storage setup
 
 const BecomeAnArtisanScreen = () => {
-  const [agreeToTerms, setAgreeToTerms] = useState(false);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    collaboration: false,
+    agreeToTerms: false,
+  });
+  const [craftImage, setCraftImage] = useState(null);
 
-  const handleCheckboxChange = () => {
-    setAgreeToTerms(!agreeToTerms);
+  const handleInputChange = (e) => {
+    const { name, value, type, checked } = e.target;
+    setFormData({
+      ...formData,
+      [name]: type === 'checkbox' ? checked : value,
+    });
   };
 
-  const [collaboration, setCollaboration] = useState(false);
+  const handleCraftImageChange = (e) => {
+    const file = e.target.files[0];
+    setCraftImage(file);
+  };
 
-  const handleCollaboration = () => {
-    setCollaboration(!collaboration);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    if (!formData.agreeToTerms || (!formData.name || !formData.email || !craftImage)) {
+      alert('Please fill out all required fields and agree to the terms.');
+      return;
+    }
+
+    // Configure and initialize Firebase Firestore
+    const db = getFirestore();
+
+    var today = new Date();
+    // Reference to a Firestore document (replace 'your_collection_name' and 'document_id' with your collection and document names)
+    const artisanDocRef = doc(db, 'exhibition', today.toString());
+
+    // Prepare the data to be saved
+    const artisanData = {
+      name: formData.name,
+      email: formData.email,
+      isCollaborative: formData.collaboration,
+      // Add more fields as needed
+    };
+
+    try {
+      // Set the data in the Firestore document
+      await setDoc(artisanDocRef, artisanData);
+
+      // Upload the image to Firebase Storage
+      const imageRef = ref(newStorage, `/craftImages/${artisanDocRef.id}/${craftImage.name}`);
+      const uploadTask = uploadBytesResumable(imageRef, craftImage);
+      await uploadTask;
+
+      // Get the download URL of the uploaded image
+      const imageUrl = await getDownloadURL(imageRef);
+
+      // Update the Firestore document with the image URL
+      await setDoc(artisanDocRef, { imageUrl }, { merge: true });
+
+      alert('Artisan data and image submitted successfully!');
+    } catch (error) {
+      console.error('Error submitting data:', error);
+    }
   };
 
   return (
@@ -21,49 +77,46 @@ const BecomeAnArtisanScreen = () => {
         <Navbar />
         <br />
         <center>
-          <h2 className="formHeading" style={{color: "black"}}>🤔 Let's upload your art!🥳</h2>
+          <h2 className="formHeading" style={{ color: "black" }}>🤔 Let's upload your art!🥳</h2>
           <br />
           <h4 className="formShowing">We would need you to submit some details, please :)</h4>
-          <div className="theboxes" style={{width: "1300px"}}>
+          <div className="theboxes" style={{ width: "1300px" }}>
             <div className="leftBox">
-              <form>
-        
-              <input type="text" placeholder="Name" className="contactFormInput" /><br /><br />
-                <input type="text" placeholder="Email" className="contactFormInput" /><br /><br />
-                <label htmlFor="profilePicture">Craft image</label>
-                <br/>
+              <form onSubmit={handleSubmit}>
+                <input type="text" placeholder="Name" className="contactFormInput" name="name" value={formData.name} onChange={handleInputChange} /><br /><br />
+                <input type="text" placeholder="Email" className="contactFormInput" name="email" value={formData.email} onChange={handleInputChange} /><br /><br />
+                <label htmlFor="craftImage">Craft image</label>
+                <br />
                 <input
                   type="file"
                   className="form-control-file"
                   id="craftImage"
                   name="craftImage"
                   accept="image/*"
+                  onChange={handleCraftImageChange}
                 />
-                <br/>
-                <br/>
-                
+                <br />
+                <br />
                 <label>
                   <input
                     type="checkbox"
                     name="collaboration"
-                    checked={collaboration}
-                    onChange={handleCollaboration}
+                    checked={formData.collaboration}
+                    onChange={handleInputChange}
                   />
-                  Is it collaborative project?
+                  Is it a collaborative project?
                 </label>
-                
                 <label>
                   <input
                     type="checkbox"
                     name="agreeToTerms"
-                    checked={agreeToTerms}
-                    onChange={handleCheckboxChange}
+                    checked={formData.agreeToTerms}
+                    onChange={handleInputChange}
                   />
                   I agree to the <a href="https://www.termsandconditionsgenerator.com/live.php?token=0C1A7QlBuET1Xn7I90Al0ZPNR4GIbDpU" target="_blank" rel="noopener noreferrer">Terms and Conditions</a>.
                 </label>
-                
-               <br/>
-               <br/>
+                <br />
+                <br />
                 <input type="submit" value="Submit" className="submitBtn" />
               </form>
             </div>
@@ -76,7 +129,7 @@ const BecomeAnArtisanScreen = () => {
           </div>
         </center>
       </div>
-      <Footer/>
+      <Footer />
     </>
   )
 }

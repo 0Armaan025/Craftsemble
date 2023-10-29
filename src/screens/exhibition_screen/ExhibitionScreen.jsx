@@ -1,34 +1,37 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './exhibitionscreen.css';
 import Navbar from '../components/navbar/Navbar';
 import ExhibitionCard from './ExhibitionCard';
 import Footer from '../components/footer/Footer';
+import { getFirestore, collection, query, getDocs } from 'firebase/firestore';
 
 const ExhibitionScreen = () => {
-  const craftData = [
-    {
-      id: 1,
-      imageUrl: "https://i.ytimg.com/an_webp/4UNIxQQJQcE/mqdefault_6s.webp?du=3000&sqp=CIf886kG&rs=AOn4CLCZjfaKTNCdcvb1DmZBjTTaBYse2Q",
-      title: "Beautiful Handcrafted Jewelry",
-      isCollaborate: false,
-      artist: "John Doe",
-    },
-    {
-      id: 2,
-      imageUrl: "https://i.ytimg.com/an_webp/4UNIxQQJQcE/mqdefault_6s.webp?du=3000&sqp=CIf886kG&rs=AOn4CLCZjfaKTNCdcvb1DmZBjTTaBYse2Q",
-      title: "Vintage Wooden Furniture",
-      isCollaborate: true,
-      artist: "Jane Smith",
-    },
-    {
-      id: 3,
-      imageUrl: "https://i.ytimg.com/an_webp/4UNIxQQJQcE/mqdefault_6s.webp?du=3000&sqp=CIf886kG&rs=AOn4CLCZjfaKTNCdcvb1DmZBjTTaBYse2Q",
-      title: "Artistic Ceramics",
-      isCollaborate: false,
-      artist: "Alice Johnson",
-    },
-    // Add more craft data as needed
-  ];
+  const [craftData, setCraftData] = useState([]);
+
+  useEffect(() => {
+    // Initialize Firestore
+    const db = getFirestore();
+
+    // Reference to the "crafts" collection in Firestore (replace 'crafts' with your collection name)
+    const craftsCollectionRef = collection(db, 'crafts');
+
+    // Fetch data from Firestore
+    const fetchData = async () => {
+      const querySnapshot = await getDocs(craftsCollectionRef);
+      const data = [];
+
+      querySnapshot.forEach((doc) => {
+        data.push({
+          id: doc.id,
+          ...doc.data(),
+        });
+      });
+
+      setCraftData(data);
+    };
+
+    fetchData();
+  }, []);
 
   return (
     <div className="exhibition-screen">
