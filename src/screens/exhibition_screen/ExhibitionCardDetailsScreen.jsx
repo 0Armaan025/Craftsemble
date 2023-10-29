@@ -31,23 +31,23 @@ const ExhibitionCardDetailsScreen = () => {
         const hanko = new Hanko(hankoApi);
         const currentUser = hanko.user.getCurrent();
         const { id } = await currentUser;
-
+  
         // Check if the current user has already starred
-        if (exhibitionDetails.uids.includes(id)) {
+        if (Array.isArray(exhibitionDetails.uids) && exhibitionDetails.uids.includes(id)) {
           setCurrentUserStarred(true);
         } else {
           // Initialize Firestore
           const db = getFirestore();
-          const exhibitionDocRef = doc(db, 'exhibition', projectId); // Replace 'exhibition' with your collection name
-
+          const exhibitionDocRef = doc(db, 'exhibition', projectId);
+  
           // Update the stars count in Firestore
           await updateDoc(exhibitionDocRef, {
-            stars: exhibitionDetails.stars + 1, // Increment the stars count by 1
-            uids: arrayUnion(id), // Add the user's UID to the uids array
+            stars: exhibitionDetails.stars + 1,
+            uids: arrayUnion(id),
           });
-
-          setIsStarred(true); // Disable the button after starring
-
+  
+          setIsStarred(true);
+  
           // Fetch and update the exhibition details
           const docSnapshot = await getDoc(exhibitionDocRef);
           if (docSnapshot.exists()) {
@@ -60,6 +60,7 @@ const ExhibitionCardDetailsScreen = () => {
       }
     }
   };
+  
 
   useEffect(() => {
     // Initialize Firestore

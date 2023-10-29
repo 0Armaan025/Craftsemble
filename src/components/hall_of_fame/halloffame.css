@@ -17,8 +17,9 @@
   .userImage {
     border-radius: 20px;
     border: 1px solid black;
+    height: 420px;
     background: none;
-    width: 450px; /* Set the size of the user image */
+    width: 350px; /* Set the size of the user image */
   }
   
   .trophy {
