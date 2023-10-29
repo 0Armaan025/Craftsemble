@@ -47,6 +47,7 @@ const BecomeAnArtisanScreen = () => {
   };
 
   const [stars, setStars] = useState(0);
+  const [artsUploaded, setArtsUploaded] = useState(0);
 
   const handleFormChange = (event) => {
     const { name, value } = event.target;
@@ -89,6 +90,8 @@ const BecomeAnArtisanScreen = () => {
       const profileImageUrl = await getDownloadURL(profileImageRef);
       const demoArtworkUrl = await getDownloadURL(demoArtworkRef);
 
+      
+
       const currentUser = hanko.user.getCurrent();
       if (currentUser !== null) {
         const { email } = await currentUser;
@@ -100,6 +103,7 @@ const BecomeAnArtisanScreen = () => {
           verified,
           profileImageUrl,
           demoArtworkUrl,
+          artsUploaded,
         };
         await setDoc(user1DocRef, userData);
 

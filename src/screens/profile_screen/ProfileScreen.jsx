@@ -26,12 +26,13 @@ const ProfileScreen = () => {
         age: '',
         craftSpeciality: '',
         country: '',
+        stars: 0,
         link: '',
         verified: true, // Assuming verified is a static value
     });
 
     const handleImageChange = (e) => {
-        // Implement the image change logic
+        alert("in beta!");
     };
 
     const handleEditClick = (field) => {
@@ -68,6 +69,7 @@ const ProfileScreen = () => {
                     console.log('backend profile image image url is ', userData.profileImageUrl);
                     setFieldValues({
                         username: userData.username,
+                        stars: userData.stars,
                         name: userData.fullName,
                         age: userData.age,
                         craftSpeciality: userData.craftSpecialty,
@@ -130,7 +132,7 @@ const ProfileScreen = () => {
                     <div style={{ color: "black" }}>
                         <h2 className="profileHeading" style={{ color: "black" }}>⭐Welcome, {fieldValues.name}⭐</h2>
                         <br/>
-                        <h3 style={{ fontSize: "42px", marginLeft: "160px", marginTop: "10px", fontFamily: "sans-serif", fontWeight: "bold" }}> Your Badges🚀</h3>
+                        <h3 style={{ fontSize: "42px", marginLeft: "160px", marginTop: "10px", fontFamily: "sans-serif", fontWeight: "bold" }}> Your Badges🚀 (beta)</h3>
 
                         <div className="badgesContainer">
 
@@ -140,9 +142,9 @@ const ProfileScreen = () => {
 
                         </div>
 
-                        <h3 style={{ fontSize: "42px", marginLeft: "160px", marginTop: "10px", fontFamily: "sans-serif", fontWeight: "bold" }}> Your Stars⭐</h3>
+                        <h3 style={{ fontSize: "42px", marginLeft: "160px", marginTop: "10px", fontFamily: "sans-serif", fontWeight: "bold" }}> Your Stars⭐ (beta)</h3>
                         <div className="starsContainer">
-                            <h4 style={{ marginLeft: "250px", fontSize: "42px", fontWeight: "bold" }}> 10 ⭐</h4>
+                            <h4 style={{ marginLeft: "250px", fontSize: "42px", fontWeight: "bold" }}> {fieldValues.stars} ⭐</h4>
                         </div>
                     </div>
                     <br />
@@ -156,7 +158,7 @@ const ProfileScreen = () => {
                             <br />
                             <br />
                             <label htmlFor="changeProfilePicture" className="changeProfilePictureLabel">
-                                Change Profile Picture
+                                Change Profile Picture (beta)
                             </label>
                             <input
                                 type="file"
