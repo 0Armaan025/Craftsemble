@@ -36,13 +36,15 @@ const WorkshopsScreen = () => {
   }, []);
 
   return (
-    <div className="workshopsScreen">
-      <Navbar />
-      <div className="workshops-container">
-        <h1 className='workshopsHeading' style={{ color: "black" }}>Upcoming Workshops!</h1>
-        <center><h4 style={{ background: "none" }}> <Link to="/workshop-creation" style={{ background: "none" }}>Click here to make a request for a workshop!</Link></h4></center>
+    <>
+    <Navbar />
+    <div className="workshopsScreen" style={{padding: "30px",borderRadius: "20px", border: "1px solid black"}}>
+      
+      <div className="workshops-container" style={{background: "none", padding: "30px",  border: "1px solid black",marginBottom: "20px", marginTop: "20px"}}>
+        <h1 className='workshopsHeading' style={{ color: "black" , background: "none"}}>Upcoming Workshops!</h1>
+        <center style={{background: "none"}}><h4 style={{ background: "none" }}> <Link to="/workshop-creation" style={{ background: "none" }}>Click here to make a request for a workshop!</Link></h4></center>
         <br />
-        <div className="workshop-grid">
+        <div className="workshop-grid" style={{padding: "20px"}}>
           {workshops.map((workshop) => (
             <div key={workshop.id} className="workshop-card">
               <img src={workshop.bannerImage} alt={workshop.title} className="workshop-image" />
@@ -50,13 +52,15 @@ const WorkshopsScreen = () => {
               <p className="workshop-date">Date:</p> <p className="workshop-date" style={{ fontWeight: "600", color: "black" }}>{workshop.date}</p>
               <p className="workshop-description">{workshop.description}</p>
               <p className="workshop-hosted">Hosted by:</p> <p className='workshop-hosted' style={{ fontWeight: "bold", color: "black" }}>{workshop.hostedBy}</p>
-              <Link to={`/workshop-registration/${workshop.id}`}><button className="register-button">Register</button></Link>
+              <Link to={`/workshop-registration/${workshop.id}`} style={{background: "none"}}><button className="register-button">Register</button></Link>
             </div>
           ))}
         </div>
       </div>
-      <Footer />
+      
     </div>
+    <Footer />
+    </>
   );
 };
 

@@ -11,7 +11,7 @@
   }
 
   .workshops-container {
-    max-width: 800px;
+    max-width: 900px;
     background-color: #f0f0f0;
     margin: 0 auto;
     padding: 20px;
@@ -26,7 +26,7 @@
   .workshop-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 20px;
+    grid-gap: 10px;
     justify-items: center;
   }
   
