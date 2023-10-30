@@ -28,7 +28,7 @@ const WorkshopsScreen = () => {
         }));
         setWorkshops(workshopData);
       } catch (error) {
-        console.error('Error retrieving workshop data: ', error);
+        
       }
     };
 

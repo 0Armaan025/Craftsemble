@@ -1,4 +1,3 @@
-/* BlogCard.css */
 .blog-card {
     position: relative;
     border: 1px solid #e1e1e1;
@@ -39,7 +38,6 @@
     margin: 0;
   }
   
-  /* Gradient lines animation */
   .blog-card::before {
     content: '';
     position: absolute;

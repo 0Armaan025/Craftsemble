@@ -12,7 +12,7 @@ const ExhibitionScreen = () => {
     // Initialize Firestore
     const db = getFirestore();
 
-    // Reference to the "exhibition" collection in Firestore (replace 'exhibition' with your collection name)
+    
     const craftsCollectionRef = collection(db, 'exhibition');
 
     // Fetch data from Firestore

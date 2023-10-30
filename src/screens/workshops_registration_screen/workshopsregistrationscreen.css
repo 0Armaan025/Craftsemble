@@ -58,44 +58,44 @@
 
   .registerBtn {
     padding: 0.5rem;
-    width: 200px; /* Make the button 100% width for responsiveness */
+    width: 200px; 
     border-radius: 6px;
     font-size: 16px;
     transition: 0.15s ease-in-out;
     font-family: 'Pixelify Sans', sans-serif;
     background-color: #eebbc3; 
-    border: 2px solid #121629; /* Add a border */
+    border: 2px solid #121629; 
     color: #232946;
-    text-align: center; /* Center the text */
+    text-align: center;
     margin-top: 20px;
-    margin-left: 120px; /* Add space at the top and bottom of the button */
+    margin-left: 120px; 
   }
 
  
   .registerBtn:hover {
-    background-color: #d8a5ad; /* Transparent button background */
+    background-color: #d8a5ad; 
   }
 
   
 
   .addToGoogleCalendarBtn {
     padding: 0.5rem;
-    width: 200px; /* Make the button 100% width for responsiveness */
+    width: 200px; 
     border-radius: 6px;
     font-size: 16px;
     transition: 0.15s ease-in-out;
     font-family: 'Pixelify Sans', sans-serif;
     background-color: #eebbc3; 
-    border: 2px solid #121629; /* Add a border */
+    border: 2px solid #121629; 
     color: #232946;
     margin-left: 20px;
     margin-top: 20px;
-    text-align: center; /* Center the text */
-    margin-right: 120px; /* Add space at the top and bottom of the button */
+    text-align: center; 
+    margin-right: 120px; 
   }
 
   .addToGoogleCalendarBtn:hover {
-    background-color: #d8a5ad; /* Transparent button background */
+    background-color: #d8a5ad; 
   }
 
   .workshop-info {

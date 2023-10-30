@@ -22,7 +22,7 @@ export default function HankoAuth() {
 
   useEffect(() => {
     register(hankoApi).catch((error) => {
-      // handle error
+      
     });
   }, []);
 

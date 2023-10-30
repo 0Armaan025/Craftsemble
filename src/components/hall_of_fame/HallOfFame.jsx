@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './halloffame.css'; // Import your CSS for styling
+import './halloffame.css'; 
 import {doc, setDoc, getDoc, deleteDoc, collection, query, where, getDocs, getFirestore} from 'firebase/firestore'; 
 
 const HallOfFame = () => {
@@ -12,8 +12,8 @@ const HallOfFame = () => {
     const db = getFirestore();
 
     try {
-        const exhibitionRef = collection(db, 'exhibition'); // Use `collection` to reference the collection
-        const querySnapshot = await getDocs(exhibitionRef); // Use `getDocs` to fetch documents
+        const exhibitionRef = collection(db, 'exhibition'); 
+        const querySnapshot = await getDocs(exhibitionRef);
 
         let maxStars = -1;
         let docWithMostStars = null;
@@ -29,7 +29,7 @@ const HallOfFame = () => {
 
         return docWithMostStars;
     } catch (error) {
-        console.error('Error getting documents:', error);
+        
     }
 }
 
@@ -38,7 +38,7 @@ const HallOfFame = () => {
     
     if (docWithMostStars) {
       const imageUrl = docWithMostStars.data().imageUrl;
-      console.log('image url is ', imageUrl);
+      
       setImageUrl(imageUrl);
     } else {
       return 'No document found with stars.';

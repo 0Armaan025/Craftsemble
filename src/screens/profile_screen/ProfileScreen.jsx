@@ -66,7 +66,7 @@ const ProfileScreen = () => {
                 if (docSnapshot.exists()) {
                     const userData = docSnapshot.data();
                     setProfileImageUrl(userData.profileImageUrl);
-                    console.log('backend profile image image url is ', userData.profileImageUrl);
+                    
                     setFieldValues({
                         username: userData.username,
                         stars: userData.stars,
@@ -77,10 +77,10 @@ const ProfileScreen = () => {
                         link: userData.socialMediaLinks,
                         verified: userData.verified, 
                     });
-                    console.log('profile image url is ', userData.profileImageUrl);
+                    
                 }
             } catch (error) {
-                console.error('Error fetching user data:', error);
+                
             }
         };
 
@@ -111,9 +111,9 @@ const ProfileScreen = () => {
                 // You can update other fields as needed
             });
 
-            console.log('Profile updated successfully');
+            
         } catch (error) {
-            console.error('Error updating profile:', error);
+            
         }
     };
 

@@ -4,15 +4,13 @@ import Navbar from '../components/navbar/Navbar';
 import CommunityCard from './community_card/CommunityCard';
 import { Link } from 'react-router-dom';
 import Footer from '../components/footer/Footer';
-import { getFirestore, collection, getDocs } from 'firebase/firestore'; // Import Firestore functions
+import { getFirestore, collection, getDocs } from 'firebase/firestore'; 
 
 const Communities = () => {
   const [communityData, setCommunityData] = useState([]);
   
-  // Initialize Firestore
   const db = getFirestore();
 
-  // Fetch community data
   useEffect(() => {
     const fetchCommunityData = async () => {
       try {
@@ -21,7 +19,7 @@ const Communities = () => {
         const data = querySnapshot.docs.map((doc) => doc.data());
         setCommunityData(data);
       } catch (error) {
-        console.error('Error fetching community data:', error);
+      
       }
     };
 

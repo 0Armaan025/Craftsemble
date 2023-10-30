@@ -4,11 +4,11 @@ import './exhibitioncard.css';
 
 const ExhibitionCard = ({ imageUrl, title, isCollaborate, artist , projectId}) => {
   const handleMoreDetails = () => {
-    // Implement your logic for the "More Details" button click
+    
   };
 
   const handleCollaborate = () => {
-    // Implement your logic for the "Collaborate" button click
+    
   };
 
   return (

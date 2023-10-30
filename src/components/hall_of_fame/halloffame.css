@@ -1,4 +1,4 @@
-/* HallOfFame.css */
+
 .hallOfFame {
     background: none;
     display: flex;
@@ -20,7 +20,7 @@
     border: 1px solid white;
     height: 420px;
     background: none;
-    width: 350px; /* Set the size of the user image */
+    width: 350px; 
   }
   
   .trophy {
@@ -42,28 +42,28 @@
   .animatedTrophy {
     background: none;
     transform: rotate(20deg);
-    width: 160px; /* Set the initial size of the trophy image */
+    width: 160px; 
     animation: trophyAnimation 2s ease-in-out infinite;
   }
   
   .animatedTrophy img {
     transform: rotate(20deg);
     background: none;
-    width: 100%; /* Set the width of the trophy image within the container */
+    width: 100%;
   }
   
   @keyframes trophyAnimation {
     0% {
       transform: rotate(20deg);
-      transform: scale(1); /* Initial size */
+      transform: scale(1);
     }
     50% {
       transform: rotate(20deg);
-      transform: scale(1.2); /* Enlarge the image at 50% of the animation */
+      transform: scale(1.2); 
     }
     100% {
       transform: rotate(20deg);
-      transform: scale(1); /* Return to the original size at the end */
+      transform: scale(1); 
     }
   }
   
@@ -73,8 +73,8 @@
 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background: none;
-    font-size: 74px; /* Adjust the font size for the #1 text */
-    margin-left: 30px; /* Add some spacing between the trophy and the text */
+    font-size: 74px; 
+    margin-left: 30px; 
   }
   .trophy {
     background: none;

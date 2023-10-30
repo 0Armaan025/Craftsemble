@@ -13,7 +13,7 @@ const ContactForm = () => {
     const body = `${message}`;
     const mailtoLink = `mailto:${recipientEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     
-    // Open the user's email client with the pre-filled content
+    
     window.location.href = mailtoLink;
   };
 

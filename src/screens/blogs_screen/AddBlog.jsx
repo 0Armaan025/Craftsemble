@@ -73,7 +73,7 @@ const AddBlog = () => {
 
       }
     } catch (error) {
-      console.log(error);
+      
     }
   };
 

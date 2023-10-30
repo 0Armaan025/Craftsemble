@@ -19,13 +19,13 @@ const FullBlog = () => {
         const blogSnapshot = await getDoc(blogRef);
         if (blogSnapshot.exists()) {
           const blogData = blogSnapshot.data();
-          // Assuming the blog content is stored in a field called 'content'
+          
           setFullContent(blogData.content);
         } else {
-          console.error('Blog not found');
+          
         }
       } catch (error) {
-        console.error('Error fetching blog data:', error);
+        
       }
     };
 

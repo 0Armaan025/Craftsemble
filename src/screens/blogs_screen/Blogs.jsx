@@ -5,17 +5,17 @@ import Navbar from '../components/navbar/Navbar';
 import { Link } from 'react-router-dom';
 import Footer from '../components/footer/Footer';
 import { collection, getDocs, getFirestore } from 'firebase/firestore';
-import BlogCard from './BlogCard'; // Import the BlogCard component
+import BlogCard from './BlogCard'; 
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
   const db = getFirestore();
 
   useEffect(() => {
-    // Function to fetch all blogs
+  
     const fetchBlogs = async () => {
       try {
-        // Replace 'your_collection_name' with the actual name of your blogs collection
+        
         const querySnapshot = await getDocs(collection(db, 'blogs'));
 
         const blogData = [];
@@ -24,19 +24,19 @@ const Blogs = () => {
           blogData.push(data);
         });
 
-        // Set the fetched blogs in the state
+        
         setBlogs(blogData);
       } catch (error) {
-        console.error('Error fetching blogs:', error);
+        
       }
     };
 
-    // Call the function to fetch blogs when the component mounts
+    
     fetchBlogs();
   }, [db]);
 
-  // Split the blogs into sets to be displayed in separate BlogList components
-  const blogsPerPage = 8; // Adjust the number of blogs to display per BlogList
+  
+  const blogsPerPage = 8; 
   const blogSets = [];
 
   for (let i = 0; i < blogs.length; i += blogsPerPage) {

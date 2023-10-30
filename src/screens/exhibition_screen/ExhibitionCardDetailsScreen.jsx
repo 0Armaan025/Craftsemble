@@ -16,14 +16,14 @@ const ExhibitionCardDetailsScreen = () => {
     artistName: '',
     artistEmail: '',
     isCollaborator: false,
-    stars: 0, // Initialize the stars count
-    uids: [], // Initialize the array to store user IDs who starred
+    stars: 0, 
+    uids: [], 
   });
 
-  const [isStarred, setIsStarred] = useState(false); // To prevent multiple starring
-  const [currentUserStarred, setCurrentUserStarred] = useState(false); // To check if the current user has already starred
+  const [isStarred, setIsStarred] = useState(false);
+  const [currentUserStarred, setCurrentUserStarred] = useState(false); 
 
-  // Function to handle the star (favorite) button click
+
   const handleFavoriteClick = async () => {
     if (!isStarred) {
       try {
@@ -32,15 +32,15 @@ const ExhibitionCardDetailsScreen = () => {
         const currentUser = hanko.user.getCurrent();
         const { id } = await currentUser;
   
-        // Check if the current user has already starred
+        
         if (Array.isArray(exhibitionDetails.uids) && exhibitionDetails.uids.includes(id)) {
           setCurrentUserStarred(true);
         } else {
-          // Initialize Firestore
+         
           const db = getFirestore();
           const exhibitionDocRef = doc(db, 'exhibition', projectId);
   
-          // Update the stars count in Firestore
+         
           await updateDoc(exhibitionDocRef, {
             stars: exhibitionDetails.stars + 1,
             uids: arrayUnion(id),
@@ -48,7 +48,6 @@ const ExhibitionCardDetailsScreen = () => {
   
           setIsStarred(true);
   
-          // Fetch and update the exhibition details
           const docSnapshot = await getDoc(exhibitionDocRef);
           if (docSnapshot.exists()) {
             const data = docSnapshot.data();
@@ -56,25 +55,25 @@ const ExhibitionCardDetailsScreen = () => {
           }
         }
       } catch (error) {
-        console.error('Error starring the project:', error);
+        
       }
     }
   };
   
 
   useEffect(() => {
-    // Initialize Firestore
+    
     const db = getFirestore();
     const exhibitionDocRef = doc(db, 'exhibition', projectId); // Replace 'exhibition' with your collection name
 
-    // Fetch exhibition details from Firestore
+   
     const fetchExhibitionDetails = async () => {
       const docSnapshot = await getDoc(exhibitionDocRef);
       if (docSnapshot.exists()) {
         const data = docSnapshot.data();
         setExhibitionDetails(data);
       } else {
-        console.error('Exhibition not found');
+        
       }
     };
 

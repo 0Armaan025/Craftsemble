@@ -66,7 +66,7 @@ const WorkshopCreationScreen = () => {
 
       await setDoc(workshopDocRef, workshopData);
 
-      console.log('Data has been added to Firestore.');
+      
 
       setFormData({
         title: '',
@@ -79,7 +79,7 @@ const WorkshopCreationScreen = () => {
         workshopMeetingLink: '', // Clear the Meeting Link field
       });
     } catch (error) {
-      console.error('Error adding data to Firestore: ', error);
+      
     }
   };
 

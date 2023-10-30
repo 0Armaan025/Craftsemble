@@ -63,7 +63,7 @@ const ListACommunityScreen = () => {
 
       await setDoc(communityDocRef, communityData);
 
-      console.log('Data has been added to Firestore.');
+      
 
       setFormData({
         communityName: '',
@@ -73,7 +73,7 @@ const ListACommunityScreen = () => {
         bannerImage: null,
       });
     } catch (error) {
-      console.error('Error adding data to Firestore: ', error);
+      
     }
   };
 

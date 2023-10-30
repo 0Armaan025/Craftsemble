@@ -3,40 +3,40 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Include padding and borders in the element's total width and height */
+    box-sizing: border-box; 
 }
 
 .contactFormHeading {
     font-size: 52px;
     font-weight: bold;
     font-family: 'Pixelify Sans', sans-serif;
-    text-align: center; /* Center the heading */
-    margin-top: 20px; /* Add space at the top */
-    padding: 20px; /* Add padding for responsiveness */
+    text-align: center; 
+    margin-top: 20px; 
+    padding: 20px;
 }
 
 .contactFormInput {
     padding: 1rem;
     color: #b8c1ec;
-    width: 100%; /* Make the input field 100% width for responsiveness */
+    width: 100%; 
     font-size: 19px;
     border-radius: 15px;
     font-family: 'Pixelify Sans', sans-serif;
-    margin: 10px 0; /* Add space between input fields */
+    margin: 10px 0; 
 }
 
 .submitBtn {
     padding: 1rem;
-    width: 100%; /* Make the button 100% width for responsiveness */
+    width: 100%; 
     border-radius: 8px;
     font-size: 30px;
     color: #232946;
     transition: 0.15s ease-in-out;
     font-family: 'Pixelify Sans', sans-serif;
-    background-color: #eebbc3; /* Transparent button background */
-    border: 2px solid #121629; /* Add a border */
-    text-align: center; /* Center the text */
-    margin: 20px 0; /* Add space at the top and bottom of the button */
+    background-color: #eebbc3; 
+    border: 2px solid #121629; 
+    text-align: center; 
+    margin: 20px 0; 
 }
 
 .submitBtn:hover {
@@ -49,12 +49,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px; /* Add space at the top */
+    margin-top: 20px; 
 }
 
 /* Media query for responsiveness */
 @media (max-width: 768px) {
     .theboxes {
-        flex-direction: column; /* Stack elements in a column on smaller screens */
+        flex-direction: column; 
     }
 }

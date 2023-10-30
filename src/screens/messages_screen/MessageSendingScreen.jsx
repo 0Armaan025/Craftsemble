@@ -101,7 +101,7 @@ const MessageSendingScreen = () => {
             setMessage('');
             setImage(null);
         } catch (error) {
-            console.error('Error sending message:', error);
+            
         }
     };
 
@@ -110,7 +110,7 @@ const MessageSendingScreen = () => {
         try {
             await deleteDoc(doc(db, 'messages', messageId));
         } catch (error) {
-            console.error('Error deleting message:', error);
+            
         }
     };
 

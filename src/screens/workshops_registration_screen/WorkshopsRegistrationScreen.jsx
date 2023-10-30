@@ -39,10 +39,10 @@ const WorkshopRegistrationScreen = () => {
             setIsRegistered(true);
           }
         } else {
-          console.log('Workshop document does not exist');
+          
         }
       } catch (error) {
-        console.error('Error fetching workshop data:', error);
+        
       }
     };
 
@@ -80,7 +80,7 @@ const WorkshopRegistrationScreen = () => {
 
       setIsRegistered(true);
     } catch (error) {
-      console.error('Error submitting registration:', error);
+      
     }
   };
 

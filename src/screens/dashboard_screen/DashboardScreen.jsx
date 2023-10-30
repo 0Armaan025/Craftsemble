@@ -83,7 +83,7 @@ const DashboardScreen = () => {
           );
         }
       } catch (error) {
-        console.error('Error fetching user statistics:', error);
+        
       }
     };
 

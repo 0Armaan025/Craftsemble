@@ -37,7 +37,7 @@ const Navbar = () => {
         return null;
       }
     } catch (error) {
-      console.error("Error getting profile image URL:", error);
+      
       throw error; // Handle the error as needed.
     }
   }
@@ -51,24 +51,24 @@ const Navbar = () => {
       
 
       if (doesUserExist) {
-        console.log('here');
+        
         const hankoApi = process.env.REACT_APP_HANKO_API_URL;
         const hanko = new Hanko(hankoApi);
 
         const currentUser = hanko.user.getCurrent();
         const { id } = await currentUser;
         getProfileImageUrl(id);
-        console.log('here 2');
+
         if (currentUser) {
-          console.log('here3');
+  
 
 
-          console.log("the id is", id)
+  
           const artisanExists = await checkDocumentExists(id);
-          console.log('here4');
+  
           setIsArtisan(artisanExists);
-          console.log(isArtisan)
-          console.log('here5');
+  
+  
         }
       }
     });

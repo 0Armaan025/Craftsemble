@@ -45,7 +45,6 @@
   border-top-right-radius: 12px;
 }
 
-/* Container for the details */
 .card-details {
   padding: 10px;
   background: rgba(0, 0, 0, 0.7); /* Dark, semi-transparent background */
@@ -55,13 +54,11 @@
   border-bottom-right-radius: 12px;
 }
 
-/* Adjust the font and spacing for details */
 .card-details h3 {
   margin: 10px 0;
   font-size: 18px;
 }
 
-/* Container for the buttons */
 .card-buttons {
   display: flex;
   flex-direction: column; /* Stack buttons vertically */
@@ -71,7 +68,6 @@
   justify-content: center;
 }
 
-/* Styling for the buttons */
 button {
   background: #eebbc3;
   color: #232946;

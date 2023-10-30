@@ -1,6 +1,5 @@
-/* fullblog.css */
 
-/* Style for the entire FullBlog page */
+
 .full-blog {
     background-color: #f5f5f5;
     padding: 20px;
@@ -9,14 +8,14 @@
     max-width: 800px;
   }
   
-  /* Style for the Full Blog Title */
+
   .full-blog h2 {
     font-size: 24px;
     color: #333;
     margin-top: 0;
   }
   
-  /* Style for the Full Blog Content */
+
   .full-blog-content {
     font-size: 18px;
     line-height: 1.5;
@@ -29,14 +28,14 @@
     margin-top: 10px;
   }
   
-  /* Style for the Navbar at the top */
+
   .navbar {
     background-color: #007BFF;
     color: #fff;
     padding: 10px 0;
   }
   
-  /* Style for the Footer at the bottom */
+
   .footer {
     background-color: #333;
     color: #fff;
@@ -44,14 +43,10 @@
     text-align: center;
   }
   
-  /* Responsive design for smaller screens */
+
   @media (max-width: 768px) {
     .full-blog {
       padding: 10px;
       max-width: 100%;
     }
-  }
-  
-  .full-blog-content p {
-    
   }

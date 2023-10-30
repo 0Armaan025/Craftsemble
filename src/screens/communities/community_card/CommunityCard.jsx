@@ -8,7 +8,7 @@ const CommuntiyCard = (props) => {
             <div className="communityCard">
 
                 <div className="card">
-                {/* this is going to be a row  */}
+                
                 <div className="imageData">
                     <img className="stubbornImage" src={props.communityImage}/>
 

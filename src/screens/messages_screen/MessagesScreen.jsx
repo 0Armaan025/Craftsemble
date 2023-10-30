@@ -3,6 +3,7 @@ import Navbar from '../components/navbar/Navbar';
 import { Link } from 'react-router-dom';
 import './messagesscreen.css';
 import Message from './Message';
+import { Hanko } from '@teamhanko/hanko-elements';
 import Footer from '../components/footer/Footer';
 import { getFirestore, collection, getDocs, addDoc, serverTimestamp } from 'firebase/firestore'; // Import Firestore functions
 import { getStorage, ref, uploadString, getDownloadURL } from 'firebase/storage'; // Import Storage functions
@@ -12,6 +13,7 @@ const MessagesScreen = () => {
   const [name, setName] = useState(''); // Initialize with user's name
   const [messageText, setMessageText] = useState('');
   const [userPhoto, setUserPhoto] = useState(null);
+  const [userId, setuserId] = useState(null);
 
   useEffect(() => {
     // Initialize Firestore
@@ -25,18 +27,30 @@ const MessagesScreen = () => {
         const messageData = querySnapshot.docs.map((doc) => doc.data());
         setMessages(messageData);
       } catch (error) {
-        console.error('Error fetching messages:', error);
+        
       }
     }
 
-    // Fetch the user's data from Firestore, including their name and photo URL
-    const usersCollection = collection(db, 'users'); // Replace with your collection name
-    const userDoc = 'user1'; // Replace with the user's ID
-    const userDocRef = collection(usersCollection, userDoc);
+    
+    const usersCollection = collection(db, 'users'); 
+    
+   
+    const userDocRef = collection(usersCollection, userId);
 
     getDownloadURL(userDocRef).then((url) => {
       setUserPhoto(url);
     });
+
+
+    const getUserId = async () => {
+      const hankoApi = process.env.REACT_APP_HANKO_API_URL;
+      const hanko = new Hanko(hankoApi);
+
+      const currentUser = hanko.user.getCurrent();
+      const { id } = await currentUser;
+      setuserId(id);
+    }
+
 
     // Fetch user's name from Firestore
     const fetchData = async () => {
@@ -48,6 +62,7 @@ const MessagesScreen = () => {
 
     fetchData();
     fetchMessages();
+    getUserId();
   }, []);
 
   const addMessage = async () => {
@@ -62,7 +77,7 @@ const MessagesScreen = () => {
       });
       setMessageText(''); // Clear the message input
     } catch (error) {
-      console.error('Error adding message:', error);
+      
     }
   };
 

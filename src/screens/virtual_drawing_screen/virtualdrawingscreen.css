@@ -58,7 +58,7 @@ button:hover {
   background-color: rgb(235, 245, 255);
 }
 
-/* Eraser mode button styles */
+
 button.toggle-eraser {
   background-color: #ff3d00;
 }
@@ -94,10 +94,10 @@ select[name="shapeType"] {
     font-size: 12px;
   }
 
-  /* Additional responsive styles as needed */
+  
 }
 
-/* Additional styling for specific elements */
+
 .canvas-container.show-grid {
   background-image: linear-gradient(0deg, transparent 1px, #ffffff 1px, #ffffff 2px, transparent 2px);
 }

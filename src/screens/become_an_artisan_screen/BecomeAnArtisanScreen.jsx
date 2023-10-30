@@ -95,7 +95,7 @@ const BecomeAnArtisanScreen = () => {
       const currentUser = hanko.user.getCurrent();
       if (currentUser !== null) {
         const { email } = await currentUser;
-        console.log(`email: ${email}`);
+        
         const userData = {
           ...formData,
           email,
@@ -107,7 +107,7 @@ const BecomeAnArtisanScreen = () => {
         };
         await setDoc(user1DocRef, userData);
 
-      console.log("Data, profile picture URL, and demo artwork URL added to Firestore");
+      
       redirect("/");
         
       }
@@ -115,7 +115,7 @@ const BecomeAnArtisanScreen = () => {
 
       
     } catch (error) {
-      console.error("Error adding data and URLs to Firestore:", error);
+      
     }
   };
 

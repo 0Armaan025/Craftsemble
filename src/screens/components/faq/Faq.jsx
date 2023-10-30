@@ -15,14 +15,8 @@ function Faq() {
           question: 'What if I\'m new to crafting?',
           answer: "No worries! Our platform caters to all skill levels. Start with beginner-friendly workshops, connect with artisans, and grow your craft skills.",
         },
-        {
-            question: 'How can I find workshops on a specific craft?',
-            answer: 'You can use our search feature to discover workshops by craft type. Simply enter the craft you\'re interested in, and you\'ll find a variety of workshops to choose from.',
-          },
-          {
-            question: 'Can I collaborate with artisans on unique projects?',
-            answer: 'Absolutely! Our "Collaborate" section allows you to join artisans in crafting extraordinary projects together. You can learn, create, and collaborate with skilled artisans.',
-          },
+       
+         
           {
             question: 'Are there community discussions and sharing?',
             answer: 'Yes, we have vibrant crafting communities where you can connect with fellow enthusiasts, share your creations, and discuss your craft passions. Join in and be part of our creative community!',
@@ -51,10 +45,7 @@ function Faq() {
             question: 'Can I connect with artisans outside of workshops?',
             answer: 'Yes, you can connect with artisans through their profiles and messaging. It\'s a great way to ask questions, discuss potential collaborations, or seek advice from artisans directly.',
           },
-          {
-            question: 'How can I report inappropriate content or behavior?',
-            answer: 'If you come across any inappropriate content or behavior, please use our reporting feature to alert our moderation team. We take such reports seriously and will take necessary actions to ensure a safe and respectful environment for all users.',
-          },
+         
       ];
   const [activeItem, setActiveItem] = useState(null);
 

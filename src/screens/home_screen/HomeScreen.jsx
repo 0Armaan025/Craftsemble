@@ -14,7 +14,7 @@ const HomeScreen = () => {
   const [userExists, setUserExists] = useState(false);
 
   useEffect(() => {
-    // Call the getUserData function as a function to get the result and update the state
+    
     getUserData(setUserExists).then((doesUserExist) => {
       setUserExists(doesUserExist);
     });

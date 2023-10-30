@@ -24,15 +24,11 @@
 .blog-card p {
   margin: 8px 0;
 }
-
-/* Style for the container of blog cards */
 .blog-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-
-/* Additional styling for the "Add a blog" button */
 .add-blog-button {
   background-color: #eebbc3;
   color: #232946;

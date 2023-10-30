@@ -3,22 +3,23 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Include padding and borders in the element's total width and height */
+    box-sizing: border-box; 
 }
+
 
 .featuresHeading {
     font-size: 70px;
     color: #fffffe;
     font-weight: bold;
     font-family: 'Autour One', sans-serif;
-    margin-bottom: 30px; /* Reduce margin for responsiveness */        
-    text-align: center; /* Center the heading */
+    margin-bottom: 30px; 
+    text-align: center;
 }
 
 .features {
-    margin-top: 20px; /* Reduce margin for responsiveness */
+    margin-top: 20px; 
     display: flex;
-    flex-wrap: wrap; /* Wrap features to the next row on smaller screens */
+    flex-wrap: wrap; 
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -27,23 +28,23 @@
 .featuresRow {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; /* Allow features to wrap to the next row on smaller screens */
+    flex-wrap: wrap; 
     align-items: center;
     justify-content: center;
 }
 
-/* Media query for responsiveness */
+
 @media (max-width: 768px) {
     .featuresHeading {
-        font-size: 40px; /* Reduce font size for smaller screens */
+        font-size: 40px; 
     }
 
     .features {
-        margin-top: 10px; /* Further reduce margin for responsiveness */
+        margin-top: 10px; 
         padding: 20px;
     }
 
     .featuresRow {
-        flex-direction: column; /* Stack features in a column on smaller screens */
-    }
+        flex-direction: column;
+}
 }
