@@ -6,7 +6,7 @@ import {
   collection,
   doc,
   setDoc,
-} from 'firebase/firestore'; 
+} from 'firebase/firestore';
 
 import { ref, uploadBytesResumable, getDownloadURL } from 'firebase/storage';
 import { newStorage } from '../../firebase_setup/firebase';
@@ -47,7 +47,10 @@ const WorkshopCreationScreen = () => {
     const workshopsCollectionRef = collection(db, 'workshops');
 
     try {
-      const profileImageRef = ref(newStorage, `/workshop-banners/${formData.workshopname}/${formData.bannerImage.name}`);
+      const profileImageRef = ref(
+        newStorage,
+        `/workshop-banners/${formData.workshopname}/${formData.bannerImage.name}`
+      );
       const profileUploadTask = uploadBytesResumable(profileImageRef, formData.bannerImage);
       await profileUploadTask;
 
@@ -90,8 +93,10 @@ const WorkshopCreationScreen = () => {
             Workshop Creation
           </h2>
           <br />
-          <h4 className="formShowing" style={{color: "#b8c1ec"}}>Please provide workshop details:</h4>
-          <div className="theboxes" style={{ width: "1300px" }}>
+          <h4 className="formShowing" style={{ color: '#b8c1ec' }}>
+            Please provide workshop details:
+          </h4>
+          <div className="theboxes">
             <div className="leftBox">
               <form onSubmit={handleSubmit}>
                 <input
@@ -101,7 +106,8 @@ const WorkshopCreationScreen = () => {
                   className="contactFormInput"
                   value={formData.title}
                   onChange={handleInputChange}
-                /><br /><br />
+                />
+                <br />
                 <input
                   type="text"
                   placeholder="Workshop Name"
@@ -109,7 +115,8 @@ const WorkshopCreationScreen = () => {
                   className="contactFormInput"
                   value={formData.workshopname}
                   onChange={handleInputChange}
-                /><br /><br />
+                />
+                <br />
                 <input
                   type="text"
                   placeholder="Workshop Description"
@@ -118,7 +125,7 @@ const WorkshopCreationScreen = () => {
                   value={formData.description}
                   onChange={handleInputChange}
                 />
-                <br /><br />
+                <br />
                 <input
                   type="text"
                   placeholder="Hosted By"
@@ -126,7 +133,8 @@ const WorkshopCreationScreen = () => {
                   className="contactFormInput"
                   value={formData.hostedBy}
                   onChange={handleInputChange}
-                /><br /><br />
+                />
+                <br />
                 <input
                   type="text"
                   placeholder="Date and Time"
@@ -134,7 +142,8 @@ const WorkshopCreationScreen = () => {
                   className="contactFormInput"
                   value={formData.dateTime}
                   onChange={handleInputChange}
-                /><br /><br />
+                />
+                <br />
                 <input
                   type="text"
                   placeholder="Workshop Meeting Link"
@@ -142,15 +151,19 @@ const WorkshopCreationScreen = () => {
                   className="contactFormInput"
                   value={formData.workshopMeetingLink} // Meeting Link field
                   onChange={handleInputChange}
-                /><br /><br />
+                />
+                <br />
                 <textarea
                   placeholder="Detailed Information"
                   name="detailedInformation"
                   className="contactFormInput"
                   value={formData.detailedInformation}
                   onChange={handleInputChange}
-                /><br /><br />
-                <label htmlFor="bannerImage" style={{color: "#b8c1ec"}}>Banner Image</label>
+                />
+                <br />
+                <label htmlFor="bannerImage" style={{ color: '#b8c1ec' }}>
+                  Banner Image
+                </label>
                 <input
                   type="file"
                   className="form-control-file"
@@ -161,22 +174,30 @@ const WorkshopCreationScreen = () => {
                 />
                 <br />
                 <br />
-                <label style={{color: "#b8c1ec"}}>
+                <label style={{ color: '#b8c1ec' }}>
                   <input
                     type="checkbox"
                     name="agreeToTerms"
                     checked={agreeToTerms}
                     onChange={handleCheckboxChange}
                   />
-                  I agree to the <a href="https://www.termsandconditionsgenerator.com/live.php?token=0C1A7QlBuET1Xn7I90Al0ZPNR4GIbDpU" target="_blank" rel="noopener noreferrer">Terms and Conditions</a>.
+                  I agree to the{' '}
+                  <a
+                    href="https://www.termsandconditionsgenerator.com/live.php?token=0C1A7QlBuET1Xn7I90Al0ZPNR4GIbDpU"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Terms and Conditions
+                  </a>
+                  .
                 </label>
                 <input type="submit" value="Submit" className="submitBtn" />
               </form>
             </div>
-            <div className="rightBox">
+            <div className="rightBox" style={{marginLeft: "30px"}}>
               <img
                 src="https://media4.giphy.com/media/KszkcokOMwO6s2aJ99/giphy.gif?cid=ecf05e471hmz175c6gxf1sfr6hfgcpfrkha1warkj9wpricj&ep=v1_gifs_search&rid=giphy.gif&ct=g"
-                style={{ height: "350px", width: "100%", maxWidth: "350px", borderRadius: "10px", boxShadow: "2px 2px 1px 1px black", marginLeft: "10rem" }}
+                alt="Workshop Image"
               />
             </div>
           </div>

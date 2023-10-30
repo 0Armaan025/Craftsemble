@@ -43,17 +43,19 @@ const Communities = () => {
         </h5>
       </center>
       <br />
-      {communityData.map((community, index) => (
-        <div key={index}>
-          <CommunityCard
-            communityImage={community.profileImageUrl}
-            communityName={community.communityName}
-            communityDescription={community.description}
-            communityLink={community.joinLink}
-          />
-          <br />
-        </div>
-      ))}
+      <div className="community-list">
+        {communityData.map((community, index) => (
+          <div key={index}>
+            <CommunityCard
+              communityImage={community.profileImageUrl}
+              communityName={community.communityName}
+              communityDescription={community.description}
+              communityLink={community.joinLink}
+            />
+            <br />
+          </div>
+        ))}
+      </div>
       <Footer />
     </div>
   );

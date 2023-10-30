@@ -144,7 +144,7 @@ const ProfileScreen = () => {
 
                         <h3 style={{ fontSize: "42px", marginLeft: "160px", marginTop: "10px", fontFamily: "sans-serif", fontWeight: "bold", color: "white" }}> Your Stars⭐ (beta)</h3>
                         <div className="starsContainer">
-                            <h4 style={{ marginLeft: "250px", fontSize: "32px", fontWeight: "bold",color: "white"}}> {fieldValues.stars} ⭐</h4>
+                            <h4 style={{ marginLeft: "250px", fontSize: "42px", fontWeight: "bold",color: "white"}}> {fieldValues.stars} ⭐</h4>
                         </div>
                     </div>
                     <br />
