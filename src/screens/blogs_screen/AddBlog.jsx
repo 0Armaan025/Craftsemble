@@ -10,7 +10,7 @@ import { Navigate } from 'react-router-dom';
 import { Hanko } from '@teamhanko/hanko-elements';
 
 const AddBlog = () => {
-  const hankoApi = process.env.NEXT_PUBLIC_HANKO_API_URL;
+  const hankoApi = process.env.REACT_APP_HANKO_API_URL;
   const hanko = new Hanko(hankoApi);
 
   const [formData, setFormData] = useState({

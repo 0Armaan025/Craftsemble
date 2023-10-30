@@ -23,7 +23,7 @@ const BecomeAnArtisanScreen = () => {
 
 
   const [verified, setVerified] = useState(false);
-  const hankoApi = process.env.NEXT_PUBLIC_HANKO_API_URL;
+  const hankoApi = process.env.REACT_APP_HANKO_API_URL;
   const hanko = new Hanko(hankoApi);
 
   

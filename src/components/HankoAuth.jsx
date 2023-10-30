@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { register, Hanko } from "@teamhanko/hanko-elements";
 import './hankoauth.css';
 
-const hankoApi = process.env.NEXT_PUBLIC_HANKO_API_URL;
+const hankoApi = process.env.REACT_APP_HANKO_API_URL;
 export default function HankoAuth() {
   const navigate = useNavigate();
   const hanko = useMemo(() => new Hanko(hankoApi), []);

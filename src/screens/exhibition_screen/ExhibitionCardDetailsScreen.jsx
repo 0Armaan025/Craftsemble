@@ -27,7 +27,7 @@ const ExhibitionCardDetailsScreen = () => {
   const handleFavoriteClick = async () => {
     if (!isStarred) {
       try {
-        const hankoApi = process.env.NEXT_PUBLIC_HANKO_API_URL;
+        const hankoApi = process.env.REACT_APP_HANKO_API_URL;
         const hanko = new Hanko(hankoApi);
         const currentUser = hanko.user.getCurrent();
         const { id } = await currentUser;
