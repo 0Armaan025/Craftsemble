@@ -82,3 +82,14 @@
     border-radius: 6px;
     border: 0.6px solid #fffffe;
   }
+  .updateProfileButton {
+    background: #eebbc3;
+    color: #232946;
+    border: 1px solid #121629;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .updateProfileButton:hover {
+    background: #ffeaed;
+
+  }

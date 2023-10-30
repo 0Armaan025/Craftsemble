@@ -83,7 +83,7 @@ const Navbar = () => {
                 </li>
               )}
             </ul>
-            <div className="spacer" style={{ marginLeft: "3.8rem" }}></div>
+            <div className="spacer" style={{ marginLeft: userExists?"21rem":"3.8rem"}}></div>
             <div className="user-avatar">
               <Link to={userExists ? '/profile' : '/hanko-auth'}>
                 <img

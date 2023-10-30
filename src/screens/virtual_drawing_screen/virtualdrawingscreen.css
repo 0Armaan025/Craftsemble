@@ -51,15 +51,17 @@ button {
 }
 
 button {
-  background-color: #007bff;
-  color: #fff;
+  background-color: #eebbc3;
+  color: #232946;
+  border-radius: 8px;
+  border: 1px solid #121629;
   cursor: pointer;
   transition: background-color 0.2s;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: rgb(235, 245, 255);
 }
 
 /* Eraser mode button styles */

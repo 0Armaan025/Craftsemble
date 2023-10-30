@@ -10,7 +10,7 @@
   width: 80%;
   height: 700px;
   overflow-y: auto;
-  border: 1px solid #ccc;
+  border: 1px solid #b8c1ec;
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 10px;
@@ -27,13 +27,18 @@ h3 {
 .sendMessageBtn {
   width: 100px;
   height: 45px;
-  background-color: rgb(237, 237, 237);
-  background: rgb(219, 219, 219);
-  color: white;
+  background-color: #eebbc3;
+
+  color: #232946;
+  border: 1px solid #121629;
   padding: 10px;
   font-weight: bold;
   font-size: 18px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sendMessageBtn:hover {
+  background-color: #ffe6e9;
 }
 
 .deleteButton {
