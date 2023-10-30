@@ -111,7 +111,7 @@ const Navbar = () => {
             <div className="user-avatar">
               <Link to={userExists ? '/profile' : '/hanko-auth'}>
                 <img
-                  src={profileImage}
+                  src={userExists?profileImage:"https://png.pngtree.com/png-clipart/20230411/original/pngtree-young-man-profile-avatar-in-blue-t-shirt-and-hat-png-image_9046722.png"}
                   alt="User Avatar"
                   className="rounded-circle"
                   style={{ width: "50px", height: "50px", marginLeft: "20px", cursor: "pointer", border: "2px solid #fffffe" }}
