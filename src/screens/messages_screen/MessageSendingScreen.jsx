@@ -19,7 +19,7 @@ const MessageSendingScreen = () => {
     const messagesCollectionRef = collection(db, 'messages');
 
     const getFillData = async () => {
-        const hankoApi = "https://c0cf08ab-bf6f-467b-b53b-20d2ab6f77dc.hanko.io";
+        const hankoApi = process.env.NEXT_PUBLIC_HANKO_API_URL;
         const hanko = new Hanko(hankoApi);
 
         const currentUser = hanko.user.getCurrent();
