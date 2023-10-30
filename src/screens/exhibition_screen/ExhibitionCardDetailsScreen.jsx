@@ -86,7 +86,7 @@ const ExhibitionCardDetailsScreen = () => {
     <Navbar/>
     <br/>
     <center>
-        <h2 style={{color: "black"}}> ⭐ You are now looking at an amazing piece of craft! ⭐ </h2>
+        <h2 style={{color: "white"}}> ⭐ You are now looking at an amazing piece of craft! ⭐ </h2>
     </center>
     <div className="exhibition-card-details">
       <div className="banner">
@@ -101,8 +101,8 @@ const ExhibitionCardDetailsScreen = () => {
         )}
         <h3 style={{background: "none"}}> Total Stars now = {exhibitionDetails.stars}</h3>
         <br/>
-        <button onClick={handleFavoriteClick} disabled={isStarred || currentUserStarred}>⭐</button>
-        <Link to="/send-message" style={{background: "none"}}><button>Message them</button></Link>
+        <button onClick={handleFavoriteClick} disabled={isStarred || currentUserStarred} className='star-button'>⭐</button>
+        <Link to="/send-message" style={{background: "none"}}><button className='message-button'>Message them</button></Link>
       </div>
     </div>
     <Footer/>

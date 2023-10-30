@@ -3,11 +3,11 @@
     flex-direction: row;
     margin-bottom: 20px;
     justify-content: center;
-    background: white;
+    background: #b8c1ec;
     margin-right: 300px;
     margin-left: 300px;
     border-radius: 20px;
-    background-color: white;
+    background-color: #b8c1ec;
     align-items: center;
     transition: 0.2s ease-in-out;
 }
@@ -33,15 +33,17 @@
     padding: 0.4rem;
     margin-top: 20px;
     outline: none;
-    border-radius: 12px;
-    border: 1px solid black;
-    background: transparent;
+    border-radius: 8px;
+    border: 1px solid #121629;
+    background: #eebbc3;
+    color: #232946;
     width: 150px;
     transition: 0.18s ease-in-out;
+    cursor: pointer;
 }
 .joinCommunityBtn:hover {
-    background: wheat;
-    cursor: pointer;
+    background: rgb(213, 193, 156)c3;
+    
 }
 .stubbornImage {
     height: 200px;
@@ -57,7 +59,7 @@
 
 .textData {
     display: flex;
-    background: white;
+    background: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;

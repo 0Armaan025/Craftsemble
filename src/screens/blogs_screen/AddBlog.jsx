@@ -81,7 +81,7 @@ const AddBlog = () => {
     <>
       <Navbar />
       <div className="add-blog-screen">
-        <h1 style={{ color: 'black' }}>Add a Blog</h1>
+        <h1 style={{ color: 'white' }}>Add a Blog</h1>
         <form className="blog-form" onSubmit={handleSubmit}>
           <input
             type="text"

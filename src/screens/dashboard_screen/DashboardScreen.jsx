@@ -130,7 +130,7 @@ const DashboardScreen = () => {
         </div>
         <div className="content">
           <center>
-            <h1 className="dashboardHeading" style={{ color: 'black' }}>
+            <h1 className="dashboardHeading" style={{ color: 'white' }}>
               🤔 Your Statistics 📔
             </h1>
             <div
@@ -151,10 +151,10 @@ const DashboardScreen = () => {
               </div>
             </div>
             {/* <br /> */}
-            <h3>Still in beta (dev. mode)</h3>
-            <h3>These are your statistics</h3>
-            <h4>Stars: {userStats.stars}</h4>
-            <h4>Arts Uploaded: {userStats.artsUploaded}</h4>
+            <h3 style={{color: "#b8c1ec"}}>Still in beta (dev. mode)</h3>
+            <h3 style={{color: "#b8c1ec"}}>These are your statistics</h3>
+            <h4 style={{color: "#b8c1ec"}}>Stars: {userStats.stars}</h4>
+            <h4 style={{color: "#b8c1ec"}}>Arts Uploaded: {userStats.artsUploaded}</h4>
           </center>
         </div>
       </div>

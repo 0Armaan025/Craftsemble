@@ -90,7 +90,7 @@ const WorkshopRegistrationScreen = () => {
       <div className="workshopRegistrationScreen">
         <br />
         <div className="workshop-registration-container">
-          <h1 className="workshop-name" style={{ fontFamily: 'cursive', background: 'transparent' }}>
+          <h1 className="workshop-name" style={{ fontFamily: 'cursive', background: 'transparent' , color: "#fffffe"}}>
             {workshopData ? workshopData.workshopname : 'Workshop Name'}
           </h1>
           <div className="workshop-details" style={{ borderRadius: '30px' }}>
@@ -101,16 +101,16 @@ const WorkshopRegistrationScreen = () => {
             </div>
             <div className="workshop-info" style={{ borderRadius: '30px' }}>
               <br />
-              <h2 className="workshop-title" style={{ fontFamily: 'cursive', background: 'transparent' }}>
+              <h2 className="workshop-title" style={{ fontFamily: 'cursive', background: 'transparent' ,color: "#fffffe"}}>
                 {workshopData ? workshopData.title : 'Title of the Workshop'}
               </h2>
-              <p className="workshop-description" style={{ background: 'transparent' }}>
+              <p className="workshop-description" style={{ background: 'transparent',color: "#b8c1ec" }}>
                 {workshopData ? workshopData.description : 'Workshop description'}
               </p>
-              <p className="hosted-by" style={{ background: 'transparent' }}>
+              <p className="hosted-by" style={{ background: 'transparent',color: "#b8c1ec" }}>
                 {workshopData ? `Hosted by: ${workshopData.hostedBy}` : 'Hosted by: John Doe'}
               </p>
-              <p className="workshop-time" style={{ background: 'transparent' }}>
+              <p className="workshop-time" style={{ background: 'transparent',color: "#b8c1ec" }}>
                 {workshopData ? workshopData.dateTime : 'Date and Time: October 10, 2023, 10:00 AM - 2:00 PM'}
               </p>
             </div>
@@ -143,11 +143,11 @@ const WorkshopRegistrationScreen = () => {
               )}
             </div>
           ) : (
-            <div className="detailed-info" style={{ borderRadius: '30px' }}>
+            <div className="detailed-info" style={{ borderRadius: '30px', color: "white" }}>
               <center>
                 <br />
-                <h2 style={{ fontFamily: 'cursive' }}>Detailed Information</h2>
-                <p className="detailed-description">{workshopData ? workshopData.detailedInfo : 'This workshop will cover various topics related to web development, design, and more. Join us for an exciting and informative session.'}</p>
+                <h2 style={{ fontFamily: 'cursive', color: "white" }}>Detailed Information</h2>
+                <p className="detailed-description" style={{color: "#b8c1ec"}}>{workshopData ? workshopData.detailedInfo : 'This workshop will cover various topics related to web development, design, and more. Join us for an exciting and informative session.'}</p>
                 <div className="myButtons">
                   <input
                     type="button"

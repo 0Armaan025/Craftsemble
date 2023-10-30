@@ -10,7 +10,7 @@ const HankoAuthScreen = () => {
     <center>
         <br/>
         <br/>
-        <h1 style={{color: "black"}}> Time to get you in the database! </h1>
+        <h1 style={{color: "#fffffe"}}> Time to get you in the database! </h1>
         <br/>
     <HankoAuth/>
     <br/>

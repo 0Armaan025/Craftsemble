@@ -86,11 +86,11 @@ const WorkshopCreationScreen = () => {
         <Navbar />
         <br />
         <center>
-          <h2 className="formHeading" style={{ color: 'black' }}>
+          <h2 className="formHeading" style={{ color: '#fffffe' }}>
             Workshop Creation
           </h2>
           <br />
-          <h4 className="formShowing">Please provide workshop details:</h4>
+          <h4 className="formShowing" style={{color: "#b8c1ec"}}>Please provide workshop details:</h4>
           <div className="theboxes" style={{ width: "1300px" }}>
             <div className="leftBox">
               <form onSubmit={handleSubmit}>
@@ -150,7 +150,7 @@ const WorkshopCreationScreen = () => {
                   value={formData.detailedInformation}
                   onChange={handleInputChange}
                 /><br /><br />
-                <label htmlFor="bannerImage">Banner Image</label>
+                <label htmlFor="bannerImage" style={{color: "#b8c1ec"}}>Banner Image</label>
                 <input
                   type="file"
                   className="form-control-file"
@@ -161,7 +161,7 @@ const WorkshopCreationScreen = () => {
                 />
                 <br />
                 <br />
-                <label>
+                <label style={{color: "#b8c1ec"}}>
                   <input
                     type="checkbox"
                     name="agreeToTerms"

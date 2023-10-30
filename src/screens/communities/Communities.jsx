@@ -33,11 +33,11 @@ const Communities = () => {
       <Navbar />
       <br />
       <br />
-      <h1 className="communitiesHeading" style={{ color: 'black' }}>
+      <h1 className="communitiesHeading" style={{ color: '#fffffe' }}>
         Let's explore some of the communities!
       </h1>
       <center>
-        <h5>
+        <h5 style={{color: "#b8c1ec"}}>
           Wanna have your listed here!? You can do that{' '}
           <Link to="/list-a-community">HERE</Link>
         </h5>

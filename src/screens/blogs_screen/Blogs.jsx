@@ -49,7 +49,7 @@ const Blogs = () => {
         <Navbar />
         <hr />
         <br />
-        <h1 style={{ color: 'black' }}>Blogs by fellow artisans! 💫</h1>
+        <h1  className='blogPageHeading'>Blogs by fellow artisans! 💫</h1>
        
         <div className="blog-cards">
           {blogs.map((blog, index) => (

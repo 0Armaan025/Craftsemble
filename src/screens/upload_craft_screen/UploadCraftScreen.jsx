@@ -81,16 +81,16 @@ const BecomeAnArtisanScreen = () => {
         <Navbar />
         <br />
         <center>
-          <h2 className="formHeading" style={{ color: "black" }}>🤔 Let's upload your art!🥳</h2>
+          <h2 className="formHeading" style={{ color: "#fffffe" }}>🤔 Let's upload your art!🥳</h2>
           <br />
-          <h4 className="formShowing">We would need you to submit some details, please :)</h4>
+          <h4 className="formShowing" style={{color: "#b8c1ec"}}>We would need you to submit some details, please :)</h4>
           <div className="theboxes" style={{ width: "1300px" }}>
             <div className="leftBox">
               <form onSubmit={handleSubmit}>
                 <input type="text" placeholder="Name" className="contactFormInput" name="name" value={formData.name} onChange={handleInputChange} /><br /><br />
                 <input type="text" placeholder="Email" className="contactFormInput" name="email" value={formData.email} onChange={handleInputChange} /><br /><br />
                 <input type="text" placeholder="Your masterpiece title" className="contactFormInput" name="imageName" value={formData.imageName} onChange={handleInputChange} /><br /><br />
-                <label htmlFor="craftImage">Craft image</label>
+                <label htmlFor="craftImage" style={{color: "#b8c1ec"}}>Craft image</label>
                 <br />
                 <input
                   type="file"
@@ -101,17 +101,8 @@ const BecomeAnArtisanScreen = () => {
                   onChange={handleCraftImageChange}
                 />
                 <br />
-                <br />
-                <label>
-                  <input
-                    type="checkbox"
-                    name="collaboration"
-                    checked={formData.collaboration}
-                    onChange={handleInputChange}
-                  />
-                  Is it a collaborative project?
-                </label>
-                <label>
+ 
+                <label style={{color: "#b8c1ec"}}>
                   <input
                     type="checkbox"
                     name="agreeToTerms"

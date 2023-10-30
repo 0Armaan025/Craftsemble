@@ -130,9 +130,9 @@ const ProfileScreen = () => {
                 </div>
                 <div className="content">
                     <div style={{ color: "black" }}>
-                        <h2 className="profileHeading" style={{ color: "black" }}>⭐Welcome, {fieldValues.name}⭐</h2>
+                        <h2 className="profileHeading" style={{ color: "white" }}>⭐Welcome, {fieldValues.name}⭐</h2>
                         <br/>
-                        <h3 style={{ fontSize: "42px", marginLeft: "160px", marginTop: "10px", fontFamily: "sans-serif", fontWeight: "bold" }}> Your Badges🚀 (beta)</h3>
+                        <h3 style={{ fontSize: "42px", marginLeft: "160px", marginTop: "10px", fontFamily: "sans-serif", fontWeight: "bold" , color: "white"}}> Your Badges🚀 (beta)</h3>
 
                         <div className="badgesContainer">
 
@@ -142,9 +142,9 @@ const ProfileScreen = () => {
 
                         </div>
 
-                        <h3 style={{ fontSize: "42px", marginLeft: "160px", marginTop: "10px", fontFamily: "sans-serif", fontWeight: "bold" }}> Your Stars⭐ (beta)</h3>
+                        <h3 style={{ fontSize: "42px", marginLeft: "160px", marginTop: "10px", fontFamily: "sans-serif", fontWeight: "bold", color: "white" }}> Your Stars⭐ (beta)</h3>
                         <div className="starsContainer">
-                            <h4 style={{ marginLeft: "250px", fontSize: "42px", fontWeight: "bold" }}> {fieldValues.stars} ⭐</h4>
+                            <h4 style={{ marginLeft: "250px", fontSize: "32px", fontWeight: "bold",color: "white"}}> {fieldValues.stars} ⭐</h4>
                         </div>
                     </div>
                     <br />
@@ -157,7 +157,7 @@ const ProfileScreen = () => {
                             )}
                             <br />
                             <br />
-                            <label htmlFor="changeProfilePicture" className="changeProfilePictureLabel">
+                            <label htmlFor="changeProfilePicture" className="changeProfilePictureLabel" style={{color: "red"}}>
                                 Change Profile Picture (beta)
                             </label>
                             <input

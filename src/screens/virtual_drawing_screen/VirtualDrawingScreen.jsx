@@ -231,8 +231,10 @@ class VirtualDrawingScreen extends Component {
             <label>
               Text:
               <input type="text" value={this.state.text} onChange={this.handleTextChange} />
-              <button onClick={this.addText}>Add Text</button>
+              <button onClick={this.addText} style={{marginBottom: "20px"}}>Add Text</button>
+              <br/>
             </label>
+            <br/>
           </div>
           <div className="action-buttons">
             <button onClick={this.clearCanvas}>Clear Canvas</button>

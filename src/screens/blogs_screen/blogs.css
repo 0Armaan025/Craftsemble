@@ -1,4 +1,5 @@
 /* blogs.css */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 
 /* Style for the individual blog card */
 .blog-card {
@@ -33,8 +34,8 @@
 
 /* Additional styling for the "Add a blog" button */
 .add-blog-button {
-  background-color: #007BFF;
-  color: #fff;
+  background-color: #eebbc3;
+  color: #232946;
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
@@ -44,5 +45,10 @@
 }
 
 .add-blog-button:hover {
-  background-color: #0056b3;
+  background-color: #b0878d;
+}
+
+.blogPageHeading {
+  color: #fffffe;
+  font-family: 'Noto Sans JP', sans-serif;
 }

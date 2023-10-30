@@ -92,7 +92,8 @@ const ListACommunityScreen = () => {
     <>
       <Navbar />
       <div className="listACommunityScreen">
-        <h1 className='listCommunityHeading' style={{ color: "black" }}>💫List your community here!😎</h1>
+        <br/>
+        <h1 className='listCommunityHeading' style={{ color: "white" }}>💫List your community here!😎</h1>
         <form className="theboxes" style={{ width: "1300px" }} onSubmit={handleSubmit}>
           <div className="leftBox">
             <input
@@ -135,7 +136,7 @@ const ListACommunityScreen = () => {
               required
             />
             <br /><br />
-            <label htmlFor="bannerImage">Please add a banner picture</label>
+            <label htmlFor="bannerImage" style={{color: "#b8c1ec"}}>Please add a banner picture</label>
             <input
               type="file"
               name="bannerImage"

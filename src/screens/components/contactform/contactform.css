@@ -17,6 +17,7 @@
 
 .contactFormInput {
     padding: 1rem;
+    color: #b8c1ec;
     width: 100%; /* Make the input field 100% width for responsiveness */
     font-size: 19px;
     border-radius: 15px;
@@ -27,7 +28,7 @@
 .submitBtn {
     padding: 1rem;
     width: 100%; /* Make the button 100% width for responsiveness */
-    border-radius: 20px;
+    border-radius: 8px;
     font-size: 30px;
     color: #232946;
     transition: 0.15s ease-in-out;

@@ -125,11 +125,11 @@ const BecomeAnArtisanScreen = () => {
         <Navbar />
         <br />
         <center>
-          <h2 className="formHeading" style={{ color: 'black' }}>
+          <h2 className="formHeading" style={{ color: 'white' }}>
             🤔 Wanna become an artisan ? Welcome!! 🥳
           </h2>
           <br />
-          <h4 className="formShowing">We would need you to submit some details, please :)</h4>
+          <h4 className="formShowing" style={{color: "#b8c1ec"}}>We would need you to submit some details, please :)</h4>
           <div className="theboxes" style={{ width: '1300px' }}>
             <div className="leftBox">
               <form onSubmit={handleSubmit}>
@@ -193,7 +193,7 @@ const BecomeAnArtisanScreen = () => {
                 />
                 <br />
                 <br />
-                <label htmlFor="profilePicture">Profile Picture</label>
+                <label htmlFor="profilePicture" style={{color: "#b8c1ec"}}>Profile Picture</label>
                 <input
                   type="file"
                   className="form-control-file"
@@ -204,7 +204,7 @@ const BecomeAnArtisanScreen = () => {
                 />
                 <br />
                 <br />
-                <label htmlFor="profilePicture">Demo art work for verification</label>
+                <label htmlFor="profilePicture" style={{color: "#b8c1ec"}}>Demo art work for verification</label>
                 <input
                   type="file"
                   className="form-control-file"
@@ -215,7 +215,7 @@ const BecomeAnArtisanScreen = () => {
                 />
                 <br />
                 <br />
-                <label>
+                <label style={{color: "#b8c1ec"}}>
                   <input
                     type="checkbox"
                     name="agreeToTerms"

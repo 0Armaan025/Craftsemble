@@ -7,8 +7,8 @@
 
   .badgesContainer {
     padding: 10px;
-    border-radius: 20px;
-    border: 0.6px solid black;
+    border-radius: 6px;
+    border: 0.6px solid #fffffe;
   }
   .badgesContainer img {
     transition: 0.2s ease-in-out;
@@ -33,6 +33,7 @@
   }
   .infoLabel {
     margin: 10px;
+    color: #b8c1ec;
     font-size: 20px;
   }
 
@@ -72,8 +73,12 @@
     font-size: 16px;
   }
 
+  .infoValue {
+    color: #ffffff;
+  }
+
   .starsContainer {
     padding: 10px;
-    border-radius: 20px;
-    border: 0.6px solid black;
+    border-radius: 6px;
+    border: 0.6px solid #fffffe;
   }

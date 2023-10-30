@@ -1,3 +1,5 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -46,7 +48,7 @@
     
     margin-bottom: 10px;
     font-family: 'Lexend', sans-serif;
-    -webkit-text-stroke: 1px black;
+    
     font-weight: bold;
 }
 
@@ -59,7 +61,7 @@ p {
     font-size: 13px;
     color: white;
     color: white;
-    font-family: monospace;
+    font-family: 'Poppins', sans-serif;
     margin-right: 10px;
     margin-bottom: 10px;
     max-width: 300px; /* Limit the width for responsiveness */
