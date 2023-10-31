@@ -1,0 +1,1007 @@
+{
+  "version": "6.0",
+  "nxVersion": "17.0.2",
+  "deps": {
+    "@swc/helpers": "~0.5.2",
+    "@teamhanko/hanko-elements": "^0.9.0",
+    "@testing-library/react": "14.0.0",
+    "@testing-library/user-event": "^13.5.0",
+    "bootstrap": "^5.3.2",
+    "chart.js": "^4.4.0",
+    "firebase": "^10.5.0",
+    "fusioncharts": "^3.21.1",
+    "gapi-client": "^0.0.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-fusioncharts": "^4.0.0",
+    "react-router-dom": "^6.16.0",
+    "react-scripts": "5.0.1",
+    "styled-components": "^6.0.9",
+    "@nx/eslint": "17.0.2",
+    "@nx/eslint-plugin": "17.0.2",
+    "@nx/js": "17.0.2",
+    "@nx/react": "17.0.2",
+    "@nx/vite": "17.0.2",
+    "@nx/workspace": "17.0.2",
+    "@swc-node/register": "~1.6.7",
+    "@swc/cli": "~0.1.62",
+    "@swc/core": "~1.3.85",
+    "@testing-library/jest-dom": "^6.1.4",
+    "@types/node": "18.14.2",
+    "@types/react": "18.2.24",
+    "@types/react-dom": "18.2.9",
+    "@typescript-eslint/eslint-plugin": "^5.60.1",
+    "@typescript-eslint/parser": "^5.60.1",
+    "@vitejs/plugin-react": "~4.0.0",
+    "@vitest/coverage-c8": "~0.32.0",
+    "@vitest/ui": "~0.32.0",
+    "eslint": "~8.46.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-jsx-a11y": "6.7.1",
+    "eslint-plugin-react": "7.32.2",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "jest-watch-typeahead": "^2.2.2",
+    "jsdom": "~22.1.0",
+    "nx": "17.0.2",
+    "prettier": "^2.6.2",
+    "typescript": "~5.1.3",
+    "vite": "~4.3.9",
+    "vitest": "^0.32.4",
+    "web-vitals": "^3.5.0"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "nonProjectFiles": [],
+    "projectFileMap": {
+      "hank-project-1": [
+        {
+          "file": ".editorconfig",
+          "hash": "5443105041930014821"
+        },
+        {
+          "file": ".env",
+          "hash": "11238801776333041167"
+        },
+        {
+          "file": ".eslintignore",
+          "hash": "7663861978715868291"
+        },
+        {
+          "file": ".eslintrc.json",
+          "hash": "17866138117546000433"
+        },
+        {
+          "file": ".gitignore",
+          "hash": "4977186076035109311"
+        },
+        {
+          "file": ".nx/cache/d/daemon.log",
+          "hash": "10298834195869464313"
+        },
+        {
+          "file": ".nx/cache/d/server-process.json",
+          "hash": "2776715919171605803"
+        },
+        {
+          "file": ".nx/cache/file-map.json",
+          "hash": "15423559349103631199"
+        },
+        {
+          "file": ".nx/cache/lockfile.hash",
+          "hash": "5415519494345295483"
+        },
+        {
+          "file": ".nx/cache/parsed-lock-file.json",
+          "hash": "13952664322568263751"
+        },
+        {
+          "file": ".nx/cache/project-graph.json",
+          "hash": "17213596023142084832"
+        },
+        {
+          "file": ".prettierignore",
+          "hash": "16448050467312557263"
+        },
+        {
+          "file": ".prettierrc",
+          "hash": "16267754514737964994"
+        },
+        {
+          "file": ".vscode/extensions.json",
+          "hash": "16884713733442577066"
+        },
+        {
+          "file": "README.md",
+          "hash": "5538422376335954584"
+        },
+        {
+          "file": "index.html",
+          "hash": "16389034498860080428"
+        },
+        {
+          "file": "nx.json",
+          "hash": "6721597195841589882"
+        },
+        {
+          "file": "package-lock.json",
+          "hash": "2192798744328191430"
+        },
+        {
+          "file": "package.json",
+          "hash": "4512418374084901260",
+          "deps": [
+            "npm:@swc/helpers",
+            "npm:@teamhanko/hanko-elements",
+            "npm:@testing-library/react",
+            "npm:@testing-library/user-event",
+            "npm:bootstrap",
+            "npm:chart.js",
+            "npm:firebase",
+            "npm:fusioncharts",
+            "npm:gapi-client",
+            "npm:react",
+            "npm:react-dom",
+            "npm:react-fusioncharts",
+            "npm:react-router-dom",
+            "npm:react-scripts",
+            "npm:styled-components",
+            "npm:@nx/eslint",
+            "npm:@nx/eslint-plugin",
+            "npm:@nx/js",
+            "npm:@nx/react",
+            "npm:@nx/vite",
+            "npm:@nx/workspace",
+            "npm:@swc-node/register",
+            "npm:@swc/cli",
+            "npm:@swc/core",
+            "npm:@testing-library/jest-dom",
+            "npm:@types/node",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:@typescript-eslint/eslint-plugin",
+            "npm:@typescript-eslint/parser",
+            "npm:@vitejs/plugin-react",
+            "npm:@vitest/coverage-c8",
+            "npm:@vitest/ui",
+            "npm:eslint",
+            "npm:eslint-config-prettier",
+            "npm:eslint-config-react-app",
+            "npm:eslint-plugin-import",
+            "npm:eslint-plugin-jsx-a11y",
+            "npm:eslint-plugin-react",
+            "npm:eslint-plugin-react-hooks",
+            "npm:jest-watch-typeahead",
+            "npm:jsdom",
+            "npm:nx",
+            "npm:prettier",
+            "npm:typescript",
+            "npm:vite",
+            "npm:vitest",
+            "npm:web-vitals"
+          ]
+        },
+        {
+          "file": "project.json",
+          "hash": "172303585424872100"
+        },
+        {
+          "file": "public/favicon.ico",
+          "hash": "3442848308499469540"
+        },
+        {
+          "file": "public/index.html",
+          "hash": "7090217074935719491"
+        },
+        {
+          "file": "public/logo192.png",
+          "hash": "7585273181698778288"
+        },
+        {
+          "file": "public/logo512.png",
+          "hash": "9339365414554387981"
+        },
+        {
+          "file": "public/manifest.json",
+          "hash": "18148235521095288643"
+        },
+        {
+          "file": "public/robots.txt",
+          "hash": "13952162886219042623"
+        },
+        {
+          "file": "src/App.jsx",
+          "hash": "15920297916575095374",
+          "deps": [
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "src/App.test.jsx",
+          "hash": "3770917940002253103",
+          "deps": [
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "src/assets/badge.png",
+          "hash": "9415686545426743099"
+        },
+        {
+          "file": "src/assets/badge2.png",
+          "hash": "14380903755138197964"
+        },
+        {
+          "file": "src/assets/badge3.png",
+          "hash": "17793603337540003768"
+        },
+        {
+          "file": "src/assets/collab_badge.png",
+          "hash": "17089382661223957273"
+        },
+        {
+          "file": "src/assets/logo.png",
+          "hash": "15914645904811009595"
+        },
+        {
+          "file": "src/colors.txt",
+          "hash": "15935427805228037132"
+        },
+        {
+          "file": "src/components/HankoAuth.jsx",
+          "hash": "4765822446880487136",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "npm:@teamhanko/hanko-elements"
+          ]
+        },
+        {
+          "file": "src/components/hall_of_fame/HallOfFame.jsx",
+          "hash": "4905716794526658394",
+          "deps": [
+            "npm:react",
+            "npm:firebase"
+          ]
+        },
+        {
+          "file": "src/components/hall_of_fame/halloffame.css",
+          "hash": "9099341128324865985"
+        },
+        {
+          "file": "src/components/hankoauth.css",
+          "hash": "10555927818150613489"
+        },
+        {
+          "file": "src/firebase_setup/firebase.js",
+          "hash": "9351085430056513746",
+          "deps": [
+            "npm:@firebase/firestore",
+            "npm:firebase"
+          ]
+        },
+        {
+          "file": "src/index.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/index.jsx",
+          "hash": "10217865842642097637",
+          "deps": [
+            "npm:react",
+            "npm:react-dom",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "src/notes.txt",
+          "hash": "12278556507409398535"
+        },
+        {
+          "file": "src/reportWebVitals.js",
+          "hash": "17211204261118952438",
+          "deps": [
+            [
+              "npm:web-vitals",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": "src/screens/become_an_artisan_screen/BecomeAnArtisanScreen.jsx",
+          "hash": "8440479919390470593",
+          "deps": [
+            "npm:react",
+            "npm:firebase",
+            "npm:@teamhanko/hanko-elements",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "src/screens/become_an_artisan_screen/becomeanartisanscreen.css",
+          "hash": "11573498912253744049"
+        },
+        {
+          "file": "src/screens/blogs_screen/AddBlog.jsx",
+          "hash": "14639919784549401424",
+          "deps": [
+            "npm:react",
+            "npm:firebase",
+            "npm:react-router-dom",
+            "npm:@teamhanko/hanko-elements"
+          ]
+        },
+        {
+          "file": "src/screens/blogs_screen/BlogCard.css",
+          "hash": "11000872523841553603"
+        },
+        {
+          "file": "src/screens/blogs_screen/BlogCard.jsx",
+          "hash": "1134721627243225953",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "src/screens/blogs_screen/BlogList.jsx",
+          "hash": "16177827481091385012",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "src/screens/blogs_screen/Blogs.jsx",
+          "hash": "12837100558092632821",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "npm:firebase"
+          ]
+        },
+        {
+          "file": "src/screens/blogs_screen/FullBlog.jsx",
+          "hash": "13587671083634563116",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "npm:firebase"
+          ]
+        },
+        {
+          "file": "src/screens/blogs_screen/addblog.css",
+          "hash": "12725704806320079924"
+        },
+        {
+          "file": "src/screens/blogs_screen/blogs.css",
+          "hash": "14518115462180765860"
+        },
+        {
+          "file": "src/screens/blogs_screen/fullblog.css",
+          "hash": "4414210920051964071"
+        },
+        {
+          "file": "src/screens/communities/Communities.jsx",
+          "hash": "768301890585884670",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "npm:firebase"
+          ]
+        },
+        {
+          "file": "src/screens/communities/communities.css",
+          "hash": "13798882534927415641"
+        },
+        {
+          "file": "src/screens/communities/community_card/CommunityCard.jsx",
+          "hash": "2768062445855954160",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "src/screens/communities/community_card/communitycard.css",
+          "hash": "17795830544788426140"
+        },
+        {
+          "file": "src/screens/communities/my_communites_screen/MyCommunitiesScreen.jsx",
+          "hash": "15507446426468922658",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "src/screens/components/contactform/ContactForm.jsx",
+          "hash": "8403874310424129165",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "src/screens/components/contactform/contactform.css",
+          "hash": "7739219322631926696"
+        },
+        {
+          "file": "src/screens/components/faq/Faq.jsx",
+          "hash": "17890691930975266309",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "src/screens/components/faq/faq.css",
+          "hash": "5349818200235352680"
+        },
+        {
+          "file": "src/screens/components/features/Features.jsx",
+          "hash": "18264503621730839398",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "src/screens/components/features/featurecards/FeatureCard.jsx",
+          "hash": "9384362645194162168",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "src/screens/components/features/featurecards/featurecard.css",
+          "hash": "17060079473952883437"
+        },
+        {
+          "file": "src/screens/components/features/features.css",
+          "hash": "2792914397052792637"
+        },
+        {
+          "file": "src/screens/components/footer/Footer.jsx",
+          "hash": "3030197628369311774",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "src/screens/components/footer/footer.css",
+          "hash": "16639431287613138469"
+        },
+        {
+          "file": "src/screens/components/middlepart/BlogsButton.jsx",
+          "hash": "8672092862203823977",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "src/screens/components/middlepart/ContinueButton.jsx",
+          "hash": "17458797581692488844",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "src/screens/components/middlepart/MiddlePart.jsx",
+          "hash": "556328166672195956",
+          "deps": [
+            "npm:react",
+            "npm:firebase",
+            "npm:@teamhanko/hanko-elements",
+            "npm:@firebase/firestore"
+          ]
+        },
+        {
+          "file": "src/screens/components/middlepart/blogsbutton.css",
+          "hash": "13627020484972865765"
+        },
+        {
+          "file": "src/screens/components/middlepart/continuebutton.css",
+          "hash": "2333642693197480942"
+        },
+        {
+          "file": "src/screens/components/middlepart/middlepart.css",
+          "hash": "18113481951246882258"
+        },
+        {
+          "file": "src/screens/components/navbar/Navbar.jsx",
+          "hash": "4514086768033446328",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "npm:@teamhanko/hanko-elements",
+            "npm:firebase"
+          ]
+        },
+        {
+          "file": "src/screens/components/navbar/navbar.css",
+          "hash": "257994565568375014"
+        },
+        {
+          "file": "src/screens/dashboard_screen/DashboardScreen.jsx",
+          "hash": "2821484582319365650",
+          "deps": [
+            "npm:react",
+            "npm:chart.js",
+            "npm:react-router-dom",
+            "npm:@teamhanko/hanko-elements",
+            "npm:firebase"
+          ]
+        },
+        {
+          "file": "src/screens/dashboard_screen/dashboardscreen.css",
+          "hash": "3561915861465150167"
+        },
+        {
+          "file": "src/screens/error_page/ErrorPage.jsx",
+          "hash": "14505365213185699039",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "src/screens/error_page/errorpage.css",
+          "hash": "2699091607058426546"
+        },
+        {
+          "file": "src/screens/exhibition_screen/ExhibitionCard.jsx",
+          "hash": "7743531751751361738",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "src/screens/exhibition_screen/ExhibitionCardDetailsScreen.jsx",
+          "hash": "2113913883191781021",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "npm:firebase",
+            "npm:@teamhanko/hanko-elements"
+          ]
+        },
+        {
+          "file": "src/screens/exhibition_screen/ExhibitionScreen.jsx",
+          "hash": "12506529660778226887",
+          "deps": [
+            "npm:react",
+            "npm:firebase"
+          ]
+        },
+        {
+          "file": "src/screens/exhibition_screen/exhibitioncard.css",
+          "hash": "16326147533082000485"
+        },
+        {
+          "file": "src/screens/exhibition_screen/exhibitioncarddetailsscreen.css",
+          "hash": "13426647670765961526"
+        },
+        {
+          "file": "src/screens/exhibition_screen/exhibitionscreen.css",
+          "hash": "2480199719347453869"
+        },
+        {
+          "file": "src/screens/hanko_auth_screen/HankoAuthScreen.jsx",
+          "hash": "3203165443055212830",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "src/screens/home_screen/HomeScreen.jsx",
+          "hash": "14045286216689762798",
+          "deps": [
+            "npm:react",
+            "npm:@teamhanko/hanko-elements",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "src/screens/home_screen/homescreen.css",
+          "hash": "4704976173212078215"
+        },
+        {
+          "file": "src/screens/list_a_community_screen/ListACommunityScreen.jsx",
+          "hash": "13530871682256611977",
+          "deps": [
+            "npm:react",
+            "npm:firebase",
+            "npm:@teamhanko/hanko-elements"
+          ]
+        },
+        {
+          "file": "src/screens/list_a_community_screen/listascommunityscreen.css",
+          "hash": "9928859485584850761"
+        },
+        {
+          "file": "src/screens/messages_screen/Message.jsx",
+          "hash": "3972701672168405301",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "src/screens/messages_screen/MessageSendingScreen.jsx",
+          "hash": "9046675730955262285",
+          "deps": [
+            "npm:react",
+            "npm:@teamhanko/hanko-elements",
+            "npm:react-router-dom",
+            "npm:firebase"
+          ]
+        },
+        {
+          "file": "src/screens/messages_screen/MessagesScreen.jsx",
+          "hash": "12249542142478090447",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "npm:@teamhanko/hanko-elements",
+            "npm:firebase"
+          ]
+        },
+        {
+          "file": "src/screens/messages_screen/message.css",
+          "hash": "12612864434293145537"
+        },
+        {
+          "file": "src/screens/messages_screen/messagesendingscreen.css",
+          "hash": "15844925571898019882"
+        },
+        {
+          "file": "src/screens/messages_screen/messagesscreen.css",
+          "hash": "7392893523382277452"
+        },
+        {
+          "file": "src/screens/profile_screen/ProfileScreen.jsx",
+          "hash": "10312172859127558207",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "npm:@teamhanko/hanko-elements",
+            "npm:firebase"
+          ]
+        },
+        {
+          "file": "src/screens/profile_screen/profilescreen.css",
+          "hash": "3029633181196564320"
+        },
+        {
+          "file": "src/screens/upload_craft_screen/UploadCraftScreen.jsx",
+          "hash": "995820766131517385",
+          "deps": [
+            "npm:react",
+            "npm:firebase"
+          ]
+        },
+        {
+          "file": "src/screens/upload_craft_screen/uploadcraftscreen.css",
+          "hash": "5835145551474060627"
+        },
+        {
+          "file": "src/screens/virtual_drawing_screen/VirtualDrawingScreen.jsx",
+          "hash": "2299156682040062814",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "src/screens/virtual_drawing_screen/virtualdrawingscreen.css",
+          "hash": "8311434137135906832"
+        },
+        {
+          "file": "src/screens/workshop_creation_screen/WorkshopCreationScreen.jsx",
+          "hash": "17228207265563084839",
+          "deps": [
+            "npm:react",
+            "npm:firebase"
+          ]
+        },
+        {
+          "file": "src/screens/workshop_creation_screen/workshopcreationscreen.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/screens/workshops_registration_screen/WorkshopsRegistrationScreen.jsx",
+          "hash": "3079835362265195250",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "npm:@teamhanko/hanko-elements",
+            "npm:firebase"
+          ]
+        },
+        {
+          "file": "src/screens/workshops_registration_screen/workshopsregistrationscreen.css",
+          "hash": "7779860551124029401"
+        },
+        {
+          "file": "src/screens/workshops_screen/WorkshopsScreen.jsx",
+          "hash": "12132111654319618626",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "npm:firebase"
+          ]
+        },
+        {
+          "file": "src/screens/workshops_screen/workshopsscreen.css",
+          "hash": "4283329941555327051"
+        },
+        {
+          "file": "src/setupTests.js",
+          "hash": "56515321623462775",
+          "deps": [
+            "npm:@testing-library/jest-dom"
+          ]
+        },
+        {
+          "file": "src/userUtils.jsx",
+          "hash": "5970370738302453687",
+          "deps": [
+            "npm:@teamhanko/hanko-elements",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "tsconfig.app.json",
+          "hash": "4244282265515480311"
+        },
+        {
+          "file": "tsconfig.base.json",
+          "hash": "16936441711144470533"
+        },
+        {
+          "file": "tsconfig.json",
+          "hash": "13784476790413232891"
+        },
+        {
+          "file": "tsconfig.spec.json",
+          "hash": "7166742611052085134"
+        },
+        {
+          "file": "vite.config.js",
+          "hash": "6271929408058337001",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react"
+          ]
+        },
+        {
+          "file": ".nx/cache/cloud/2310.19.6.hotfix2/index.js",
+          "hash": "11105368040345262562",
+          "deps": [
+            "npm:os",
+            "npm:assert",
+            "npm:buffer",
+            "npm:zlib",
+            "npm:events",
+            "npm:fs",
+            "npm:path",
+            [
+              "npm:fs",
+              "dynamic"
+            ],
+            [
+              "npm:path",
+              "dynamic"
+            ],
+            [
+              "npm:os",
+              "dynamic"
+            ],
+            [
+              "npm:child_process",
+              "dynamic"
+            ],
+            [
+              "npm:crypto",
+              "dynamic"
+            ],
+            [
+              "npm:tty",
+              "dynamic"
+            ],
+            [
+              "npm:util",
+              "dynamic"
+            ],
+            [
+              "npm:url",
+              "dynamic"
+            ],
+            [
+              "npm:http",
+              "dynamic"
+            ],
+            [
+              "npm:https",
+              "dynamic"
+            ],
+            [
+              "npm:stream",
+              "dynamic"
+            ],
+            [
+              "npm:assert",
+              "dynamic"
+            ],
+            [
+              "npm:zlib",
+              "dynamic"
+            ],
+            [
+              "npm:perf_hooks",
+              "dynamic"
+            ],
+            [
+              "npm:events",
+              "dynamic"
+            ],
+            [
+              "npm:string_decoder",
+              "dynamic"
+            ],
+            [
+              "npm:constants",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": ".nx/cache/cloud/2310.19.6.hotfix2/lib/daemon/process-run-end.js",
+          "hash": "17993887837223109277",
+          "deps": [
+            "npm:path",
+            "npm:os",
+            "npm:assert",
+            "npm:buffer",
+            "npm:zlib",
+            "npm:events",
+            "npm:fs",
+            [
+              "npm:fs",
+              "dynamic"
+            ],
+            [
+              "npm:path",
+              "dynamic"
+            ],
+            [
+              "npm:os",
+              "dynamic"
+            ],
+            [
+              "npm:child_process",
+              "dynamic"
+            ],
+            [
+              "npm:crypto",
+              "dynamic"
+            ],
+            [
+              "npm:tty",
+              "dynamic"
+            ],
+            [
+              "npm:util",
+              "dynamic"
+            ],
+            [
+              "npm:url",
+              "dynamic"
+            ],
+            [
+              "npm:http",
+              "dynamic"
+            ],
+            [
+              "npm:https",
+              "dynamic"
+            ],
+            [
+              "npm:stream",
+              "dynamic"
+            ],
+            [
+              "npm:assert",
+              "dynamic"
+            ],
+            [
+              "npm:zlib",
+              "dynamic"
+            ],
+            [
+              "npm:perf_hooks",
+              "dynamic"
+            ],
+            [
+              "npm:events",
+              "dynamic"
+            ],
+            [
+              "npm:string_decoder",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": ".nx/cache/cloud/2310.19.6.hotfix2/lib/heartbeat/heartbeat-process.js",
+          "hash": "8101618490335397045",
+          "deps": [
+            "npm:os",
+            "npm:fs",
+            "npm:path",
+            [
+              "npm:fs",
+              "dynamic"
+            ],
+            [
+              "npm:path",
+              "dynamic"
+            ],
+            [
+              "npm:os",
+              "dynamic"
+            ],
+            [
+              "npm:child_process",
+              "dynamic"
+            ],
+            [
+              "npm:crypto",
+              "dynamic"
+            ],
+            [
+              "npm:tty",
+              "dynamic"
+            ],
+            [
+              "npm:util",
+              "dynamic"
+            ],
+            [
+              "npm:url",
+              "dynamic"
+            ],
+            [
+              "npm:http",
+              "dynamic"
+            ],
+            [
+              "npm:https",
+              "dynamic"
+            ],
+            [
+              "npm:stream",
+              "dynamic"
+            ],
+            [
+              "npm:assert",
+              "dynamic"
+            ],
+            [
+              "npm:zlib",
+              "dynamic"
+            ],
+            [
+              "npm:perf_hooks",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": ".nx/cache/cloud/verify.lock",
+          "hash": "14502006516672961249"
+        }
+      ]
+    }
+  }
+}
