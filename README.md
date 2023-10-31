@@ -2,11 +2,13 @@
 
 ## "Empowering Artisans: Craftsemble Unleashes Creativity"
 
+![image (5)](https://github.com/0Armaan025/Craftsemble/assets/104704093/c3a8ff34-2260-441b-97dd-0923afcf6bfd)
+
 ## Hey all, if you are reading this, you are amazing! ⭐
 ## **Craftsemble** is a project made for the Hanko Hackathon using [Hanko](https://hanko.io) providing an amazing authentication service.
 ## This is not really a project, but an AIM, a mission!
 ## Artisans/Craftsmen usually don't get the respect they truly deserve, and I thought to get on a journey to prepare a solution, Hanko provided with an amazing opportunity, [The Hanko Hackathon](https://hanko.io/hackathon).
-## The project is made in **ReactJS, HTML, CSS, JS, and firebase has been used**.
+## The project is made in **ReactJS, HTML, CSS, JS, and Firebase have been used**.
 ## It includes some basic features that serve a mission like:
 - Blogs
 - Exhibition
