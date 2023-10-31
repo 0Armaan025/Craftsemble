@@ -49,7 +49,7 @@ const ProfileScreen = () => {
 
     useEffect(() => {
         // Use Hanko to get the user ID
-        const hankoApi = process.env.REACT_APP_HANKO_API_URL;
+        const hankoApi = "https://6a2c061a-8cdd-4297-af87-11afe6acdd0a.hanko.io";
         const hanko = new Hanko(hankoApi);
 
         const fetchData = async () => {
@@ -89,7 +89,7 @@ const ProfileScreen = () => {
 
     const handleUpdateProfile = async () => {
         // Use Hanko to get the user ID
-        const hankoApi = process.env.REACT_APP_HANKO_API_URL;
+        const hankoApi = "https://6a2c061a-8cdd-4297-af87-11afe6acdd0a.hanko.io";
         const hanko = new Hanko(hankoApi);
         const currentUser = hanko.user.getCurrent();
         const { id } = await currentUser;
