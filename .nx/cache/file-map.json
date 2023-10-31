@@ -79,7 +79,7 @@
         },
         {
           "file": ".nx/cache/d/daemon.log",
-          "hash": "10298834195869464313"
+          "hash": "6395587794202394305"
         },
         {
           "file": ".nx/cache/d/server-process.json",
@@ -87,7 +87,7 @@
         },
         {
           "file": ".nx/cache/file-map.json",
-          "hash": "15423559349103631199"
+          "hash": "14824656161484601913"
         },
         {
           "file": ".nx/cache/lockfile.hash",
@@ -1000,6 +1000,14 @@
         {
           "file": ".nx/cache/cloud/verify.lock",
           "hash": "14502006516672961249"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~08c95826",
+          "hash": "17213596023142084832"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~0d021978",
+          "hash": "17213596023142084832"
         }
       ]
     }
