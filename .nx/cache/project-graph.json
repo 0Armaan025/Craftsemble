@@ -15155,6 +15155,26 @@
     "hank-project-1": [
       {
         "source": "hank-project-1",
+        "target": "npm:buffer",
+        "type": "static"
+      },
+      {
+        "source": "hank-project-1",
+        "target": "npm:events",
+        "type": "static"
+      },
+      {
+        "source": "hank-project-1",
+        "target": "npm:events",
+        "type": "dynamic"
+      },
+      {
+        "source": "hank-project-1",
+        "target": "npm:string_decoder",
+        "type": "dynamic"
+      },
+      {
+        "source": "hank-project-1",
         "target": "npm:@swc/helpers",
         "type": "static"
       },
@@ -15402,26 +15422,6 @@
         "source": "hank-project-1",
         "target": "npm:@firebase/firestore",
         "type": "static"
-      },
-      {
-        "source": "hank-project-1",
-        "target": "npm:buffer",
-        "type": "static"
-      },
-      {
-        "source": "hank-project-1",
-        "target": "npm:events",
-        "type": "static"
-      },
-      {
-        "source": "hank-project-1",
-        "target": "npm:events",
-        "type": "dynamic"
-      },
-      {
-        "source": "hank-project-1",
-        "target": "npm:string_decoder",
-        "type": "dynamic"
       }
     ],
     "npm:@ampproject/remapping": [

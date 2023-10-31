@@ -1,6 +1,8 @@
 {
   "name": "hank-project-1",
   "version": "0.1.0",
+  "type": "module",
+  "files": ["dist"],
   "private": true,
   "dependencies": {
     "@swc/helpers": "~0.5.2",

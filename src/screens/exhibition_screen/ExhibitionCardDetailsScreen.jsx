@@ -92,7 +92,7 @@ const ExhibitionCardDetailsScreen = () => {
         <img src={exhibitionDetails.imageUrl} alt="Craft Image" className='craftImage' />
       </div>
       <div className="details">
-        <h2>{exhibitionDetails.artistName}'s Craft</h2>
+        <h2>{exhibitionDetails.name}'s Craft</h2>
         <p style={{fontSize: "16px"}}>Uploaded on {projectId}</p>
         
         {exhibitionDetails.isCollaborator && (

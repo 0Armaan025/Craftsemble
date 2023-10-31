@@ -1,8 +1,8 @@
 {
   "run": {
     "command": "nx run hank-project-1:\"build\"",
-    "startTime": "2023-10-31T11:25:41.912Z",
-    "endTime": "2023-10-31T11:26:01.622Z",
+    "startTime": "2023-10-31T11:48:13.718Z",
+    "endTime": "2023-10-31T11:48:29.603Z",
     "inner": false
   },
   "tasks": [
@@ -10,9 +10,9 @@
       "taskId": "hank-project-1:build",
       "target": "build",
       "projectName": "hank-project-1",
-      "hash": "12877997447873764836",
-      "startTime": "2023-10-31T11:25:41.935Z",
-      "endTime": "2023-10-31T11:26:01.620Z",
+      "hash": "2749936407966457670",
+      "startTime": "2023-10-31T11:48:13.744Z",
+      "endTime": "2023-10-31T11:48:29.601Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0

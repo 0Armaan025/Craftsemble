@@ -122,20 +122,20 @@ const WorkshopRegistrationScreen = () => {
               ) : (
                 <form>
                   <br />
-                  <label htmlFor="name" style={{ fontSize: "22px" }}>Name:</label>
+                  <label htmlFor="name" style={{ fontSize: "22px" , color: 'white'}}>Name:</label>
                   <input type="text" id="name" name="name" required style={{ width: "500px" }} onChange={(e) => setFormData({ ...formData, name: e.target.value })} />
 
-                  <label htmlFor="email" style={{ fontSize: "22px" }}>Email:</label>
+                  <label htmlFor="email" style={{ fontSize: "22px", color: 'white' }}>Email:</label>
                   <input type="email" id="email" name="email" required style={{ width: "500px" }} onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
 
                   <div>
                     <input type="checkbox" id="guardiansPermission" name="guardiansPermission" onChange={(e) => setFormData({ ...formData, guardiansPermission: e.target.checked })} />
-                    <label htmlFor="guardiansPermission" style={{ fontSize: "22px" }}>I have my guardian's permission (if under 16)</label>
+                    <label htmlFor="guardiansPermission" style={{ fontSize: "22px", color: "white" }}>I have my guardian's permission (if under 16)</label>
                   </div>
 
                   <div>
                     <input type="checkbox" id="artisan" name="artisan" style={{ width: "100px" }} onChange={(e) => setFormData({ ...formData, artisan: e.target.checked })} />
-                    <label htmlFor="artisan" style={{ fontSize: "22px" }}>I am an artisan</label>
+                    <label htmlFor="artisan" style={{ fontSize: "22px" , color: "white"}}>I am an artisan</label>
                   </div>
 
                   <input type="button" className='submitBtn' value='Submit' onClick={handleFormSubmit} />
