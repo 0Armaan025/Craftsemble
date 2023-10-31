@@ -36,6 +36,9 @@ I'm glad, you asked.
 # CONTRIBUTING
 After Nov 4 ( the end of the hackathon ), everyone is free to contribute and I have future plans to resume this project.
 
+For reviews/bugs/feedback/talks, you can join the community server as well!
+[Discord link here](https://discord.gg/7xc4yVFjaP).
+
 # ADDITIONAL INFO
 
 Since I'm a student, I was unable to have proper time to develop this, I had to be awake till midnight, or sometimes even 5 am in the morning, all that with managing studies and festivals.
