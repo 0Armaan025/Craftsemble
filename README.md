@@ -1,5 +1,7 @@
 # CRAFTSEMBLE
 
+![craftsemble-2](https://github.com/0Armaan025/Craftsemble/assets/104704093/e09a0ade-9986-4d0a-9a7d-e49d7bbd5965)
+
 ## "Empowering Artisans: Craftsemble Unleashes Creativity"
 
 ![image (5)](https://github.com/0Armaan025/Craftsemble/assets/104704093/c3a8ff34-2260-441b-97dd-0923afcf6bfd)
