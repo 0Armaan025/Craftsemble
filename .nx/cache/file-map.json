@@ -79,7 +79,7 @@
         },
         {
           "file": ".nx/cache/d/daemon.log",
-          "hash": "6395587794202394305"
+          "hash": "6559522470865295750"
         },
         {
           "file": ".nx/cache/d/server-process.json",
@@ -87,7 +87,7 @@
         },
         {
           "file": ".nx/cache/file-map.json",
-          "hash": "14824656161484601913"
+          "hash": "9017306249417858759"
         },
         {
           "file": ".nx/cache/lockfile.hash",
@@ -119,7 +119,7 @@
         },
         {
           "file": "index.html",
-          "hash": "16389034498860080428"
+          "hash": "1175173834714499583"
         },
         {
           "file": "nx.json",
@@ -285,15 +285,6 @@
         {
           "file": "src/index.css",
           "hash": "3244421341483603138"
-        },
-        {
-          "file": "src/index.jsx",
-          "hash": "10217865842642097637",
-          "deps": [
-            "npm:react",
-            "npm:react-dom",
-            "npm:react-router-dom"
-          ]
         },
         {
           "file": "src/notes.txt",
@@ -1008,6 +999,1443 @@
         {
           "file": ".nx/cache/project-graph.json~0d021978",
           "hash": "17213596023142084832"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~a192f997",
+          "hash": "17213596023142084832"
+        },
+        {
+          "file": ".nx/cache/file-map.json~c583541a",
+          "hash": "9194557732520892848"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~1c8644f1",
+          "hash": "17213596023142084832"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~c39916fd",
+          "hash": "17213596023142084832"
+        },
+        {
+          "file": ".nx/cache/file-map.json~0691ab9d",
+          "hash": "17345060306776394694"
+        },
+        {
+          "file": ".nx/cache/file-map.json~0fa2a6f1",
+          "hash": "16472996181763161827"
+        },
+        {
+          "file": ".nx/cache/file-map.json~892b5299",
+          "hash": "17648221151504193764"
+        },
+        {
+          "file": ".nx/cache/file-map.json~ff6a4dcd",
+          "hash": "4443701166426773718"
+        },
+        {
+          "file": ".nx/cache/terminalOutputs/12877997447873764836",
+          "hash": "11775308622983618903"
+        },
+        {
+          "file": ".nx/cache/12877997447873764836/terminalOutput",
+          "hash": "11775308622983618903"
+        },
+        {
+          "file": ".nx/cache/12877997447873764836/outputs/public/logo512.png",
+          "hash": "9339365414554387981"
+        },
+        {
+          "file": ".nx/cache/12877997447873764836/outputs/public/favicon.ico",
+          "hash": "3442848308499469540"
+        },
+        {
+          "file": ".nx/cache/12877997447873764836/outputs/public/manifest.json",
+          "hash": "18148235521095288643"
+        },
+        {
+          "file": ".nx/cache/run.json",
+          "hash": "228926362942867125"
+        },
+        {
+          "file": ".nx/cache/12877997447873764836/outputs/public/logo192.png",
+          "hash": "7585273181698778288"
+        },
+        {
+          "file": ".nx/cache/12877997447873764836/outputs/public/index.html",
+          "hash": "7090217074935719491"
+        },
+        {
+          "file": ".nx/cache/12877997447873764836/outputs/public/robots.txt",
+          "hash": "13952162886219042623"
+        },
+        {
+          "file": ".nx/cache/12877997447873764836.commit",
+          "hash": "4664556114322093609"
+        },
+        {
+          "file": ".nx/cache/12877997447873764836/code",
+          "hash": "1838281907459330133"
+        },
+        {
+          "file": ".nx/cache/12877997447873764836.tar.gz",
+          "hash": "13872253136417497193"
+        },
+        {
+          "file": "src/index.jsx",
+          "hash": "10217865842642097637",
+          "deps": [
+            "npm:react",
+            "npm:react-dom",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": ".nx/cache/file-map.json~34633135",
+          "hash": "8048998582105177569"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~0291750f",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~98dc3e87",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~d9e5ccff",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~071de53a",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~aa6a0ade",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~f9db4523",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~c25df6bb",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~397a3ed5",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~1680d832",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~27e23ac8",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~36a2a3ec",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~557338ea",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~7d6a4c1f",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~89203da7",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~ca7cd7c8",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~a744b2a6",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~d28f3579",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~c5e35f11",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~871a8fd4",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~abdf85d2",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~7ec799c6",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~3b15549e",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~eed42f56",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~a6e1cbbf",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~4d270b4c",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~0c76fa89",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~05c89b2b",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~92c5d1a7",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~fa191d0e",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~31c8e048",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~671c80bc",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~08c42986",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~9a9dd9ea",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~c143e279",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~a6fe7bfa",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~4837505f",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~32c615b8",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~a80fada5",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~a4ddc87c",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~717014fb",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~27482de5",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~820fb9a8",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~85b3f241",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~6737acc1",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~07065ce4",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~28722589",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~5d0ffffd",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~8bc93cd2",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~73683db1",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~ad2849ee",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~13fd51eb",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~95736cda",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~3b12717b",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~43e012ad",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~b0625fbb",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~2e413c0d",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~58ee5356",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~d268213f",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~5ea3922a",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~13057df7",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~1eebd124",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~13f7c011",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~7df9920b",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~66e6b754",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~8038fbdc",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~67b799e8",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~40f3ed4e",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~5a3e88fa",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~ada6ed67",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~9907f01d",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~712e028b",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~129bdff5",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~c2543cde",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~bfbfe3b8",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~88da97ea",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~117468b7",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~a55995c8",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~c078fab3",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~5150b10c",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~501d4d93",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~da92e097",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~f2b971a9",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~fad28fc0",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~dc9c07f9",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~5e5f77ec",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~4d2a7693",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~682262f6",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~5a9a42e9",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~f9205fb8",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~1266f106",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~48e587b5",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~801a9ed6",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~d0f6986e",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~af6eaacf",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~31c7aa2a",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~f43b1917",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~20387fb6",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~caf73a1e",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~c141e53b",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~7cb5372c",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~6ef941c5",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~aa11ba9a",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~26500337",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~ea65ac5d",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~e1d3a710",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~0a21344c",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~cdaded07",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~a443aa41",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~4215476e",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~8944c5fe",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~7cc4376f",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~7c6e952f",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~8ea34960",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~3f8c5f9b",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~5ef0e3df",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~0447deca",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~0ff4bf7b",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~b62bc7d9",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~d76a48dd",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~d2c9b614",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~4e058097",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~3afa7bd0",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~4f69d7d2",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~9cb36400",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~43074df0",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~3ce04b17",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~f454b703",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~5a61ec4b",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~66b65400",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~ac0aa648",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~c60f5309",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~eebdb7a4",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~d2601184",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~0ec75795",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~1ea8c824",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~0243d4d0",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~ae44cac5",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~e8de9129",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~03200e79",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~d74f8d23",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~a2352e59",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~8b426751",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~d3dae99a",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~20ba4be9",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~ddcfeae1",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~9624e717",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~c031861e",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~6d3dde39",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~4456dc1f",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~135b0679",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~beb778d7",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~911f7086",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~0d311f54",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~f1e738b8",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~9540559d",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~56fdc968",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~942d6a18",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~a93a1550",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~e4a91fb3",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~dcc8df22",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~13f6a138",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~a99efd87",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~79cf70a6",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~f60b6f9c",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~0d530265",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~58876b1d",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~e4cad6bd",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~db7a732c",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~199c8698",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~7bebe257",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~8610f368",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~49a72a11",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~70f26195",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~59e4fa2a",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~3c05cd83",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~507d6af2",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~ac686719",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~4f067cf1",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~67de2cdc",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~6fff468e",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~cc44d746",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~f2b91186",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~9dabdebc",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~aeafbf20",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~fc1ce1db",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~347c3dcf",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~bf63e9bb",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~2fd0c2d9",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~0645da3b",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~405e04e7",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~c6c8a166",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~359f200f",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~b0c1546c",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~4c0018c2",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~b54d953b",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~9840e1dc",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~6ddd6f29",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~10f15dd9",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~0a1d7b23",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~9a8a6300",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~1b112c06",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~71d7cb2e",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~c8b13998",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~1fe3a7dc",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~a4a0225f",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~17bf3c8f",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~35be58b1",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~7adf6f33",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~79aea30f",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~4b2655f2",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~be668c34",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~11f99748",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~0bc458d7",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~ad58bb6e",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~0f8fc6fb",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~00d62da0",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~9d9b1325",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~7c4ce9e8",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~caf8c6bd",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~61ede035",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~8ea052bd",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~26c4cd15",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~6b463e7b",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~48af573e",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~43c81cb4",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~4f5966d9",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~913fef2d",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~aeebd2a8",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~42de2713",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~c8a3d063",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~7aeb029b",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~584680f5",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~c037eb31",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~19fd43b7",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~a828c2e3",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~9445e1f8",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~f4972839",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~80f80971",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~cc8db4f4",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~c1d5156b",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~1e85b6bf",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~ee9fe063",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~46d1f0d2",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~c15f8e62",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~62703605",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~6c2e26a5",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~3c2a3377",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~5c96ca4c",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~573f4cb2",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~9ea9d0bd",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~21312234",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~e17c9d2e",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~682299ca",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~13a258d8",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~4e52206b",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~e5808787",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~91459c75",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~4a257c7d",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~4dcf3b2d",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~90c8652e",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~aad261fc",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~c46d0232",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~42afa858",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~cf907a4f",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~6e10a770",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~9d9c8e21",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~9c869c97",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~4aacc231",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~bb8b150d",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~dd33d25f",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~d5f347c0",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~e8f9f6b7",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~503662a0",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~bbec33ab",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~d1f186b8",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~dd96466c",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~84ec66eb",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~1b63911a",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~ea08be8f",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~7c5f44e0",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~de72a083",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~cdc998cc",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~99e30043",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~7590925e",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~7f428f7c",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~17c51487",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~145ead52",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~1b96352b",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~4ecebaac",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~03c80c19",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~1b6c60e0",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~57d15235",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~5fccd68d",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~585d02a0",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~358f7d0a",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~e8bffbde",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~4b767ed1",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~3daf7cc1",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~258674a6",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~1629a796",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~40d3c834",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~153db2fe",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~4fb7d2af",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~1a2b069f",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~296e5d5d",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~2851e4e5",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~af8e053b",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~de0256b1",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~7c7e1316",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~035548e9",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~124dbc17",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~65c6198f",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~ce2cdc98",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~8490652b",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~6115ad53",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~06d26d02",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~96d18268",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~5d4e5ecf",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~ac0be5dc",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~966dc0bb",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~341db5c7",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~12d38233",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~c55ab53a",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~ce1bae0a",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~38a3885f",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~2b7bd04f",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~e5de0396",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~38c4403c",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~64035bab",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~540a4112",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~b33b9aa3",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~86f0a56d",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~81cf2568",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~aed91b3b",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~514ec49a",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".nx/cache/project-graph.json~b2fdb300",
+          "hash": "3244421341483603138"
         }
       ]
     }
