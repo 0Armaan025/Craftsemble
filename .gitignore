@@ -40,3 +40,7 @@ Thumbs.db
 
 .nx/cache"node_modules" 
 "dist" 
+.vercel
+
+# Local Netlify folder
+.netlify

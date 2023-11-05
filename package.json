@@ -25,7 +25,8 @@
     "dev": "vite",
     "start": "nx exec -- vite",
     "serve": "nx exec -- vite",
-    "build": "nx exec -- vite build",
+    "build": "vite build",
+    "preview": "vite preview --port 8080",
     "test": "nx exec -- vitest"
   },
   "eslintConfig": {
