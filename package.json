@@ -22,6 +22,7 @@
     "styled-components": "^6.0.9"
   },
   "scripts": {
+    "dev": "vite",
     "start": "nx exec -- vite",
     "serve": "nx exec -- vite",
     "build": "nx exec -- vite build",

@@ -1,0 +1,453 @@
+
+> hank-project-1@0.1.0 start
+> nx exec -- vite
+
+
+  [32m[1mVITE[22m v4.3.9[39m  [2mready in [0m[1m1753[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m4200[22m/[39m
+[2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh[22m[2m to show help[22m
+[2m6:13:30 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/workshop_creation_screen/WorkshopCreationScreen.jsx[22m
+[2m6:13:32 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/workshop_creation_screen/WorkshopCreationScreen.jsx[22m
+[2m6:13:44 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/workshops_registration_screen/WorkshopsRegistrationScreen.jsx[22m
+[2m6:13:44 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/workshops_registration_screen/WorkshopsRegistrationScreen.jsx[22m
+[2m6:13:45 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Paul\Desktop\Craftsemble\craftsemble\src\screens\workshops_registration_screen\WorkshopsRegistrationScreen.jsx: Unexpected token (138:80)
+
+[0m [90m 136 |[31m                   [33m<[31m[33mdiv[31m[33m>[31m[0m
+[0m [90m 137 |[31m                     [33m<[31m[33minput[31m type[33m=[31m[32m"checkbox"[31m id[33m=[31m[32m"artisan"[31m name[33m=[31m[32m"artisan"[31m style[33m=[31m{{ width[33m:[31m [32m"100px"[31m }} onChange[33m=[31m{(e) [33m=>[31m setFormData({ [33m...[31mformData[33m,[31m artisan[33m:[31m e[33m.[31mtarget[33m.[31mchecked })} [33m/[31m[33m>[31m[0m
+[0m[31m[1m>[22m[31m[90m 138 |[31m                     [33m<[31m[33mlabel[31m htmlFor[33m=[31m[32m"artisan"[31m style[33m=[31m{{ fontSize[33m:[31m [32m"22px"[31m [33m,[31m color[33m:[31m }}[33m>[31m[33mI[31m am an artisan[33m<[31m[33m/[31m[33mlabel[31m[33m>[31m[0m
+[0m [90m     |[31m                                                                                 [31m[1m^[22m[31m[0m
+[0m [90m 139 |[31m                   [33m<[31m[33m/[31m[33mdiv[31m[33m>[31m[0m
+[0m [90m 140 |[31m[0m
+[0m [90m 141 |[31m                   [33m<[31m[33minput[31m type[33m=[31m[32m"button"[31m className[33m=[31m[32m'submitBtn'[31m value[33m=[31m[32m'Submit'[31m onClick[33m=[31m{handleFormSubmit} [33m/[31m[33m>[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Paul/Desktop/Craftsemble/craftsemble/src/screens/workshops_registration_screen/WorkshopsRegistrationScreen.jsx[39m:138:80
+[33m  139|                    </div>
+  140|  
+  141|                    <input type="button" className='submitBtn' value='Submit' onClick={handleFormSubmit} />
+     |                                                                                      ^
+  142|                  </form>
+  143|                )}[39m
+      at constructor (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:356:19)
+      at JSXParserMixin.raise (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:3223:19)
+      at JSXParserMixin.unexpected (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:3253:16)
+      at JSXParserMixin.parseExprAtom (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:11262:16)
+      at JSXParserMixin.parseExprAtom (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6937:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10862:23)
+      at JSXParserMixin.parseUpdate (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10845:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10821:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10659:61)
+      at JSXParserMixin.parseExprOps (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10664:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10602:21)
+      at C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10572:39
+      at JSXParserMixin.allowInAnd (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:12289:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10572:17)
+      at JSXParserMixin.parseObjectProperty (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:11789:83)
+      at JSXParserMixin.parseObjPropValue (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:11816:100)
+      at JSXParserMixin.parsePropertyDefinition (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:11750:17)
+      at JSXParserMixin.parseObjectLike (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:11665:21)
+      at JSXParserMixin.parseExprAtom (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:11160:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6937:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10862:23)
+      at JSXParserMixin.parseUpdate (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10845:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10821:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10659:61)
+      at JSXParserMixin.parseExprOps (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10664:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10602:21)
+      at JSXParserMixin.parseExpressionBase (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10556:23)
+      at C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10552:39
+      at JSXParserMixin.allowInAnd (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:12289:12)
+      at JSXParserMixin.parseExpression (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10552:17)
+      at JSXParserMixin.jsxParseExpressionContainer (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6797:31)
+      at JSXParserMixin.jsxParseAttributeValue (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6765:21)
+      at JSXParserMixin.jsxParseAttribute (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6818:38)
+      at JSXParserMixin.jsxParseOpeningElementAfterName (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6832:28)
+      at JSXParserMixin.jsxParseOpeningElementAt (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6827:17)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6851:33)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6863:32)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6863:32)
+      at JSXParserMixin.jsxParseElement (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6920:17)
+      at JSXParserMixin.parseExprAtom (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6932:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10862:23)
+      at JSXParserMixin.parseUpdate (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10845:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10821:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10659:61)
+      at JSXParserMixin.parseExprOps (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10664:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10602:21)
+      at C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10572:39
+[2m6:13:45 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/workshops_registration_screen/WorkshopsRegistrationScreen.jsx[22m
+[2m6:13:45 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/workshops_registration_screen/WorkshopsRegistrationScreen.jsx[22m
+[2m6:13:45 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/workshops_registration_screen/WorkshopsRegistrationScreen.jsx[22m
+[2m6:13:46 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/workshops_registration_screen/WorkshopsRegistrationScreen.jsx[22m
+[2m6:13:57 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/workshops_registration_screen/WorkshopsRegistrationScreen.jsx[22m
+[2m6:13:57 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/workshops_registration_screen/WorkshopsRegistrationScreen.jsx[22m
+[2m6:13:57 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/workshops_registration_screen/WorkshopsRegistrationScreen.jsx[22m
+[2m6:13:58 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/workshops_registration_screen/WorkshopsRegistrationScreen.jsx[22m
+[2m6:13:58 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/workshops_registration_screen/WorkshopsRegistrationScreen.jsx[22m
+[2m6:13:58 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/workshops_registration_screen/WorkshopsRegistrationScreen.jsx[22m
+[2m6:14:03 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/workshops_registration_screen/WorkshopsRegistrationScreen.jsx[22m
+[2m6:14:03 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/workshops_registration_screen/WorkshopsRegistrationScreen.jsx[22m
+[2m6:14:04 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/workshops_registration_screen/WorkshopsRegistrationScreen.jsx[22m
+[2m6:14:04 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/workshops_registration_screen/WorkshopsRegistrationScreen.jsx[22m
+[2m6:14:05 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/workshops_registration_screen/WorkshopsRegistrationScreen.jsx[22m
+[2m6:14:05 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/workshops_registration_screen/WorkshopsRegistrationScreen.jsx[22m
+[2m6:14:06 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/workshops_registration_screen/WorkshopsRegistrationScreen.jsx[22m
+[2m6:14:07 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/workshops_registration_screen/WorkshopsRegistrationScreen.jsx[22m
+[2m6:14:07 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/workshops_registration_screen/WorkshopsRegistrationScreen.jsx[22m
+[2m6:14:07 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/workshops_registration_screen/WorkshopsRegistrationScreen.jsx[22m
+[2m6:14:08 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/workshops_registration_screen/WorkshopsRegistrationScreen.jsx[22m
+[2m6:14:09 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/workshops_registration_screen/WorkshopsRegistrationScreen.jsx[22m
+[2m6:14:11 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/workshops_registration_screen/WorkshopsRegistrationScreen.jsx[22m
+[2m6:14:11 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Paul\Desktop\Craftsemble\craftsemble\src\screens\workshops_registration_screen\WorkshopsRegistrationScreen.jsx: Unexpected token, expected "," (133:82)
+
+[0m [90m 131 |[31m                   [33m<[31m[33mdiv[31m[33m>[31m[0m
+[0m [90m 132 |[31m                     [33m<[31m[33minput[31m type[33m=[31m[32m"checkbox"[31m id[33m=[31m[32m"guardiansPermission"[31m name[33m=[31m[32m"guardiansPermission"[31m onChange[33m=[31m{(e) [33m=>[31m setFormData({ [33m...[31mformData[33m,[31m guardiansPermission[33m:[31m e[33m.[31mtarget[33m.[31mchecked })} [33m/[31m[33m>[31m[0m
+[0m[31m[1m>[22m[31m[90m 133 |[31m                     [33m<[31m[33mlabel[31m htmlFor[33m=[31m[32m"guardiansPermission"[31m style[33m=[31m{{ fontSize[33m:[31m [32m"22px"[31mm[33m,[31m  }}[33m>[31m[33mI[31m have my guardian[32m's permission (if under 16)</label>[31m[0m
+[0m [90m     |[31m                                                                                   [31m[1m^[22m[31m[0m
+[0m [90m 134 |[31m                   [33m<[31m[33m/[31m[33mdiv[31m[33m>[31m[0m
+[0m [90m 135 |[31m[0m
+[0m [90m 136 |[31m                   [33m<[31m[33mdiv[31m[33m>[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Paul/Desktop/Craftsemble/craftsemble/src/screens/workshops_registration_screen/WorkshopsRegistrationScreen.jsx[39m:133:82
+[33m  135|  
+  136|                    <div>
+  137|                      <input type="checkbox" id="artisan" name="artisan" style={{ width: "100px" }} onChange={(e) => setFormData({ ...formData, artisan: e.target.checked })} />
+     |                       ^
+  138|                      <label htmlFor="artisan" style={{ fontSize: "22px" , color: "white"}}>I am an artisan</label>
+  139|                    </div>[39m
+      at constructor (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:356:19)
+      at JSXParserMixin.raise (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:3223:19)
+      at JSXParserMixin.unexpected (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:3253:16)
+      at JSXParserMixin.expect (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:3590:28)
+      at JSXParserMixin.parseObjectLike (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:11655:14)
+      at JSXParserMixin.parseExprAtom (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:11160:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6937:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10862:23)
+      at JSXParserMixin.parseUpdate (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10845:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10821:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10659:61)
+      at JSXParserMixin.parseExprOps (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10664:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10602:21)
+      at JSXParserMixin.parseExpressionBase (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10556:23)
+      at C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10552:39
+      at JSXParserMixin.allowInAnd (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:12289:12)
+      at JSXParserMixin.parseExpression (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10552:17)
+      at JSXParserMixin.jsxParseExpressionContainer (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6797:31)
+      at JSXParserMixin.jsxParseAttributeValue (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6765:21)
+      at JSXParserMixin.jsxParseAttribute (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6818:38)
+      at JSXParserMixin.jsxParseOpeningElementAfterName (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6832:28)
+      at JSXParserMixin.jsxParseOpeningElementAt (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6827:17)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6851:33)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6863:32)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6863:32)
+      at JSXParserMixin.jsxParseElement (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6920:17)
+      at JSXParserMixin.parseExprAtom (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6932:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10862:23)
+      at JSXParserMixin.parseUpdate (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10845:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10821:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10659:61)
+      at JSXParserMixin.parseExprOps (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10664:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10602:21)
+      at C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10572:39
+      at JSXParserMixin.allowInAnd (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:12289:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10572:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:11504:28)
+      at JSXParserMixin.parseExprAtom (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:11142:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6937:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10862:23)
+      at JSXParserMixin.parseUpdate (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10845:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10821:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10659:61)
+      at JSXParserMixin.parseExprOps (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10664:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10602:21)
+      at JSXParserMixin.parseConditional (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10653:29)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10645:17)
+[2m6:14:11 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/workshops_registration_screen/WorkshopsRegistrationScreen.jsx[22m
+[2m6:14:11 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Paul\Desktop\Craftsemble\craftsemble\src\screens\workshops_registration_screen\WorkshopsRegistrationScreen.jsx: Unexpected token, expected "," (133:82)
+
+[0m [90m 131 |[31m                   [33m<[31m[33mdiv[31m[33m>[31m[0m
+[0m [90m 132 |[31m                     [33m<[31m[33minput[31m type[33m=[31m[32m"checkbox"[31m id[33m=[31m[32m"guardiansPermission"[31m name[33m=[31m[32m"guardiansPermission"[31m onChange[33m=[31m{(e) [33m=>[31m setFormData({ [33m...[31mformData[33m,[31m guardiansPermission[33m:[31m e[33m.[31mtarget[33m.[31mchecked })} [33m/[31m[33m>[31m[0m
+[0m[31m[1m>[22m[31m[90m 133 |[31m                     [33m<[31m[33mlabel[31m htmlFor[33m=[31m[32m"guardiansPermission"[31m style[33m=[31m{{ fontSize[33m:[31m [32m"22px"[31mm }}[33m>[31m[33mI[31m have my guardian[32m's permission (if under 16)</label>[31m[0m
+[0m [90m     |[31m                                                                                   [31m[1m^[22m[31m[0m
+[0m [90m 134 |[31m                   [33m<[31m[33m/[31m[33mdiv[31m[33m>[31m[0m
+[0m [90m 135 |[31m[0m
+[0m [90m 136 |[31m                   [33m<[31m[33mdiv[31m[33m>[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Paul/Desktop/Craftsemble/craftsemble/src/screens/workshops_registration_screen/WorkshopsRegistrationScreen.jsx[39m:133:82
+[33m  135|  
+  136|                    <div>
+  137|                      <input type="checkbox" id="artisan" name="artisan" style={{ width: "100px" }} onChange={(e) => setFormData({ ...formData, artisan: e.target.checked })} />
+     |                         ^
+  138|                      <label htmlFor="artisan" style={{ fontSize: "22px" , color: "white"}}>I am an artisan</label>
+  139|                    </div>[39m
+      at constructor (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:356:19)
+      at JSXParserMixin.raise (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:3223:19)
+      at JSXParserMixin.unexpected (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:3253:16)
+      at JSXParserMixin.expect (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:3590:28)
+      at JSXParserMixin.parseObjectLike (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:11655:14)
+      at JSXParserMixin.parseExprAtom (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:11160:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6937:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10862:23)
+      at JSXParserMixin.parseUpdate (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10845:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10821:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10659:61)
+      at JSXParserMixin.parseExprOps (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10664:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10602:21)
+      at JSXParserMixin.parseExpressionBase (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10556:23)
+      at C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10552:39
+      at JSXParserMixin.allowInAnd (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:12289:12)
+      at JSXParserMixin.parseExpression (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10552:17)
+      at JSXParserMixin.jsxParseExpressionContainer (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6797:31)
+      at JSXParserMixin.jsxParseAttributeValue (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6765:21)
+      at JSXParserMixin.jsxParseAttribute (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6818:38)
+      at JSXParserMixin.jsxParseOpeningElementAfterName (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6832:28)
+      at JSXParserMixin.jsxParseOpeningElementAt (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6827:17)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6851:33)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6863:32)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6863:32)
+      at JSXParserMixin.jsxParseElement (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6920:17)
+      at JSXParserMixin.parseExprAtom (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6932:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10862:23)
+      at JSXParserMixin.parseUpdate (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10845:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10821:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10659:61)
+      at JSXParserMixin.parseExprOps (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10664:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10602:21)
+      at C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10572:39
+      at JSXParserMixin.allowInAnd (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:12289:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10572:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:11504:28)
+      at JSXParserMixin.parseExprAtom (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:11142:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6937:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10862:23)
+      at JSXParserMixin.parseUpdate (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10845:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10821:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10659:61)
+      at JSXParserMixin.parseExprOps (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10664:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10602:21)
+      at JSXParserMixin.parseConditional (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10653:29)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10645:17)
+[2m6:14:12 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/workshops_registration_screen/WorkshopsRegistrationScreen.jsx[22m
+[2m6:14:12 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/workshops_registration_screen/WorkshopsRegistrationScreen.jsx[22m
+[2m6:14:12 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/workshops_registration_screen/WorkshopsRegistrationScreen.jsx[22m
+[2m6:14:12 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/workshops_registration_screen/WorkshopsRegistrationScreen.jsx[22m
+[2m6:14:13 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/workshops_registration_screen/WorkshopsRegistrationScreen.jsx[22m
+[2m6:14:13 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/workshops_registration_screen/WorkshopsRegistrationScreen.jsx[22m
+[2m6:14:13 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Paul\Desktop\Craftsemble\craftsemble\src\screens\workshops_registration_screen\WorkshopsRegistrationScreen.jsx: Unexpected token (133:91)
+
+[0m [90m 131 |[31m                   [33m<[31m[33mdiv[31m[33m>[31m[0m
+[0m [90m 132 |[31m                     [33m<[31m[33minput[31m type[33m=[31m[32m"checkbox"[31m id[33m=[31m[32m"guardiansPermission"[31m name[33m=[31m[32m"guardiansPermission"[31m onChange[33m=[31m{(e) [33m=>[31m setFormData({ [33m...[31mformData[33m,[31m guardiansPermission[33m:[31m e[33m.[31mtarget[33m.[31mchecked })} [33m/[31m[33m>[31m[0m
+[0m[31m[1m>[22m[31m[90m 133 |[31m                     [33m<[31m[33mlabel[31m htmlFor[33m=[31m[32m"guardiansPermission"[31m style[33m=[31m{{ fontSize[33m:[31m [32m"22px"[31m[33m,[31m color[33m:[31m }}[33m>[31m[33mI[31m have my guardian[32m's permission (if under 16)</label>[31m[0m
+[0m [90m     |[31m                                                                                            [31m[1m^[22m[31m[0m
+[0m [90m 134 |[31m                   [33m<[31m[33m/[31m[33mdiv[31m[33m>[31m[0m
+[0m [90m 135 |[31m[0m
+[0m [90m 136 |[31m                   [33m<[31m[33mdiv[31m[33m>[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Paul/Desktop/Craftsemble/craftsemble/src/screens/workshops_registration_screen/WorkshopsRegistrationScreen.jsx[39m:133:91
+[33m  135|  
+  136|                    <div>
+  137|                      <input type="checkbox" id="artisan" name="artisan" style={{ width: "100px" }} onChange={(e) => setFormData({ ...formData, artisan: e.target.checked })} />
+     |                           ^
+  138|                      <label htmlFor="artisan" style={{ fontSize: "22px" , color: "white"}}>I am an artisan</label>
+  139|                    </div>[39m
+      at constructor (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:356:19)
+      at JSXParserMixin.raise (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:3223:19)
+      at JSXParserMixin.unexpected (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:3253:16)
+      at JSXParserMixin.parseExprAtom (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:11262:16)
+      at JSXParserMixin.parseExprAtom (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6937:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10862:23)
+      at JSXParserMixin.parseUpdate (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10845:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10821:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10659:61)
+      at JSXParserMixin.parseExprOps (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10664:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10602:21)
+      at C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10572:39
+      at JSXParserMixin.allowInAnd (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:12289:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10572:17)
+      at JSXParserMixin.parseObjectProperty (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:11789:83)
+      at JSXParserMixin.parseObjPropValue (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:11816:100)
+      at JSXParserMixin.parsePropertyDefinition (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:11750:17)
+      at JSXParserMixin.parseObjectLike (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:11665:21)
+      at JSXParserMixin.parseExprAtom (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:11160:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6937:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10862:23)
+      at JSXParserMixin.parseUpdate (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10845:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10821:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10659:61)
+      at JSXParserMixin.parseExprOps (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10664:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10602:21)
+      at JSXParserMixin.parseExpressionBase (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10556:23)
+      at C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10552:39
+      at JSXParserMixin.allowInAnd (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:12289:12)
+      at JSXParserMixin.parseExpression (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10552:17)
+      at JSXParserMixin.jsxParseExpressionContainer (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6797:31)
+      at JSXParserMixin.jsxParseAttributeValue (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6765:21)
+      at JSXParserMixin.jsxParseAttribute (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6818:38)
+      at JSXParserMixin.jsxParseOpeningElementAfterName (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6832:28)
+      at JSXParserMixin.jsxParseOpeningElementAt (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6827:17)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6851:33)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6863:32)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6863:32)
+      at JSXParserMixin.jsxParseElement (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6920:17)
+      at JSXParserMixin.parseExprAtom (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6932:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10862:23)
+      at JSXParserMixin.parseUpdate (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10845:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10821:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10659:61)
+      at JSXParserMixin.parseExprOps (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10664:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10602:21)
+      at C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10572:39
+[2m6:14:13 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Paul\Desktop\Craftsemble\craftsemble\src\screens\workshops_registration_screen\WorkshopsRegistrationScreen.jsx: Unexpected token (133:92)
+
+[0m [90m 131 |[31m                   [33m<[31m[33mdiv[31m[33m>[31m[0m
+[0m [90m 132 |[31m                     [33m<[31m[33minput[31m type[33m=[31m[32m"checkbox"[31m id[33m=[31m[32m"guardiansPermission"[31m name[33m=[31m[32m"guardiansPermission"[31m onChange[33m=[31m{(e) [33m=>[31m setFormData({ [33m...[31mformData[33m,[31m guardiansPermission[33m:[31m e[33m.[31mtarget[33m.[31mchecked })} [33m/[31m[33m>[31m[0m
+[0m[31m[1m>[22m[31m[90m 133 |[31m                     [33m<[31m[33mlabel[31m htmlFor[33m=[31m[32m"guardiansPermission"[31m style[33m=[31m{{ fontSize[33m:[31m [32m"22px"[31m[33m,[31m color[33m:[31m  }}[33m>[31m[33mI[31m have my guardian[32m's permission (if under 16)</label>[31m[0m
+[0m [90m     |[31m                                                                                             [31m[1m^[22m[31m[0m
+[0m [90m 134 |[31m                   [33m<[31m[33m/[31m[33mdiv[31m[33m>[31m[0m
+[0m [90m 135 |[31m[0m
+[0m [90m 136 |[31m                   [33m<[31m[33mdiv[31m[33m>[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Paul/Desktop/Craftsemble/craftsemble/src/screens/workshops_registration_screen/WorkshopsRegistrationScreen.jsx[39m:133:92
+[33m  135|  
+  136|                    <div>
+  137|                      <input type="checkbox" id="artisan" name="artisan" style={{ width: "100px" }} onChange={(e) => setFormData({ ...formData, artisan: e.target.checked })} />
+     |                           ^
+  138|                      <label htmlFor="artisan" style={{ fontSize: "22px" , color: "white"}}>I am an artisan</label>
+  139|                    </div>[39m
+      at constructor (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:356:19)
+      at JSXParserMixin.raise (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:3223:19)
+      at JSXParserMixin.unexpected (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:3253:16)
+      at JSXParserMixin.parseExprAtom (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:11262:16)
+      at JSXParserMixin.parseExprAtom (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6937:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10862:23)
+      at JSXParserMixin.parseUpdate (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10845:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10821:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10659:61)
+      at JSXParserMixin.parseExprOps (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10664:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10602:21)
+      at C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10572:39
+      at JSXParserMixin.allowInAnd (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:12289:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10572:17)
+      at JSXParserMixin.parseObjectProperty (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:11789:83)
+      at JSXParserMixin.parseObjPropValue (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:11816:100)
+      at JSXParserMixin.parsePropertyDefinition (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:11750:17)
+      at JSXParserMixin.parseObjectLike (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:11665:21)
+      at JSXParserMixin.parseExprAtom (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:11160:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6937:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10862:23)
+      at JSXParserMixin.parseUpdate (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10845:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10821:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10659:61)
+      at JSXParserMixin.parseExprOps (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10664:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10602:21)
+      at JSXParserMixin.parseExpressionBase (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10556:23)
+      at C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10552:39
+      at JSXParserMixin.allowInAnd (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:12289:12)
+      at JSXParserMixin.parseExpression (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10552:17)
+      at JSXParserMixin.jsxParseExpressionContainer (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6797:31)
+      at JSXParserMixin.jsxParseAttributeValue (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6765:21)
+      at JSXParserMixin.jsxParseAttribute (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6818:38)
+      at JSXParserMixin.jsxParseOpeningElementAfterName (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6832:28)
+      at JSXParserMixin.jsxParseOpeningElementAt (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6827:17)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6851:33)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6863:32)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6863:32)
+      at JSXParserMixin.jsxParseElement (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6920:17)
+      at JSXParserMixin.parseExprAtom (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6932:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10862:23)
+      at JSXParserMixin.parseUpdate (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10845:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10821:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10659:61)
+      at JSXParserMixin.parseExprOps (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10664:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10602:21)
+      at C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10572:39
+[2m6:14:13 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Paul\Desktop\Craftsemble\craftsemble\src\screens\workshops_registration_screen\WorkshopsRegistrationScreen.jsx: Unexpected token (133:92)
+
+[0m [90m 131 |[31m                   [33m<[31m[33mdiv[31m[33m>[31m[0m
+[0m [90m 132 |[31m                     [33m<[31m[33minput[31m type[33m=[31m[32m"checkbox"[31m id[33m=[31m[32m"guardiansPermission"[31m name[33m=[31m[32m"guardiansPermission"[31m onChange[33m=[31m{(e) [33m=>[31m setFormData({ [33m...[31mformData[33m,[31m guardiansPermission[33m:[31m e[33m.[31mtarget[33m.[31mchecked })} [33m/[31m[33m>[31m[0m
+[0m[31m[1m>[22m[31m[90m 133 |[31m                     [33m<[31m[33mlabel[31m htmlFor[33m=[31m[32m"guardiansPermission"[31m style[33m=[31m{{ fontSize[33m:[31m [32m"22px"[31m[33m,[31m color[33m:[31m  }}[33m>[31m[33mI[31m have my guardian[32m's permission (if under 16)</label>[31m[0m
+[0m [90m     |[31m                                                                                             [31m[1m^[22m[31m[0m
+[0m [90m 134 |[31m                   [33m<[31m[33m/[31m[33mdiv[31m[33m>[31m[0m
+[0m [90m 135 |[31m[0m
+[0m [90m 136 |[31m                   [33m<[31m[33mdiv[31m[33m>[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Paul/Desktop/Craftsemble/craftsemble/src/screens/workshops_registration_screen/WorkshopsRegistrationScreen.jsx[39m:133:92
+[33m  135|  
+  136|                    <div>
+  137|                      <input type="checkbox" id="artisan" name="artisan" style={{ width: "100px" }} onChange={(e) => setFormData({ ...formData, artisan: e.target.checked })} />
+     |                           ^
+  138|                      <label htmlFor="artisan" style={{ fontSize: "22px" , color: "white"}}>I am an artisan</label>
+  139|                    </div>[39m
+      at constructor (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:356:19)
+      at JSXParserMixin.raise (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:3223:19)
+      at JSXParserMixin.unexpected (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:3253:16)
+      at JSXParserMixin.parseExprAtom (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:11262:16)
+      at JSXParserMixin.parseExprAtom (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6937:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10862:23)
+      at JSXParserMixin.parseUpdate (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10845:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10821:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10659:61)
+      at JSXParserMixin.parseExprOps (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10664:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10602:21)
+      at C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10572:39
+      at JSXParserMixin.allowInAnd (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:12289:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10572:17)
+      at JSXParserMixin.parseObjectProperty (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:11789:83)
+      at JSXParserMixin.parseObjPropValue (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:11816:100)
+      at JSXParserMixin.parsePropertyDefinition (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:11750:17)
+      at JSXParserMixin.parseObjectLike (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:11665:21)
+      at JSXParserMixin.parseExprAtom (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:11160:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6937:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10862:23)
+      at JSXParserMixin.parseUpdate (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10845:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10821:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10659:61)
+      at JSXParserMixin.parseExprOps (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10664:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10602:21)
+      at JSXParserMixin.parseExpressionBase (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10556:23)
+      at C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10552:39
+      at JSXParserMixin.allowInAnd (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:12289:12)
+      at JSXParserMixin.parseExpression (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10552:17)
+      at JSXParserMixin.jsxParseExpressionContainer (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6797:31)
+      at JSXParserMixin.jsxParseAttributeValue (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6765:21)
+      at JSXParserMixin.jsxParseAttribute (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6818:38)
+      at JSXParserMixin.jsxParseOpeningElementAfterName (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6832:28)
+      at JSXParserMixin.jsxParseOpeningElementAt (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6827:17)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6851:33)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6863:32)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6863:32)
+      at JSXParserMixin.jsxParseElement (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6920:17)
+      at JSXParserMixin.parseExprAtom (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:6932:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10862:23)
+      at JSXParserMixin.parseUpdate (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10845:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10821:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10659:61)
+      at JSXParserMixin.parseExprOps (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10664:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10602:21)
+      at C:\Users\Paul\Desktop\Craftsemble\craftsemble\node_modules\@babel\parser\lib\index.js:10572:39
+[2m6:14:13 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/workshops_registration_screen/WorkshopsRegistrationScreen.jsx[22m
+[2m6:14:15 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/workshops_registration_screen/WorkshopsRegistrationScreen.jsx[22m
+[2m6:14:16 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/workshops_registration_screen/WorkshopsRegistrationScreen.jsx[22m
+[2m6:17:30 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/exhibition_screen/ExhibitionCardDetailsScreen.jsx[22m
+[2m6:17:30 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/exhibition_screen/ExhibitionCardDetailsScreen.jsx[22m
+[2m6:17:30 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/exhibition_screen/ExhibitionCardDetailsScreen.jsx[22m
+[2m6:17:30 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/exhibition_screen/ExhibitionCardDetailsScreen.jsx[22m
